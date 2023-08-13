@@ -20,3 +20,57 @@
     position: initial;
     margin: .5em 0;
 }
+
+.card__descricao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5em;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background: var(--azul-degradee);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.descricao__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.descricao__categoria {
+    color: var(--cinza);
+    font-size: 18px;
+    font-weight: 700;
+    margin: .5em 0;
+}
+
+.descricao__texto {
+    font-size: 14px;
+    color: var(--branco);
+}
+
+.botao-conhecer {
+    background-color: var(--laranja);
+    padding: 1em 2.2em;
+    font-size: 12px;
+    text-decoration: none;
+    width: 30%;
+    color: var(--branco);
+}
+
+.botao-comprar {
+    background-color: var(--laranja);
+    padding: 1em 2.2em;
+    font-size: 12px;
+    text-decoration: none;
+    width: 30%;
+    color: var(--branco);
+}
