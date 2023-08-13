@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="newstyles.css">
 </head>
 <body>
@@ -32,5 +33,41 @@
         <h2 class="banner_titulo">Como você quer estudar?</h2>
         <p class="banner__texto">Estude comigo e desenvolva a sua percepção musical. Conheça as diversas possibilidades para estudar.</p>
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Conheça os cursos</h2>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="./img/imagem1.png" alt="imagem do curso"></div>
+      <div class="swiper-slide"><img src="./img/imagem2.png" alt="imagem do curso"></div>
+      <div class="swiper-slide"><img src="./img/imagem3.png" alt="imagem do curso"></div>
+      <div class="swiper-slide"><img src="./img/imagem4.png" alt="imagem do curso"></div>
+      <div class="swiper-slide"><img src="./img/imagem5.png" alt="imagem do curso"></div>
+      <div class="swiper-slide"><img src="./img/imagem6.png" alt="imagem do curso"></div>
+    </div>
+    
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets"
+            }
+        });
+    </script>
 </body>
 </html>
