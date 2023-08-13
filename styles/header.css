@@ -2,6 +2,8 @@
     width: 24px;
     height: 24px;
     background-image: url("../img/Menu.svg");
+    background-position: center;
+    background-repeat: no-repeat;
     display: inline-block;
 }
 
@@ -11,4 +13,40 @@
     align-items: center;
     padding: .5em;
     gap: .5em;
+    position: relative;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 50vw;
+}
+
+.cabecalho__botao:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo {
+    padding: 1em;
+    background-color: var(--branco);
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__link {
+    background: var(--azul-degradee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.cabecalho__botao {
+    display: none;
 }
