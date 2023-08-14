@@ -1,4 +1,18 @@
 .rodape {
     background-color: var(--branco);
     padding: 1em;
+    text-align: center;
+}
+
+.rodape__texto {
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+
+    .rodape__texto {
+        display: block;
+        padding-top: .3em;
+    }
+
 }

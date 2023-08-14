@@ -51,3 +51,40 @@
 .cabecalho__botao {
     display: none;
 }
+
+.titulo-principal {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+
+    .titulo-principal {
+        font-family: var(--fonte-secundario);
+        font-size: 30px;
+        font-weight: 700;
+        display: block;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__item {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .cabecalho__menu-hamburger {
+        display: none;
+    }
+
+}

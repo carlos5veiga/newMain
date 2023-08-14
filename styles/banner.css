@@ -14,3 +14,15 @@
     font-weight: 500;
     margin-top: 1em;
 }
+
+@media screen and (min-width: 900px) {
+
+    .banner_titulo {
+        font-size: 36px;
+    }
+
+    .banner {
+        padding: 5em 0;
+    }
+
+}
