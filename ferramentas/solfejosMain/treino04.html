@@ -1,125 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<!-- Required meta tags -->
-		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-			<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	
-		<link rel="stylesheet" href="http://carlosveigafilho.com.br/contraponto/styles.css">
-		<link rel="shortcut icon" href="../../img/IconeTuts.gif" type="image/x-icon">
-		<title>Treino 04</title>
-	
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-H9L5D8BG84"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-	
-			gtag('config', 'G-H9L5D8BG84');
-		</script>
-	  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino 04</title>
+    <link rel="shortcut icon" href="../../img/IconeTuts.gif" type="image/x-icon">
+    <link rel="stylesheet" href="../../reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../../newstyles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <input type="checkbox" id="menu" class="cabecalho__botao">
+        <label for="menu" class="rotulo">
+            <span class="cabecalho__menu-hamburger"></span>
+        </label>
+        <ul class="lista-menu">
+            <li class="lista-menu__titulo">Categorias</li>
+            <li class="lista-menu__item"><a href="../../tutoriais.html" class="lista-menu__link">Tutoriais</a></li>
+            <li class="lista-menu__item"><a target="_blank" href="https://tutoriaisemmusica.com.br" class="lista-menu__link">Cursos</a></li>
+            <li class="lista-menu__item"><a href="../../ferramentas.html" class="lista-menu__link">Ferramentas</a></li>
+            <li class="lista-menu__item"><a href="../../livros.html" class="lista-menu__link">Livros</a></li>
+            <li class="lista-menu__item"><a target="_blank" href="https://carlosveigafilho.com.br/repertorio/index.html" class="lista-menu__link">Corais</a></li>
+        </ul>
+        <a href="../../index.html"><img src="../../img/LogoTuts40.png" class="cabecalho__imagem" alt="Logo dos Tutoriais em Música"></a>
+        <h1 class="titulo-principal">Carlos Veiga Filho</h1>
 
+        <ul class="opcoes">
+            <li class="opcoes__item"><a href="../../tutoriais.html" class="opcoes__link">Tutoriais</a></li>
+            <li class="opcoes__item"><a target="_blank" href="https://tutoriaisemmusica.com.br" class="opcoes__link">Cursos</a></li>
+            <li class="opcoes__item"><a href="../../ferramentas.html" class="opcoes__link">Ferramentas</a></li>
+            <li class="opcoes__item"><a href="../../livros.html" class="opcoes__link">Livros</a></li>
+            <li class="opcoes__item"><a target="_blank" href="https://carlosveigafilho.com.br/repertorio/index.html" class="opcoes__link">Corais</a></li>
+        </ul>
+    </header>
 
-		<audio id="audio1" src="http://www.carlosveigafilho.com.br/treinosolf/sounds/domaior.mp3" autostart="false" ></audio>
+    <section class="banner">
+        <h2 class="banner_titulo">Treinamento de solfejo</h2>
+        <p class="banner__texto">Pressione os botões de controle para estudar.</p>
+    </section>
 
-<!-- NAVBAR -->
-	<nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top">
-	  <a class="navbar-brand" href="http://carlosveigafilho.com.br/index.html">Home</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Solfejo 04</h2>
+        
+        <div class="card__botoes">
+            <a href="./treino03.html" class="botao-conhecer">Anterior</a>
+            <a href="./treino05.html" class="botao-comprar">Seguinte</a>
+        </div>
 
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-			<a class="nav-link active" href="http://carlosveigafilho.com.br/tutoriais.php">Tutoriais em m�sica</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="http://carlosveigafilho.com.br/repertorio/index.html">Corais</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="#">Carlos Veiga Filho</a>
-		  </li>
-	  </div>
-	</nav>
-
-
-<header>
-			<h1><center>Treinamento de solfejo - 04</center></h1>
-</header>
-
-
-<div class="container-fluid">
-
-	<div class="text-center">
-		<a class="btn btn-large btn-primary" href="http://carlosveigafilho.com.br/treinosolf/treino03.html">Solfejo Anterior</a><br><br>
-		<a class="btn btn-large btn-primary" href="http://carlosveigafilho.com.br/treinosolf/treino05.html">Pr�ximo Solfejo</a><br><br>
-		</div>
-
-<div class="text-center bg-info">
-      <p> Ol�, Pessoas!!<br>
-            Esta p�gina serve para voc� estudar o solfejo, ou seja, a leitura da partitura atrav�s do canto.<br>
-            Existe uma melodia que est� escrita e ela � companhada de 5 bot�es.<br>
-            O primeiro bot�o vai tocar a tonalidade para voc� encontrar uma refer�ncia.<br>
-            O segundo bot�o vai tocar o acompanhamento para voc� cantar.<br>
-			Os tr�s �ltimos bot�es servem para voc� estudar se ainda tiver dificuldades.<br>
-			No terceiro eu canto as notas, no quarto os graus, e no quinto eu fa�o uma leitura r�tmica.<br>
-            Jogue duro. Abra��o,<br>
-			Carlinhos.</p>
-</div>
-
-
-<div class="text-center">
-       <h3>Solfejo</h3>
-</div>
-
-<div class="text-center">
-		<img src="http://carlosveigafilho.com.br/treinosolf/images/treino04.jpg" alt="treino" class="img-fluid">
-</div>
+        <div class="solfejo">
+            <img id="imagem_solfejo" alt="treino" class="imagem__solfejo" width="100%">
+        </div>
 
 
 
-<div class="text-center light">
-	<button type="button" class="btn btn-primary" onclick="audio1.src='http://www.carlosveigafilho.com.br/treinosolf/sounds/domaior.mp3'; audio1.play();">Tonalidade</button>
-	<button type="button" class="btn btn-primary" onclick="audio1.src='http://www.carlosveigafilho.com.br/treinosolf/sounds/04acomp.mp3'; audio1.play();">Acompanhamento</button>
-	<button type="button" class="btn btn-primary" onclick="audio1.src='http://www.carlosveigafilho.com.br/treinosolf/sounds/04notas.mp3'; audio1.play();">Notas</button>
-	<button type="button" class="btn btn-primary" onclick="audio1.src='http://www.carlosveigafilho.com.br/treinosolf/sounds/04graus.mp3'; audio1.play();">Graus</button>
-	<button type="button" class="btn btn-primary" onclick="audio1.src='http://www.carlosveigafilho.com.br/treinosolf/sounds/04ritmo.mp3'; audio1.play();">Ritmo</button>
-	<br><br>
-	</div>
+    </section>
 
+    <audio id="audio1" src="https://www.carlosveigafilho.com.br/treinosolf/sounds/domaior.mp3" autostart="false" ></audio>
 
+    <section class="topicos" id="topicos">
+        <h2 class="topicos__titulo">Botões de controle</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a class="topicos__link" href="#topicos" onclick="audio1.src='https://www.carlosveigafilho.com.br/treinosolf/sounds/domaior.mp3'; audio1.play();">Tonalidade</a>
+            </li>
+            <li class="topicos__item">
+                <a id="acompanhamento" class="topicos__link" href="#topicos">Acompanhamento</a>
+            </li>
+            <li class="topicos__item">
+                <a id="notas" class="topicos__link" href="#topicos">Notas</a>
+            </li>
+            <li class="topicos__item">
+                <a id="graus" class="topicos__link" href="#topicos">Graus</a>
+            </li>
+            <li class="topicos__item">
+                <a id="ritmo" class="topicos__link" href="#topicos">Ritmo</a>
+            </li>
+        </ul>
+    </section>
 
-
-
-<div class="container-fluid bg-info">
-
-            <center>
-
-
-                      <p>Copyright &copy; 2010-<script>
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Carlos Veiga Filho</h2>
+        <h3 class="rodape__texto">Copyright &copy; 2010-<script>
             var CurrentYear = new Date().getFullYear()
-            document.write(CurrentYear)
-        </script>  Carlos Veiga Filho</p>
-            </center>
+            document.write(CurrentYear)</script></h3>
+    </footer>
 
-
-</div>
-
-
-
-
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-
-  </body>
+	<script src="./js/treino.js"></script>
+</body>
 </html>
