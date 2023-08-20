@@ -66,8 +66,8 @@
 
 .botao-conhecer {
     background-color: var(--azul);
-    padding: 1em 2.2em;
-    font-size: 14px;
+    padding: 1em 2em;
+    font-size: 13px;
     text-decoration: none;
     width: 30%;
     color: var(--branco);
@@ -76,8 +76,8 @@
 
 .botao-comprar {
     background-color: var(--laranja);
-    padding: 1em 2.2em;
-    font-size: 14px;
+    padding: 1em 2em;
+    font-size: 13px;
     text-decoration: none;
     width: 30%;
     color: var(--branco);
