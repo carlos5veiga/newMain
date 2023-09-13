@@ -7,7 +7,7 @@ document.getElementById("imagem_ditado").src = "./images/Mel" + numero + " Branc
 
 document.getElementById("play").onclick = function () {
     const audio1 = document.getElementById("audio1");
-    audio1.src = "https://www.carlosveigafilho.com.br/ditados/sounds/Mel" + numero + ".mp3";
+    audio1.src = "./sounds/Mel" + numero + ".mp3";
     audio1.play();
 }
 
