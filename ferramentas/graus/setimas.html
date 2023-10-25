@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sétimas</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./img/IconeTuts.gif" type="image/x-icon">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 id="title_setimas">Sétimas Maiores e Menores</h1>
+        <h2>Desenvolvido por Carlos Veiga Filho</h2>
+    </header>
+    <main class="secao_principal">
+
+        <section class="zona1">
+            <div class="placar">
+                <h3 class="placar_texto">Acertos: </h3>
+                <h3 class="placar_numero" id="acertos">0</h3>
+                <h3 class="placar_texto">Erros: </h3>
+                <h3 class="placar_numero" id="erros">0</h3>
+            </div>
+            <button class="botao botao_play" id="play">Play</button>
+            <div class="resposta">
+                <button class="botao botao_resposta" id="maior">Sétima Maior</button>
+                <button class="botao botao_resposta" id="menor">Sétima Menor</button>
+            </div>
+        </section>
+        
+        <section class="zona2">
+            <a href="https://tutoriaisemmusica.com.br/scoreplay" class="botao_ancora" id="botao_conheca">Conheça o curso</a>
+            <a href="https://tutoriaisemmusica.com.br/scoreplay" target="_blank"><img src="./img/Scoreplay.jpg" class="imagem" alt="Imagem do curso Scoreplay"></a>
+            <a href="./index.html" class="botao_ancora">Volte para a central</a>
+        </section>
+    
+        <audio src="./notas/1.mp3" id="nota1"></audio>
+        <audio src="./notas/2.mp3" id="nota2"></audio>
+    </main>
+    
+    <footer class="rodape">
+        <p>Copyright &copy; 2010-<script>
+            var CurrentYear = new Date().getFullYear()
+            document.write(CurrentYear)
+        </script></p><p>Carlos Veiga Filho</p>
+    </footer>
+    <script src="js/setimas.js"></script>
+</body>
+</html>
