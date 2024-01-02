@@ -1,5 +1,6 @@
 const cabecalho = document.getElementById("cabecalho");
-cabecalho.innerHTML = `
+if (cabecalho) {
+    cabecalho.innerHTML = `
     <input type="checkbox" id="menu" class="cabecalho__botao">
     <label for="menu" class="rotulo">
         <span class="cabecalho__menu-hamburger"></span>
@@ -23,9 +24,11 @@ cabecalho.innerHTML = `
         <li class="opcoes__item"><a target="_blank" href="https://carlosveigafilho.com.br/repertorio/index.html" class="opcoes__link">Corais</a></li>
     </ul>
 `;
+}
 
 const cursos = document.getElementById("secao-cursos");
-cursos.innerHTML = `
+if (cursos) {
+    cursos.innerHTML = `
     <h2 class="topicos__titulo">Cursos</h2>
     <ul class="topicos__lista">
         <li class="topicos__item">
@@ -45,9 +48,12 @@ cursos.innerHTML = `
         </li>
     </ul>
 `;
+}
+
 
 const playlists = document.getElementById("secao-playlists");
-playlists.innerHTML = `
+if (playlists) {
+    playlists.innerHTML = `
     <h2 class="topicos__titulo">Playlists do youtube</h2>
     <ul class="topicos__lista">
         <li class="topicos__item">
@@ -64,11 +70,16 @@ playlists.innerHTML = `
         </li>
     </ul>
 `;
+}
+
 
 const currentYear = new Date().getFullYear();
 
 const conteudoRodape = '<h2 class="rodape__titulo">Carlos Veiga Filho</h2><h3 class="rodape__texto">Copyright &copy; 2010-'+currentYear+'</h3>';
 
 const rodape = document.getElementById("rodape");
-rodape.innerHTML = conteudoRodape;
+if (rodape) {
+    rodape.innerHTML = conteudoRodape;
+}
+
 

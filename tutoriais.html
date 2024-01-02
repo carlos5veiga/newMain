@@ -15,30 +15,7 @@
     <link rel="stylesheet" href="./newstyles.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <input type="checkbox" id="menu" class="cabecalho__botao">
-        <label for="menu" class="rotulo">
-            <span class="cabecalho__menu-hamburger"></span>
-        </label>
-        <ul class="lista-menu">
-            <li class="lista-menu__titulo">Categorias</li>
-            <li class="lista-menu__item"><a href="./tutoriais.html" class="lista-menu__link">Tutoriais</a></li>
-            <li class="lista-menu__item"><a target="_blank" href="https://tutoriaisemmusica.com.br" class="lista-menu__link">Cursos</a></li>
-            <li class="lista-menu__item"><a href="./ferramentas.html" class="lista-menu__link">Ferramentas</a></li>
-            <li class="lista-menu__item"><a href="./livros.html" class="lista-menu__link">Livros</a></li>
-            <li class="lista-menu__item"><a target="_blank" href="https://carlosveigafilho.com.br/repertorio/index.html" class="lista-menu__link">Corais</a></li>
-        </ul>
-        <a href="./index.html"><img src="./img/LogoTuts40.png" class="cabecalho__imagem" alt="Logo dos Tutoriais em Música"></a>
-        <h1 class="titulo-principal">Carlos Veiga Filho</h1>
-
-        <ul class="opcoes">
-            <li class="opcoes__item"><a href="./tutoriais.html" class="opcoes__link">Tutoriais</a></li>
-            <li class="opcoes__item"><a target="_blank" href="https://tutoriaisemmusica.com.br" class="opcoes__link">Cursos</a></li>
-            <li class="opcoes__item"><a href="./ferramentas.html" class="opcoes__link">Ferramentas</a></li>
-            <li class="opcoes__item"><a href="./livros.html" class="opcoes__link">Livros</a></li>
-            <li class="opcoes__item"><a target="_blank" href="https://carlosveigafilho.com.br/repertorio/index.html" class="opcoes__link">Corais</a></li>
-        </ul>
-    </header>
+    <header class="cabecalho" id="cabecalho"></header>
 
     <section class="banner">
         <h2 class="banner_titulo">Conheça os Tutoriais em Música</h2>
@@ -93,45 +70,10 @@
         </div>
     </section>
 
-    <section class="topicos">
-        <h2 class="topicos__titulo">Playlists do youtube</h2>
-        <ul class="topicos__lista">
-            <li class="topicos__item">
-                <a class="topicos__link" href="https://www.youtube.com/playlist?list=PLPPAfvKjYPk2k7d1KcoGJxPVotCPQuCYb" target="_blank">Minicurso Solfejo</a>
-            </li>
-            <li class="topicos__item">
-                <a class="topicos__link" href="https://www.youtube.com/playlist?list=PLPPAfvKjYPk0sxktVnfbIcs2LPiFBTQFw" target="_blank">Estudando Música</a>
-            </li>
-            <li class="topicos__item">
-                <a class="topicos__link" href="https://www.youtube.com/playlist?list=PLPPAfvKjYPk2XlppJArrQSWMf2cenDLxi" target="_blank">Música e Metrônomo</a>
-            </li>
-            <li class="topicos__item">
-                <a class="topicos__link" href="https://www.youtube.com/playlist?list=PLPPAfvKjYPk0s3tSiLsMydzLy-lrBqzIh" target="_blank">Harmonia na Prática</a>
-            </li>
-        </ul>
-    </section>
+    <section class="topicos" id="secao-playlists"></section>
 
-    <footer class="rodape">
-        <h2 class="rodape__titulo">Carlos Veiga Filho</h2>
-        <h3 class="rodape__texto">Copyright &copy; 2010-<script>
-            var CurrentYear = new Date().getFullYear()
-            document.write(CurrentYear)</script></h3>
-    </footer>
+    <footer class="rodape" id="rodape"></footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            spaceBetween: 10,
-            slidesPerView: 3,
-            pagination: {
-                el: ".swiper-pagination",
-                type: "bullets"
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            }
-        });
-    </script>
+    <script src="./jsnewmain/elementos.js"></script>
 </body>
 </html>
