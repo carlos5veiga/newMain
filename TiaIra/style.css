@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+.title{
+    text-align: center;
+    color: beige;
+}
+
+.div-image{
+    text-align: center;
+}
+
+.image{
+    max-width: 20%;
+}
+
+.meses{
+    padding: 1% 10%;
+    text-align: left;
+}
+
+.subtitle{
+    color: gray;
+    text-align: center;
+}
+
+p{
+    color: azure;
+}
+
+a{
+    margin-bottom: 5%;
+}
