@@ -181,7 +181,7 @@ for (let index = 4; index < 6; index++) {
     
         let newH2 = document.createElement('h2');
         newH2.setAttribute('class','carrossel__titulo');
-        newH2.textContent = 'Titulo';
+        newH2.textContent = dados[index].tituloCabecalho;
         newSection.appendChild(newH2);
     
         let newDiv1 = document.createElement('div');
@@ -193,14 +193,18 @@ for (let index = 4; index < 6; index++) {
         newDiv2.setAttribute('class','card__imagem-texto');
         newDiv2.setAttribute('id', 'div2');
         newDiv1.appendChild(newDiv2);
+
+        const linkVideo = 'https://youtu.be/' + dados[index].codigoVideo;
     
         let newA = document.createElement('a');
         newA.setAttribute('target','_blank');
-        newA.setAttribute('href','https://youtu.be/lDK61UKmiQA');
+        newA.setAttribute('href', linkVideo);
         newDiv2.appendChild(newA);
+
+        const imagemVideo = 'https://img.youtube.com/vi/' + dados[index].codigoVideo + '/hqdefault.jpg';
     
         let newImg = document.createElement('img');
-        newImg.setAttribute('src','https://img.youtube.com/vi/lDK61UKmiQA/hqdefault.jpg');
+        newImg.setAttribute('src', imagemVideo);
         newImg.setAttribute('alt','Imagem do vídeo Solfejo 03 Software');
         newImg.setAttribute('class','descricao__imagem');
         newImg.setAttribute('height','160px');
@@ -208,7 +212,7 @@ for (let index = 4; index < 6; index++) {
     
         let newP = document.createElement('p');
         newP.setAttribute('class','texto-card__imagem-texto');
-        newP.textContent = 'Conteúdo do card';
+        newP.textContent = dados[index].resumoVideo;;
         newDiv2.appendChild(newP);
     
         let newDiv3 = document.createElement('div');
@@ -217,7 +221,7 @@ for (let index = 4; index < 6; index++) {
     
         let newA2 = document.createElement('a');
         newA2.setAttribute('target','_blank');
-        newA2.setAttribute('href','https://youtu.be/lDK61UKmiQA');
+        newA2.setAttribute('href', linkVideo);
         newA2.setAttribute('class','botao-conhecer');
         newA2.textContent = 'Assista';
         newDiv3.appendChild(newA2);
