@@ -72,6 +72,26 @@ if (playlists) {
 `;
 }
 
+const livroAnHarm = document.getElementById("div-card-livroAnHarm");
+if (livroAnHarm) {
+    livroAnHarm.innerHTML = `
+        <div class="card__descricao">
+            <div class="descricao">
+                <h2 class="descricao__titulo">Análise Harmônica para Estudantes de Música</h2>
+                <h3 class="descricao__categoria">Livro</h3>
+                <p class="descricao__texto">Aprenda a fazer uma análise harmônica completa.</p>
+            </div>
+            <a target="_blank" href="https://www.amazon.com.br/An%C3%A1lise-Harm%C3%B4nica-para-Estudantes-M%C3%BAsica-ebook/dp/B09CCMDD6Q/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2N6LPKLZMKXNO&keywords=an%C3%A1lise+harm%C3%B4nica+para+estudantes+de+m%C3%BAsica&qid=1692020657&sprefix=an%C3%A1lise+harm%C3%B4nica+para+estudantes+de+m%C3%BAsica%2Caps%2C201&sr=8-1">
+                <img src="./img/LivroAnHarm.jpg" alt="Capa do livro Análise Harmônica para Estudantes de Música" class="descricao__imagem">
+            </a>
+        </div>
+        <div class="card__botoes">
+            <a target="_blank" href="https://carlosveigafilho.com.br/divulgacao/livros/DivulgLivro.html" class="botao-conhecer">Conheça</a>
+            <a target="_blank" href="https://www.amazon.com.br/An%C3%A1lise-Harm%C3%B4nica-para-Estudantes-M%C3%BAsica-ebook/dp/B09CCMDD6Q/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2N6LPKLZMKXNO&keywords=an%C3%A1lise+harm%C3%B4nica+para+estudantes+de+m%C3%BAsica&qid=1692020657&sprefix=an%C3%A1lise+harm%C3%B4nica+para+estudantes+de+m%C3%BAsica%2Caps%2C201&sr=8-1" class="botao-comprar">Compre</a>
+        </div>
+`;
+}
+
 
 const currentYear = new Date().getFullYear();
 
