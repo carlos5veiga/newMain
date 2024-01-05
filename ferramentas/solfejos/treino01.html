@@ -14,30 +14,7 @@
     <link rel="stylesheet" href="../../newstyles.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <input type="checkbox" id="menu" class="cabecalho__botao">
-        <label for="menu" class="rotulo">
-            <span class="cabecalho__menu-hamburger"></span>
-        </label>
-        <ul class="lista-menu">
-            <li class="lista-menu__titulo">Categorias</li>
-            <li class="lista-menu__item"><a href="../../tutoriais.html" class="lista-menu__link">Tutoriais</a></li>
-            <li class="lista-menu__item"><a target="_blank" href="https://tutoriaisemmusica.com.br" class="lista-menu__link">Cursos</a></li>
-            <li class="lista-menu__item"><a href="../../ferramentas.html" class="lista-menu__link">Ferramentas</a></li>
-            <li class="lista-menu__item"><a href="../../livros.html" class="lista-menu__link">Livros</a></li>
-            <li class="lista-menu__item"><a target="_blank" href="https://carlosveigafilho.com.br/repertorio/index.html" class="lista-menu__link">Corais</a></li>
-        </ul>
-        <a href="../../index.html"><img src="../../img/LogoTuts40.png" class="cabecalho__imagem" alt="Logo dos Tutoriais em Música"></a>
-        <h1 class="titulo-principal">Carlos Veiga Filho</h1>
-
-        <ul class="opcoes">
-            <li class="opcoes__item"><a href="../../tutoriais.html" class="opcoes__link">Tutoriais</a></li>
-            <li class="opcoes__item"><a target="_blank" href="https://tutoriaisemmusica.com.br" class="opcoes__link">Cursos</a></li>
-            <li class="opcoes__item"><a href="../../ferramentas.html" class="opcoes__link">Ferramentas</a></li>
-            <li class="opcoes__item"><a href="../../livros.html" class="opcoes__link">Livros</a></li>
-            <li class="opcoes__item"><a target="_blank" href="https://carlosveigafilho.com.br/repertorio/index.html" class="opcoes__link">Corais</a></li>
-        </ul>
-    </header>
+    <header class="cabecalho" id="cabecalho"></header>
 
     <section class="banner">
         <h2 class="banner_titulo">Treinamento de solfejo</h2>
@@ -55,9 +32,6 @@
         <div class="solfejo">
             <img id="imagem_solfejo" alt="treino" class="imagem__solfejo" width="100%">
         </div>
-
-
-
     </section>
 
     <audio id="audio1" src="https://www.carlosveigafilho.com.br/treinosolf/sounds/domaior.mp3" autostart="false" ></audio>
@@ -86,26 +60,13 @@
     <section class="carrossel">
         <h2 class="carrossel__titulo">Curso</h2>
 
-        <div class="card">
-            <div class="card__imagem-solo">
-                <a target="_blank" href="https://tutoriaisemmusica.com.br/scoreplay">
-                    <img src="../../img/Scoreplay.jpg" alt="Imagem do curso scoreplay" class="descricao__imagem" height="160px">
-                </a>
-            </div>
-            <div class="card__botao-solo">
-                <a target="_blank" href="https://tutoriaisemmusica.com.br/scoreplay" class="botao-conhecer">Conheça</a>
-            </div>
-        </div>
+        <div class="card" id="div-card-scoreplay"></div>
 
     </section>
 
-    <footer class="rodape">
-        <h2 class="rodape__titulo">Carlos Veiga Filho</h2>
-        <h3 class="rodape__texto">Copyright &copy; 2010-<script>
-            var CurrentYear = new Date().getFullYear()
-            document.write(CurrentYear)</script></h3>
-    </footer>
+    <footer class="rodape" id="rodape"></footer>
 
 	<script src="./js/treino.js"></script>
+    <script src="../../jsnewmain/elementos.js"></script>
 </body>
 </html>

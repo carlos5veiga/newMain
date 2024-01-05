@@ -93,6 +93,34 @@ if (livroAnHarm) {
 }
 
 
+const divCardScoreplay = document.getElementById("div-card-scoreplay");
+if (divCardScoreplay) {
+    divCardScoreplay.innerHTML = `
+        <div class="card__imagem-solo">
+            <a target="_blank" href="https://tutoriaisemmusica.com.br/scoreplay">
+                <img src="../../img/Scoreplay.jpg" alt="Imagem do curso scoreplay" class="descricao__imagem" height="160px">
+            </a>
+        </div>
+        <div class="card__botao-solo">
+            <a target="_blank" href="https://tutoriaisemmusica.com.br/scoreplay" class="botao-conhecer">Conheça</a>
+        </div>
+`;
+}
+
+const divCardTeoria = document.getElementById("div-card-teoria");
+if (divCardTeoria) {
+    divCardTeoria.innerHTML = `
+        <div class="card__imagem-solo">
+            <a target="_blank" href="https://tutoriaisemmusica.com.br/teoriamusical">
+                <img src="../../img/Teoria Musical.jpg" alt="Imagem do curso teoria musical" class="descricao__imagem" height="160px">
+            </a>
+        </div>
+        <div class="card__botao-solo">
+            <a target="_blank" href="https://tutoriaisemmusica.com.br/teoriamusical" class="botao-conhecer">Conheça</a>
+        </div>
+`;
+}
+
 const currentYear = new Date().getFullYear();
 
 const conteudoRodape = '<h2 class="rodape__titulo">Carlos Veiga Filho</h2><h3 class="rodape__texto">Copyright &copy; 2010-'+currentYear+'</h3>';
