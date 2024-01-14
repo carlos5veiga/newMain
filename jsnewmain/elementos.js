@@ -133,84 +133,128 @@ if (rodape) {
 
 const dados = [
     {
-        "tituloVideo":"Harmonia 01 - Tríades",
-        "tituloCabecalho":"O que é tríade?",
-        "codigoVideo":"GadkL8Pd5cg",
-        "resumoVideo":"Conheça o elemento básico da harmonia."
+      tituloVideo: 'Solfejo 7 a cappella',
+      tituloCabecalho: '',
+      codigoVideo: 'Z22n5InVfLM',
+      resumoVideo: ''
     },
     {
-        "tituloVideo":"Harmonia 02 - Maior, menor e diminuto",
-        "tituloCabecalho":"Maior, Menor ou Diminuto?",
-        "codigoVideo":"6CtFw23x5qo",
-        "resumoVideo":"Aprenda a classificar intervalos e tríades."
+      tituloVideo: 'Solfejo 6 a cappella',
+      tituloCabecalho: '',
+      codigoVideo: 'eTdNmNzyyyk',
+      resumoVideo: ''
     },
     {
-        "tituloVideo":"Harmonia 03 - Acordes Maiores e menores",
-        "tituloCabecalho":"Maior ou Menor?",
-        "codigoVideo":"UAelunGDzgM",
-        "resumoVideo":"Reconheça pelo som se o acorde é Maior ou Menor."
+      tituloVideo: 'Solfejo 5 a cappella',
+      tituloCabecalho: '',
+      codigoVideo: 'RnEPTDGnQGY',
+      resumoVideo: ''
+    },
+    {
+      tituloVideo: 'Solfejo 4 a cappella',
+      tituloCabecalho: '',
+      codigoVideo: 'BLe3kx9QK38',
+      resumoVideo: ''
+    },
+    {
+      tituloVideo: 'Solfejo 3 a cappella',
+      tituloCabecalho: '',
+      codigoVideo: '89vkvO5tp0w',
+      resumoVideo: ''
+    },
+    {
+      tituloVideo: 'Solfejo Forrest Gump',
+      tituloCabecalho: '',
+      codigoVideo: 'B6-hI75z2TU',
+      resumoVideo: ''
+    },
+    {
+      tituloVideo: 'Sozinho',
+      tituloCabecalho: '',
+      codigoVideo: '5g1OfE2HRRg',
+      resumoVideo: ''
+    },
+    {
+      tituloVideo: 'Solfejo No woman, no cry #bobmarley #reggae #solfejo',
+      tituloCabecalho: '',
+      codigoVideo: 'rZRtB2ec-bY',
+      resumoVideo: ''
+    },
+    {
+      tituloVideo: 'Solfejo Ovelha Negra #ritalee #ovelhanegra #rock',
+      tituloCabecalho: '',
+      codigoVideo: 's5859NAdIJg',
+      resumoVideo: ''
+    },
+    {
+      tituloVideo: 'Solfejo Heal the world',
+      tituloCabecalho: '',
+      codigoVideo: 'OF5InwfdeDg',
+      resumoVideo: ''
+    },
+    {
+      tituloVideo: 'Solfejo de Azul da cor do mar',
+      tituloCabecalho: '',
+      codigoVideo: 'Je-3I1IfkW0',
+      resumoVideo: ''
+    },
+    {
+      tituloVideo: 'Livro top',
+      tituloCabecalho: '',
+      codigoVideo: '6VXmDSu38eE',
+      resumoVideo: ''
+    },
+    {
+      tituloVideo: 'Solfejo 2 a cappella',
+      tituloCabecalho: '',
+      codigoVideo: 'NVDKzvZHRkE',
+      resumoVideo: ''
+    },
+    {
+      tituloVideo: 'Solfejo 01 a cappella',
+      tituloCabecalho: '',
+      codigoVideo: 'CFl-FALbeMg',
+      resumoVideo: ''
+    },
+    {
+      tituloVideo: 'Solfejo 36',
+      tituloCabecalho: '',
+      codigoVideo: 'GNV-Ri-w9lc',
+      resumoVideo: 'https://carlosveigafilho.com.br/solfejos/SolfejosParaPraticar.pdf.'
+    },
+    {
+      tituloVideo: 'Grupo Vocal Pentágono no Hotel Fiesta - 18/10/23 - Evento do Cremeb - Dia dos médicos',
+      tituloCabecalho: '',
+      codigoVideo: 'vfaq0RHdbNE',
+      resumoVideo: ''
+    },
+    {
+      tituloVideo: 'Exercitando os graus',
+      tituloCabecalho: '',
+      codigoVideo: 'F6eC05rbOnc',
+      resumoVideo: ''
+    },
+    {
+      tituloVideo: 'Leitura rítmica 01',
+      tituloCabecalho: '',
+      codigoVideo: 'esLM7nyAdE8',
+      resumoVideo: ''
+    },
+    {
+      tituloVideo: 'Modo Mixolídio - Hey Jude',
+      tituloCabecalho: '',
+      codigoVideo: 'eR6E8LeHeqY',
+      resumoVideo: ''
+    },
+    {
+      tituloVideo: 'Praticando os graus em todos os lugares',
+      tituloCabecalho: '',
+      codigoVideo: '52GNwPQAe00',
+      resumoVideo: ''
     }
-]
-
-for (let index = 0; index < 3; index++) {
-    let newSection = document.createElement('section');
-    newSection.setAttribute('class','carrossel');
-    newSection.setAttribute('id','carrossel');
-
-    let container = document.getElementById('conteiner3');
-
-    container.appendChild(newSection);
-
-    let newH2 = document.createElement('h2');
-    newH2.setAttribute('class','carrossel__titulo');
-    newH2.textContent = dados[index].tituloCabecalho;
-    newSection.appendChild(newH2);
-
-    let newDiv1 = document.createElement('div');
-    newDiv1.setAttribute('class','card');
-    newDiv1.setAttribute('id', 'div1');
-    newSection.appendChild(newDiv1);
-
-    let newDiv2 = document.createElement('div');
-    newDiv2.setAttribute('class','card__imagem-texto');
-    newDiv2.setAttribute('id', 'div2');
-    newDiv1.appendChild(newDiv2);
-
-    const linkVideo = 'https://youtu.be/' + dados[index].codigoVideo;
-
-    let newA = document.createElement('a');
-    newA.setAttribute('target','_blank');
-    newA.setAttribute('href', linkVideo);
-    newDiv2.appendChild(newA);
-
-    const imagemVideo = 'https://img.youtube.com/vi/' + dados[index].codigoVideo + '/hqdefault.jpg';
-
-    let newImg = document.createElement('img');
-    newImg.setAttribute('src', imagemVideo);
-    newImg.setAttribute('alt','Imagem do vídeo');
-    newImg.setAttribute('class','descricao__imagem');
-    newImg.setAttribute('height','160px');
-    newA.appendChild(newImg);
-
-    let newP = document.createElement('p');
-    newP.setAttribute('class','texto-card__imagem-texto');
-    newP.textContent = dados[index].resumoVideo;
-    newDiv2.appendChild(newP);
-
-    let newDiv3 = document.createElement('div');
-    newDiv3.setAttribute('class','card__botao-solo');
-    newDiv1.appendChild(newDiv3);
-
-    let newA2 = document.createElement('a');
-    newA2.setAttribute('target','_blank');
-    newA2.setAttribute('href', linkVideo);
-    newA2.setAttribute('class','botao-conhecer');
-    newA2.textContent = 'Assista';
-    newDiv3.appendChild(newA2);
-
-}
-
-for (let index = 4; index < 6; index++) {
+  ]
+  
+for (let index = 1; index < 2; index++) {
     
     let newDiv0 = document.createElement('div');
     let nomeId = 'conteiner' + index;
@@ -220,7 +264,7 @@ for (let index = 4; index < 6; index++) {
 
     containerPrincipal.appendChild(newDiv0);
 
-    for (let index = 0; index < 3; index++) {
+    for (let index = 0; index < dados.length; index++) {
         let newSection = document.createElement('section');
         newSection.setAttribute('class','carrossel');
         newSection.setAttribute('id','carrossel');
