@@ -31,4 +31,10 @@ p{
 
 a{
     margin-bottom: 5%;
+    color: aquamarine;
+}
+
+.subitem{
+    color: pink;
+    text-align: center;
 }
