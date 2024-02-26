@@ -1,10 +1,10 @@
 {
   "kind": "youtube#playlistItemListResponse",
-  "etag": "pRGxaajn5WxL3hxmfgJxjNJHibs",
+  "etag": "DZgaWtAt86p0gMHokXvUQSLw42k",
   "items": [
     {
       "kind": "youtube#playlistItem",
-      "etag": "iwVpalqm12F-aKvCoi8pfGjjJzE",
+      "etag": "ChKafyhqEjK7T5YnU3x3PCZ1r58",
       "id": "UExQUEFmdktqWVBrMmZZRFhDam1HMnZESG0tVzE0dDFKNS41NkI0NEY2RDEwNTU3Q0M2",
       "snippet": {
         "publishedAt": "2023-08-10T11:11:25Z",
@@ -259,7 +259,7 @@
     },
     {
       "kind": "youtube#playlistItem",
-      "etag": "PoSvm_NbVi45Xi0c1vNG6QgBR1k",
+      "etag": "JGjUmtUp4g-0J-UYOFNV-JnA3c8",
       "id": "UExQUEFmdktqWVBrMmZZRFhDam1HMnZESG0tVzE0dDFKNS4xMkVGQjNCMUM1N0RFNEUx",
       "snippet": {
         "publishedAt": "2023-08-10T11:14:47Z",
@@ -1378,10 +1378,673 @@
         "videoId": "Al1aijYR_h4",
         "videoPublishedAt": "2023-08-15T15:32:26Z"
       }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "kcqpzNURgWy5YlUeg48-2ist0iI",
+      "id": "UExQUEFmdktqWVBrMmZZRFhDam1HMnZESG0tVzE0dDFKNS4yQUE2Q0JEMTk4NTM3RTZC",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:56:03Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 29",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/pa1q9sW3Hzs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/pa1q9sW3Hzs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/pa1q9sW3Hzs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/pa1q9sW3Hzs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/pa1q9sW3Hzs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2fYDXCjmG2vDHm-W14t1J5",
+        "position": 27,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "pa1q9sW3Hzs"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "pa1q9sW3Hzs",
+        "videoPublishedAt": "2023-08-20T12:19:29Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "O9xIqiMKWI5T6__CP_L_6heAelE",
+      "id": "UExQUEFmdktqWVBrMmZZRFhDam1HMnZESG0tVzE0dDFKNS5DMkU4NTY1QUFGQTYwMDE3",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:56:27Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 30",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/9PagbmBm-Rg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/9PagbmBm-Rg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/9PagbmBm-Rg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/9PagbmBm-Rg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/9PagbmBm-Rg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2fYDXCjmG2vDHm-W14t1J5",
+        "position": 28,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "9PagbmBm-Rg"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "9PagbmBm-Rg",
+        "videoPublishedAt": "2023-08-22T11:58:32Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "PVgfWqfAcYFmzTjL_wYBukAPNhQ",
+      "id": "UExQUEFmdktqWVBrMmZZRFhDam1HMnZESG0tVzE0dDFKNS44Mjc5REFBRUE2MTdFRDU0",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:56:45Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 31",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/uslfwcmVUUs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/uslfwcmVUUs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/uslfwcmVUUs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/uslfwcmVUUs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/uslfwcmVUUs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2fYDXCjmG2vDHm-W14t1J5",
+        "position": 29,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "uslfwcmVUUs"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "uslfwcmVUUs",
+        "videoPublishedAt": "2023-08-24T14:41:46Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "LyliF5XGBbdarXaOBuCpaIHsz7M",
+      "id": "UExQUEFmdktqWVBrMmZZRFhDam1HMnZESG0tVzE0dDFKNS43NDhFRTgwOTRERTU4Rjg3",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:57:02Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 32",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/PAFf_od9fFc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/PAFf_od9fFc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/PAFf_od9fFc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/PAFf_od9fFc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/PAFf_od9fFc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2fYDXCjmG2vDHm-W14t1J5",
+        "position": 30,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "PAFf_od9fFc"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "PAFf_od9fFc",
+        "videoPublishedAt": "2023-08-30T20:15:08Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "Ef90YtuOLr0XwwlaxNsGdzg5_Bs",
+      "id": "UExQUEFmdktqWVBrMmZZRFhDam1HMnZESG0tVzE0dDFKNS41QUZGQTY5OTE4QTREQUU4",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:57:19Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 33",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/aaGMSTcRJJw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/aaGMSTcRJJw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/aaGMSTcRJJw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/aaGMSTcRJJw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/aaGMSTcRJJw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2fYDXCjmG2vDHm-W14t1J5",
+        "position": 31,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "aaGMSTcRJJw"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "aaGMSTcRJJw",
+        "videoPublishedAt": "2023-09-02T15:45:24Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "Y3dGhTXZHBKG44NkowI64kTPXVI",
+      "id": "UExQUEFmdktqWVBrMmZZRFhDam1HMnZESG0tVzE0dDFKNS4zRDBDOEZDOUM0MDY5NEEz",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:57:38Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 34",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/-Asytn3wI4k/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/-Asytn3wI4k/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/-Asytn3wI4k/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/-Asytn3wI4k/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/-Asytn3wI4k/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2fYDXCjmG2vDHm-W14t1J5",
+        "position": 32,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "-Asytn3wI4k"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "-Asytn3wI4k",
+        "videoPublishedAt": "2023-09-30T14:02:33Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "MkJrSIcvtjIprjOt8xY_HFCI-rc",
+      "id": "UExQUEFmdktqWVBrMmZZRFhDam1HMnZESG0tVzE0dDFKNS5CMEQ2Mjk5NTc3NDZFRUNB",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:57:55Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 35",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/SxT5tAsvCDY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/SxT5tAsvCDY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/SxT5tAsvCDY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/SxT5tAsvCDY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/SxT5tAsvCDY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2fYDXCjmG2vDHm-W14t1J5",
+        "position": 33,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "SxT5tAsvCDY"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "SxT5tAsvCDY",
+        "videoPublishedAt": "2023-10-08T15:10:11Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "dk24UsuzkRRyaR_NeQSHoqucMyg",
+      "id": "UExQUEFmdktqWVBrMmZZRFhDam1HMnZESG0tVzE0dDFKNS42MTI4Njc2QjM1RjU1MjlG",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:58:33Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 36",
+        "description": "https://carlosveigafilho.com.br/solfejos/SolfejosParaPraticar.pdf",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/GNV-Ri-w9lc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/GNV-Ri-w9lc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/GNV-Ri-w9lc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/GNV-Ri-w9lc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/GNV-Ri-w9lc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2fYDXCjmG2vDHm-W14t1J5",
+        "position": 34,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "GNV-Ri-w9lc"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "GNV-Ri-w9lc",
+        "videoPublishedAt": "2023-10-22T11:16:14Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "23oeKAFZTZApPnJOqhhSTUp7oBQ",
+      "id": "UExQUEFmdktqWVBrMmZZRFhDam1HMnZESG0tVzE0dDFKNS45RjNFMDhGQ0Q2RkFCQTc1",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:58:49Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 37",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/sARQynvA5l0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/sARQynvA5l0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/sARQynvA5l0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/sARQynvA5l0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/sARQynvA5l0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2fYDXCjmG2vDHm-W14t1J5",
+        "position": 35,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "sARQynvA5l0"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "sARQynvA5l0",
+        "videoPublishedAt": "2024-02-15T16:04:14Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "R30Rkr1TOngrT3_Gd28iKXUpOsU",
+      "id": "UExQUEFmdktqWVBrMmZZRFhDam1HMnZESG0tVzE0dDFKNS40QTA3NTU2RkM1QzlCMzYx",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:59:05Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 38",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/2JOLxDvJg-c/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/2JOLxDvJg-c/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/2JOLxDvJg-c/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/2JOLxDvJg-c/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/2JOLxDvJg-c/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2fYDXCjmG2vDHm-W14t1J5",
+        "position": 36,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "2JOLxDvJg-c"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "2JOLxDvJg-c",
+        "videoPublishedAt": "2024-02-17T19:35:15Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "J_MYXZIDsVld3VixV1DKNa-ht44",
+      "id": "UExQUEFmdktqWVBrMmZZRFhDam1HMnZESG0tVzE0dDFKNS5BRjJDODk5REM0NjkzMUIy",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:59:25Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 39",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/VBUR5mctIiY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/VBUR5mctIiY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/VBUR5mctIiY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/VBUR5mctIiY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/VBUR5mctIiY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2fYDXCjmG2vDHm-W14t1J5",
+        "position": 37,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "VBUR5mctIiY"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "VBUR5mctIiY",
+        "videoPublishedAt": "2024-02-19T16:37:38Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "J9kUNGc3H_MxaWaisIBwcAaTsv8",
+      "id": "UExQUEFmdktqWVBrMmZZRFhDam1HMnZESG0tVzE0dDFKNS4xOTEzQzhBQzU3MDNDNjcz",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:59:39Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 40",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/G684AwAdU10/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/G684AwAdU10/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/G684AwAdU10/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/G684AwAdU10/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/G684AwAdU10/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2fYDXCjmG2vDHm-W14t1J5",
+        "position": 38,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "G684AwAdU10"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "G684AwAdU10",
+        "videoPublishedAt": "2024-02-21T16:29:48Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "lMIQhWSwZBy4QL-aGbr0H1KCtvE",
+      "id": "UExQUEFmdktqWVBrMmZZRFhDam1HMnZESG0tVzE0dDFKNS5GNDg1Njc1QzZERjlFRjE5",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:59:54Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 41",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/H20wKS8R_ow/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/H20wKS8R_ow/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/H20wKS8R_ow/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/H20wKS8R_ow/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/H20wKS8R_ow/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2fYDXCjmG2vDHm-W14t1J5",
+        "position": 39,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "H20wKS8R_ow"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "H20wKS8R_ow",
+        "videoPublishedAt": "2024-02-24T12:39:47Z"
+      }
     }
   ],
   "pageInfo": {
-    "totalResults": 27,
+    "totalResults": 40,
     "resultsPerPage": 50
   }
 }

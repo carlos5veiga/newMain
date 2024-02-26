@@ -2556,8 +2556,8 @@
 }
 {
   "kind": "youtube#playlistItemListResponse",
-  "etag": "OXdaOMwMnjOM5PhJMed969CNvoc",
-  "prevPageToken": "EAEajQFQVDpDRElpRURoRE5VWkJSVFpDTVRZME9ERXpRemdvQVVpVl82YjctWVdDQTFBQVdrUWlRMmxLVVZSR1FsRlJWMW95VXpKd1dsVkhjM2xoZW1SclRWVjBhbUl3WkV0bFJrSlhZak5TUkZWR1JqRlJNV3hwUldkelNTMDRhazF4VVZsUmFVdERNV1ZuSWc",
+  "etag": "WY0bbcbBFxhrsB27Ia0LCSyNBQI",
+  "prevPageToken": "EAEajQFQVDpDRElpRURoRE5VWkJSVFpDTVRZME9ERXpRemdvQVVpUTRmTGM4TWlFQTFBQVdrUWlRMmxLVVZSR1FsRlJWMW95VXpKd1dsVkhjM2xoZW1SclRWVjBhbUl3WkV0bFJrSlhZak5TUkZWR1JqRlJNV3hwUldkelNXNHRZbmh5WjFsUloxQnVWVWhCSWc",
   "items": [
     {
       "kind": "youtube#playlistItem",
@@ -3731,10 +3731,459 @@
         "videoId": "m7NPrFeLtiQ",
         "videoPublishedAt": "2023-10-20T20:28:00Z"
       }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "gL_j4AI7ePgDDKlF4HJ64StWSQc",
+      "id": "UExQUEFmdktqWVBrMms3ZDFLY29HSnhQVm90Q1BRdUNZYi4yQzk4QTA5QjkzMTFFOEI1",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:13:38Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 60 - Nova versão do e-book",
+        "description": "Cante esta incrível melodia e aproveite para baixar a nova versão do e-book.\ne-book: https://carlosveigafilho.com.br/solfejos/SolfejosParaPraticar.pdf\npartitura: https://carlosveigafilho.com.br/solfejos/Solfejo60.pdf\n\n🌐 Conheça o meu site. Lá você encontra informações sobre os meus cursos, o Projeto Tutoriais em Música e um pouco da minha história.\n https://tutoriaisemmusica.com.br\n\n ⧹(⦁ᴗ⦁)⧸Aproveite a PROMOÇÃO para os cursos:⧹(⦁ᴗ⦁)⧸\n\n🔴 SCOREPLAY: https://tutoriaisemmusica.com.br/scoreplay\nComece a tocar pela partitura em 20 dias. Metodologia fácil e descomplicada onde você toca desde o primeiro momento e vai assimilando o conteúdo de fundamentação musical de forma lúdica, prática e prazerosa! Leve os outros cursos no valor de R$ 508 de BÔNUS para avançar na música. Apenas R$ 297\n\n🟢 DECIFRANDO O CODIGO DA MÚSICA: https://tutoriaisemmusica.com.br/teoriamusical\nDe R$ 497 por R$ 197 - Desconto de R$ 200 - por tempo limitado.\nCom esse método você será capaz de entender uma partitura com a velocidade necessária para executá-la num instrumento ou com a sua voz.\n\n🔵 INTERVALOS MUSICAIS NA TEORIA E NA PRÁTICA: https://intervalosmusicais.online/\nDe R$ 597 por R$ 147 - Desconto de R$ 450 - por tempo limitado.\nCom esse método você irá desenvolver a sua percepção musical. Ter um ouvido musical educado é o que diferencia um músico consciente dos elementos musicais, daquele que, mesmo lendo uma partitura não mergulha na magia da música.\n\n🟠15 MELODIAS PARA TOCAR: https://tutoriaisemmusica.com.br/15melodiasparatocar\nMétodo simplificado que vai te ensinar na prática a tocar melodias no seu instrumento. R$ 67\n\n🌐 Conheça o melhor livro para estudar harmonia: \"Análise Harmônica para Estudantes de Música\"\nhttps://carlosveigafilho.com.br/Divulgacao/Livros/DivulgLivro.html\n\n✅ Assine a lista exclusiva para receber mais conteúdo:\nhttps://inscricao.tutoriaisemmusica.com.br\n\n💬 Entre no canal do Telegram e fique por dentro de tudo o que acontece e receba exercícios para praticar.\nhttps://t.me/TutoriaisemMusica",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/qSdznCRiKH8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/qSdznCRiKH8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/qSdznCRiKH8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/qSdznCRiKH8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/qSdznCRiKH8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2k7d1KcoGJxPVotCPQuCYb",
+        "position": 73,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "qSdznCRiKH8"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "qSdznCRiKH8",
+        "videoPublishedAt": "2023-10-22T10:09:32Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "H8XrWDgRhtMSruBANo9hxX0J4Ck",
+      "id": "UExQUEFmdktqWVBrMms3ZDFLY29HSnhQVm90Q1BRdUNZYi45NDlDQUFFOThDMTAxQjUw",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:14:16Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 61 para praticar - Semicolcheia e colcheia pontuada",
+        "description": "Desenvolva a leitura rítmica e o solfejo com este vídeo.\ne-book: https://carlosveigafilho.com.br/solfejos/SolfejosParaPraticar.pdf\npartitura: https://carlosveigafilho.com.br/solfejos/Solfejo61.pdf\n\n🌐 Conheça o meu site. Lá você encontra informações sobre os meus cursos, o Projeto Tutoriais em Música e um pouco da minha história.\n https://tutoriaisemmusica.com.br\n\n ⧹(⦁ᴗ⦁)⧸Aproveite a PROMOÇÃO para os cursos:⧹(⦁ᴗ⦁)⧸\n\n🔴 SCOREPLAY: https://tutoriaisemmusica.com.br/scoreplay\nComece a tocar pela partitura em 20 dias. Metodologia fácil e descomplicada onde você toca desde o primeiro momento e vai assimilando o conteúdo de fundamentação musical de forma lúdica, prática e prazerosa! Leve os outros cursos no valor de R$ 508 de BÔNUS para avançar na música. Apenas R$ 297\n\n🟢 DECIFRANDO O CODIGO DA MÚSICA: https://tutoriaisemmusica.com.br/teoriamusical\nDe R$ 497 por R$ 197 - Desconto de R$ 200 - por tempo limitado.\nCom esse método você será capaz de entender uma partitura com a velocidade necessária para executá-la num instrumento ou com a sua voz.\n\n🔵 INTERVALOS MUSICAIS NA TEORIA E NA PRÁTICA: https://intervalosmusicais.online/\nDe R$ 597 por R$ 147 - Desconto de R$ 450 - por tempo limitado.\nCom esse método você irá desenvolver a sua percepção musical. Ter um ouvido musical educado é o que diferencia um músico consciente dos elementos musicais, daquele que, mesmo lendo uma partitura não mergulha na magia da música.\n\n🟠15 MELODIAS PARA TOCAR: https://tutoriaisemmusica.com.br/15melodiasparatocar\nMétodo simplificado que vai te ensinar na prática a tocar melodias no seu instrumento. R$ 67\n\n🌐 Conheça o melhor livro para estudar harmonia: \"Análise Harmônica para Estudantes de Música\"\nhttps://carlosveigafilho.com.br/Divulgacao/Livros/DivulgLivro.html\n\n✅ Assine a lista exclusiva para receber mais conteúdo:\nhttps://inscricao.tutoriaisemmusica.com.br\n\n💬 Entre no canal do Telegram e fique por dentro de tudo o que acontece e receba exercícios para praticar.\nhttps://t.me/TutoriaisemMusica",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ryYrlbqVbYI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ryYrlbqVbYI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ryYrlbqVbYI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/ryYrlbqVbYI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/ryYrlbqVbYI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2k7d1KcoGJxPVotCPQuCYb",
+        "position": 74,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "ryYrlbqVbYI"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "ryYrlbqVbYI",
+        "videoPublishedAt": "2023-11-04T10:37:08Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "OjGtWc2d8bES-S7iDAWl58AwsH0",
+      "id": "UExQUEFmdktqWVBrMms3ZDFLY29HSnhQVm90Q1BRdUNZYi4xN0Y2QjVBOEI2MzQ5OUM5",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:14:44Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 62 para praticar - Harmonia movimentada",
+        "description": "Desenvolva o seu solfejo e baixe o nosso e-book para praticar.\ne-book: https://carlosveigafilho.com.br/solfejos/SolfejosParaPraticar.pdf\npartitura: https://carlosveigafilho.com.br/solfejos/Solfejo62.pdf\n\n\n🌐 Conheça o meu site. Lá você encontra informações sobre os meus cursos, o Projeto Tutoriais em Música e um pouco da minha história.\n https://tutoriaisemmusica.com.br\n\n ⧹(⦁ᴗ⦁)⧸Aproveite a PROMOÇÃO para os cursos:⧹(⦁ᴗ⦁)⧸\n\n🔴 SCOREPLAY: https://tutoriaisemmusica.com.br/scoreplay\nComece a tocar pela partitura em 20 dias. Metodologia fácil e descomplicada onde você toca desde o primeiro momento e vai assimilando o conteúdo de fundamentação musical de forma lúdica, prática e prazerosa! Leve os outros cursos no valor de R$ 508 de BÔNUS para avançar na música. Apenas R$ 297\n\n🟢 DECIFRANDO O CODIGO DA MÚSICA: https://tutoriaisemmusica.com.br/teoriamusical\nDe R$ 497 por R$ 197 - Desconto de R$ 200 - por tempo limitado.\nCom esse método você será capaz de entender uma partitura com a velocidade necessária para executá-la num instrumento ou com a sua voz.\n\n🔵 INTERVALOS MUSICAIS NA TEORIA E NA PRÁTICA: https://intervalosmusicais.online/\nDe R$ 597 por R$ 147 - Desconto de R$ 450 - por tempo limitado.\nCom esse método você irá desenvolver a sua percepção musical. Ter um ouvido musical educado é o que diferencia um músico consciente dos elementos musicais, daquele que, mesmo lendo uma partitura não mergulha na magia da música.\n\n🟠15 MELODIAS PARA TOCAR: https://tutoriaisemmusica.com.br/15melodiasparatocar\nMétodo simplificado que vai te ensinar na prática a tocar melodias no seu instrumento. R$ 67\n\n🌐 Conheça o melhor livro para estudar harmonia: \"Análise Harmônica para Estudantes de Música\"\nhttps://carlosveigafilho.com.br/Divulgacao/Livros/DivulgLivro.html\n\n✅ Assine a lista exclusiva para receber mais conteúdo:\nhttps://inscricao.tutoriaisemmusica.com.br\n\n💬 Entre no canal do Telegram e fique por dentro de tudo o que acontece e receba exercícios para praticar.\nhttps://t.me/TutoriaisemMusica",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/zvBL4iIr2zg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/zvBL4iIr2zg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/zvBL4iIr2zg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/zvBL4iIr2zg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/zvBL4iIr2zg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2k7d1KcoGJxPVotCPQuCYb",
+        "position": 75,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "zvBL4iIr2zg"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "zvBL4iIr2zg",
+        "videoPublishedAt": "2023-11-11T13:00:21Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "L6j9hDod31EamD3o3xWPUWPXOcI",
+      "id": "UExQUEFmdktqWVBrMms3ZDFLY29HSnhQVm90Q1BRdUNZYi5FQUY2Qzk4RUFDN0ZFRkZF",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:15:04Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 63 - Solfejos para praticar",
+        "description": "Semicolcheia e colcheia pontuada fazem parte do grupo rítmico que estamos trabalhando. Desenvolva o seu solfejo e a sua percepção.\ne-book: https://carlosveigafilho.com.br/solfejos/SolfejosParaPraticar.pdf\npartitura: https://carlosveigafilho.com.br/solfejos/Solfejo63.pdf\nhttps://carlosveigafilho.com.br",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/o6a1q__XDoM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/o6a1q__XDoM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/o6a1q__XDoM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/o6a1q__XDoM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/o6a1q__XDoM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2k7d1KcoGJxPVotCPQuCYb",
+        "position": 76,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "o6a1q__XDoM"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "o6a1q__XDoM",
+        "videoPublishedAt": "2024-02-14T14:21:34Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "GxFXLpqNZihEeE6BdtF-zlVHXqc",
+      "id": "UExQUEFmdktqWVBrMms3ZDFLY29HSnhQVm90Q1BRdUNZYi5CMEVBRUJERkUyNTBENTkz",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:15:22Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 64 para praticar - Semicolcheia e Colcheia Pontuada",
+        "description": "Desenvolva o solfejo e a percepção com esta simples melodia.\ne-book: https://carlosveigafilho.com.br/solfejos/SolfejosParaPraticar.pdf\npartitura: https://carlosveigafilho.com.br/solfejos/Solfejo64.pdf\noutros recursos: https://carlosveigafilho.com.br/",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/vrUEp0_IsLI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/vrUEp0_IsLI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/vrUEp0_IsLI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/vrUEp0_IsLI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/vrUEp0_IsLI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2k7d1KcoGJxPVotCPQuCYb",
+        "position": 77,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "vrUEp0_IsLI"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "vrUEp0_IsLI",
+        "videoPublishedAt": "2024-02-16T10:32:43Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "tQbGpvknhwBl_nzxixMsLNGiHfA",
+      "id": "UExQUEFmdktqWVBrMms3ZDFLY29HSnhQVm90Q1BRdUNZYi4xNjIyNEE0MDEyRDlCMjBE",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:15:47Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 65 para praticar - NOVA VERSÃO DO E-BOOK GRATUITO DE SOLFEJO",
+        "description": "Com esta linda melodia você desenvolve a sua musicalidade e a sua percepção musical.\ne-book: https://carlosveigafilho.com.br/Solfejos/SolfejosParaPraticar.pdf\npartitura: https://carlosveigafilho.com.br/Solfejos/Solfejo65.pdf\n\nhttps://carlosveigafilho.com.br",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fL0C5yeTJE8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fL0C5yeTJE8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fL0C5yeTJE8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2k7d1KcoGJxPVotCPQuCYb",
+        "position": 78,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "fL0C5yeTJE8"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "fL0C5yeTJE8",
+        "videoPublishedAt": "2024-02-18T15:31:59Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "Z7FDAcLBnzBTWhtloplMfR_klso",
+      "id": "UExQUEFmdktqWVBrMms3ZDFLY29HSnhQVm90Q1BRdUNZYi44QTY2MEEzNzBFQUJCMUQ2",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:16:07Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 66 para praticar - Tercinas (Quiálteras de 3 colcheias)",
+        "description": "Vamos começar a trabalhar as quiálteras!!! Cante comigo e desenvolva a musicalidade e a percepção!!\ne-book: https://carlosveigafilho.com.br/Solfejos/SolfejosParaPraticar.pdf\npartitura: https://carlosveigafilho.com.br/Solfejos/Solfejo66.pdf\nsite: https://carlosveigafilho.com.br",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/XuD8k5UL-NM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/XuD8k5UL-NM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/XuD8k5UL-NM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/XuD8k5UL-NM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/XuD8k5UL-NM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2k7d1KcoGJxPVotCPQuCYb",
+        "position": 79,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "XuD8k5UL-NM"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "XuD8k5UL-NM",
+        "videoPublishedAt": "2024-02-20T16:14:43Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "clOA_9n3HyjRh4VkcXsbg4s2uXM",
+      "id": "UExQUEFmdktqWVBrMms3ZDFLY29HSnhQVm90Q1BRdUNZYi4zQTkzRjgxRTY0OEU0MkM3",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:16:30Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 67 para praticar - Tercinas de colcheias",
+        "description": "Desenvolva a sua percepção e a sua musicalidade com esta linda melodia.\ne-book: https://carlosveigafilho.com.br/Solfejos/SolfejosParaPraticar.pdf\npartitura: https://carlosveigafilho.com.br/Solfejos/Solfejo67.pdf\nsite: https://carlosveigafilho.com.br",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/SFhcmondPt0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/SFhcmondPt0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/SFhcmondPt0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/SFhcmondPt0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/SFhcmondPt0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2k7d1KcoGJxPVotCPQuCYb",
+        "position": 80,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "SFhcmondPt0"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "SFhcmondPt0",
+        "videoPublishedAt": "2024-02-22T16:43:14Z"
+      }
+    },
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "9yx8CZ6hOcTFYA_ma9UYtQ1Cgj8",
+      "id": "UExQUEFmdktqWVBrMms3ZDFLY29HSnhQVm90Q1BRdUNZYi4xNTZBNUQxMDZBQzFGMjkw",
+      "snippet": {
+        "publishedAt": "2024-02-26T11:16:46Z",
+        "channelId": "UCgrta3Ub--dhvK8eeLxNt3g",
+        "title": "Solfejo 68 para praticar",
+        "description": "Este solfejo ficou lindão!! Cante e deixe o comentário.\ne-book: https://carlosveigafilho.com.br/Solfejos/SolfejosParaPraticar.pdf\npartitura: https://carlosveigafilho.com.br/Solfejos/Solfejo68.pdf\nsite: https://carlosveigafilho.com.br",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/egspfT43XEM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/egspfT43XEM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/egspfT43XEM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/egspfT43XEM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/egspfT43XEM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Veiga Filho",
+        "playlistId": "PLPPAfvKjYPk2k7d1KcoGJxPVotCPQuCYb",
+        "position": 81,
+        "resourceId": {
+          "kind": "youtube#video",
+          "videoId": "egspfT43XEM"
+        },
+        "videoOwnerChannelTitle": "Carlos Veiga Filho",
+        "videoOwnerChannelId": "UCgrta3Ub--dhvK8eeLxNt3g"
+      },
+      "contentDetails": {
+        "videoId": "egspfT43XEM",
+        "videoPublishedAt": "2024-02-25T19:39:04Z"
+      }
     }
   ],
   "pageInfo": {
-    "totalResults": 73,
+    "totalResults": 82,
     "resultsPerPage": 50
   }
 }
