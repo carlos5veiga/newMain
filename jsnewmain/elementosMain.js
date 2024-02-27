@@ -86,8 +86,8 @@ if (solfParaPraticar) {
             </a>
         </div>
         <div class="card__botoes">
-            <a target="_blank" href="https://carlosveigafilho.com.br/divulgacao/livros/DivulgLivro.html" class="botao-conhecer">Videoaulas</a>
-            <a target="_blank" href="https://www.amazon.com.br/An%C3%A1lise-Harm%C3%B4nica-para-Estudantes-M%C3%BAsica-ebook/dp/B09CCMDD6Q/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2N6LPKLZMKXNO&keywords=an%C3%A1lise+harm%C3%B4nica+para+estudantes+de+m%C3%BAsica&qid=1692020657&sprefix=an%C3%A1lise+harm%C3%B4nica+para+estudantes+de+m%C3%BAsica%2Caps%2C201&sr=8-1" class="botao-comprar">Shorts</a>
+            <a target="_blank" href="https://carlosveigafilho.com.br/VideoaulasSolfejosParaPraticar/" class="botao-conhecer">Videoaulas</a>
+            <a target="_blank" href="https://carlosveigafilho.com.br/ShortsSolfejosParaPraticar/" class="botao-comprar">Shorts</a>
         </div>
 `;
 }
