@@ -18,406 +18,466 @@ const dados = [
     resumoVideo: 'Terceiro vídeo da série que vai deixar você craque no solfejo. Aprenda o que é um motivo e veja como essa informação ajuda você a cantar corretamente.'
   },
   {
-    tituloVideo: 'Solfejo 04 - Pentagrama',
-    tituloCabecalho: 'A notação musical',
-    codigoVideo: 'QacA2f6L_1U',
-    resumoVideo: 'Aprenda como as notas musicais são representadas em um pentagrama.'
+    tituloVideo: 'Solfejo 04',
+    tituloCabecalho: 'Solfejo 4',
+    codigoVideo: 'zsf8m8h9ygk',
+    resumoVideo: 'Neste solfejo você vai praticar um ritmo que tem a semínima pontuada, uma situação rítmica muito encontrada no mundo musical. Pratique e ganhe autonomia.'
   },
   {
-    tituloVideo: 'Solfejo 05 - Estrutura da Escala Maior',
-    tituloCabecalho: 'Estrutura da escala maior',
-    codigoVideo: 'nL5ecTTK4KE',
-    resumoVideo: 'Tópico essencial para desenvolver o solfejo.'
+    tituloVideo: 'Solfejo 05',
+    tituloCabecalho: 'Solfejo 5',
+    codigoVideo: 'hlcdVgTnKR0',
+    resumoVideo: 'Lindo solfejo para você desenvolver a sua leitura musical. Aproveite também para tocar a melodia no seu instrumento.'
   },
   {
-    tituloVideo: 'Solfejo 06 - Exercícios',
-    tituloCabecalho: 'Exercícios',
-    codigoVideo: 'dRhY885r-LM',
-    resumoVideo: 'Um pouco de exercício para complementar os estudos.'
+    tituloVideo: 'Solfejo 06',
+    tituloCabecalho: 'Solfejo 6',
+    codigoVideo: 'wNogNico1x4',
+    resumoVideo: 'Cante este solfejo e perceba a sonoridade do campo harmônico menor. Assista aos vídeos da primeira série para perceber a diferença em relação ao campo harmônico maior.'
   },
   {
-    tituloVideo: 'Solfejo 07 - Sol Maior',
-    tituloCabecalho: 'Sol Maior',
-    codigoVideo: '9iPbKvB5x1Q',
-    resumoVideo: 'Conheça a escala de Sol Maior'
+    tituloVideo: 'Solfejo 07',
+    tituloCabecalho: 'Solfejo 7',
+    codigoVideo: 'xqeutRvSkUA',
+    resumoVideo: 'Sétimo solfejo desta série que está desvendando os segredos do solfejo. Saiba como analisar uma alteração que aparece no meio da melodia.'
   },
   {
-    tituloVideo: 'Solfejo 08 - Sustenido',
-    tituloCabecalho: 'Sustenido',
-    codigoVideo: 'CvkvfuNgpSU',
-    resumoVideo: 'Comece a descobrir as alterações das notas.'
+    tituloVideo: 'Solfejo 08',
+    tituloCabecalho: 'Solfejo 8',
+    codigoVideo: 'oK5c_orFdTY',
+    resumoVideo: 'Lindo solfejo para você treinar a sua leitura musical e perceber o campo harmônico menor.'
   },
   {
-    tituloVideo: 'Solfejo 09 - Armaduras',
-    tituloCabecalho: 'Armaduras',
-    codigoVideo: 'NCwZHwEeFNI',
-    resumoVideo: 'Simplificando a partitura com a armadura.'
+    tituloVideo: 'Solfejo 09',
+    tituloCabecalho: 'Solfejo 9',
+    codigoVideo: 'gPcoHIr8MZI',
+    resumoVideo: 'Conheça a sonoridade do modo eólio nesse solfejo. Esta sonoridade é a mesma da escala menor primitiva. Cante comigo e aprecie a melodia.'
   },
   {
-    tituloVideo: 'Solfejo 10 - Claves',
-    tituloCabecalho: 'Claves',
-    codigoVideo: 'Juix6j-RXE4',
-    resumoVideo: 'Entenda porque existem as claves.'
+    tituloVideo: 'Solfejo 10',
+    tituloCabecalho: 'Solfejo 10',
+    codigoVideo: '6O7-GgJ_9-w',
+    resumoVideo: 'Descubra o que é a terça de picardia e cante este décimo solfejo da nossa série. Aproveite para baixar a nova versão do e-book com os 10 solfejos.'
   },
   {
-    tituloVideo: 'Solfejo 11 - Clave de sol',
-    tituloCabecalho: 'Clave de sol',
-    codigoVideo: 'EBP3KxQ9sI0',
-    resumoVideo: 'Conheça este símbolo mundialmente famoso.'
+    tituloVideo: 'Exercícios de afinação para o solfejo',
+    tituloCabecalho: 'Exercícios de afinação para o solfejo',
+    codigoVideo: '93mkIGDm9Sg',
+    resumoVideo: 'Neste vídeo você vai desenvolver a sua afinação com 4 exercícios simples e bastante funcionais.'
   },
   {
-    tituloVideo: 'Solfejo 12 - Sol Maior 2',
-    tituloCabecalho: 'Sol Maior 2',
-    codigoVideo: 'pfhAcB888VI',
-    resumoVideo: 'Aprofundando na tonalidade de Sol Maior.'
+    tituloVideo: 'Exercícios de quartas e quintas para solfejo',
+    tituloCabecalho: 'Exercícios de quartas e quintas para solfejo',
+    codigoVideo: 'Tfpzzg2ITlk',
+    resumoVideo: 'Desenvolva os intervalos de quartas e quintas nestes exercícios que farão você solfejar melhor.'
   },
   {
-    tituloVideo: 'Solfejo 13 - Lá Maior',
-    tituloCabecalho: 'Lá maior',
-    codigoVideo: 'CwvUI_epm4o',
-    resumoVideo: 'Conheça a estrutura da escala de Lá Maior.'
+    tituloVideo: 'Solfejo 11',
+    tituloCabecalho: 'Solfejo 11',
+    codigoVideo: 'ljXu3aH108U',
+    resumoVideo: 'Neste solfejo a primeira nota da melodia é a terça do acorde e eu aproveito para criar uma melodia com muitos arpejos. Aproveite para cantar e perceber.'
   },
   {
-    tituloVideo: 'Solfejo 14 - Ré Maior',
-    tituloCabecalho: 'Ré maior',
-    codigoVideo: 'y6Fdmqjppl8',
-    resumoVideo: 'Conheça a estrutura da escala de Ré Maior.'
+    tituloVideo: 'Solfejo 12',
+    tituloCabecalho: 'Solfejo 12',
+    codigoVideo: 'ZfJ-QrET1gQ',
+    resumoVideo: 'Cante este solfejo e veja se as dissonâncias inseridas na harmonia ajudam ou atrapalham a sua performance.'
   },
   {
-    tituloVideo: 'Solfejo 15 - Primeiro Solfejo',
-    tituloCabecalho: 'Primeiro Solfejo',
-    codigoVideo: 'EAOA3NUS0qc',
-    resumoVideo: 'Veja como você já avançou: faça o seu primeiro solfejo.'
+    tituloVideo: 'Solfejo 13',
+    tituloCabecalho: 'Solfejo 13',
+    codigoVideo: 'mZQsVHTKDYk',
+    resumoVideo: 'Pratique o seu solfejo com esta melodia e conheça como funciona o sistema de graus para solfejar.'
   },
   {
-    tituloVideo: 'Solfejo 16 - Segundo Solfejo',
-    tituloCabecalho: 'Segundo Solfejo',
-    codigoVideo: 'My8Jlt57LeY',
-    resumoVideo: 'Ninguém segura você: faça o seu segundo solfejo.'
+    tituloVideo: 'Solfejo 14',
+    tituloCabecalho: 'Solfejo 14',
+    codigoVideo: 'PFJ-IWY5BWc',
+    resumoVideo: 'Pratique o seu solfejo com este novo desafio: comece a cantar a partir do quinto grau da tonalidade e veja como este solfejo ficou bonito.'
   },
   {
-    tituloVideo: 'Solfejo 17 - Partes de coral',
-    tituloCabecalho: 'Partes de coral',
-    codigoVideo: 'kM6skY2bJRU',
-    resumoVideo: 'Conhecendo muito material para estudar.'
+    tituloVideo: 'Solfejo 15',
+    tituloCabecalho: 'Solfejo 15',
+    codigoVideo: 'r6hdKuQhShc',
+    resumoVideo: 'Cante este solfejo e aproveite para baixar a nova versão do e-book com a série completa para você desenvolver o seu solfejo.'
   },
   {
-    tituloVideo: 'Solfejo 18 - Elementos Ritmicos',
-    tituloCabecalho: 'Elementos Ritmicos',
-    codigoVideo: 'NdfD_V0dk4Y',
-    resumoVideo: 'Vamos mergulhar no aspectos rítmicos, a dor de muita gente.'
+    tituloVideo: 'Os graus no Solfejo',
+    tituloCabecalho: 'Os graus no Solfejo',
+    codigoVideo: '4pX3dcHnAnk',
+    resumoVideo: 'Incrível vídeo que vai abrir a sua percepção musical. Os graus são uma forma genérica de você ouvir, pensar e fazer música.'
   },
   {
-    tituloVideo: 'Solfejo 19 - Símbolos rítmicos',
-    tituloCabecalho: 'Símbolos rítmicos',
-    codigoVideo: 'A28lh01IcZw',
-    resumoVideo: 'Conheça os principais símbolos rítmicos.'
+    tituloVideo: 'A resposta do desafio',
+    tituloCabecalho: 'A resposta do desafio',
+    codigoVideo: 'Sto5CwnA9Cs',
+    resumoVideo: 'Veja como resolver o desafio melódico do vídeo anterior.'
   },
   {
-    tituloVideo: 'Solfejo 20 - Compassos',
-    tituloCabecalho: 'Compassos',
-    codigoVideo: 'VUGYRGlk1AA',
-    resumoVideo: 'Entenda o que é um compasso e tudo vai ficar mais simples.'
+    tituloVideo: 'Solfejo 16',
+    tituloCabecalho: 'Solfejo 16',
+    codigoVideo: 'dJlZ03D1xKc',
+    resumoVideo: 'Entrando em uma nova etapa desta série, você vai cantar em outras tonalidade. E para começar: Sol Maior.'
   },
   {
-    tituloVideo: 'Solfejo 21 - Compassos Binários',
-    tituloCabecalho: 'Compassos Binários',
-    codigoVideo: 'Oqw3fNlqLDw',
-    resumoVideo: 'Conheça o compasso com 2 tempos.'
+    tituloVideo: 'Solfejo 17',
+    tituloCabecalho: 'Solfejo 17',
+    codigoVideo: 'OQ0lIB9umdA',
+    resumoVideo: 'Cante esta linda melodia em Sola maior e desenvolva o seu solfejo e a sua percepção musical.'
   },
   {
-    tituloVideo: 'Solfejo 22 - Exemplos binários',
-    tituloCabecalho: 'Exemplos binários',
-    codigoVideo: 'B27vXvlVdAA',
-    resumoVideo: 'Exemplos de compassos com 2 tempos.'
+    tituloVideo: 'Solfejo 18',
+    tituloCabecalho: 'Solfejo 18',
+    codigoVideo: 'vB8g5pUpXAE',
+    resumoVideo: 'A nossa série de solfejo traz uma nova partitura para você se desenvolver. Cante esta linda melodia em Sol Maior e compasso quaternário.'
   },
   {
-    tituloVideo: 'Solfejo 23 - Compassos Ternários',
-    tituloCabecalho: 'Compassos Ternários',
-    codigoVideo: 'zQAj55o7qAU',
-    resumoVideo: 'Conheça o compasso com 3 tempos.'
+    tituloVideo: 'Solfejo 19',
+    tituloCabecalho: 'Solfejo 19',
+    codigoVideo: 'eZcc6y6MKc0',
+    resumoVideo: 'Vigésimo solfejo desta série incrível que está revolucionando o ensino do solfejo a distância.'
   },
   {
-    tituloVideo: 'Solfejo 24 - Exemplos ternários',
-    tituloCabecalho: 'Exemplos ternários',
-    codigoVideo: 'mVxQ83tcm1w',
-    resumoVideo: 'Exemplos de compassos com 3 tempos.'
+    tituloVideo: 'Solfejo 20',
+    tituloCabecalho: 'Solfejo 20',
+    codigoVideo: 'cO643RTjZE0',
+    resumoVideo: 'Cante esta melodia em Fá Maior e aproveite para conhecer toda a série de solfejos para praticar. Você pode nos ajudar divulgando este vídeo e também o e-book. Não esqueça de deixar o like.'
   },
   {
-    tituloVideo: 'Solfejo 25 - Compassos quaternários',
-    tituloCabecalho: 'Compassos quaternários',
-    codigoVideo: 'lC2s9SyGs1A',
-    resumoVideo: 'Conheça o compasso com 4 tempos.'
+    tituloVideo: 'Solfejo 21',
+    tituloCabecalho: 'Solfejo 21',
+    codigoVideo: 'OPELSrkNVvY',
+    resumoVideo: 'Perceber e entender as escalas maiores vai ampliar muito a sua capacidade de ouvir, cantar, tocar, escrever...'
   },
   {
-    tituloVideo: 'Solfejo 26 - Exemplos quaternários',
-    tituloCabecalho: 'Exemplos quaternários',
-    codigoVideo: 'FAhpkTiYIVM',
-    resumoVideo: 'Exemplos de compassos com 4 tempos.'
+    tituloVideo: 'Solfejo 22',
+    tituloCabecalho: 'Solfejo 22',
+    codigoVideo: 'qEEtpK-yraQ',
+    resumoVideo: 'Você consegue cantar esta melodia em Fá Maior? Tente junto comigo neste vídeo incrível e você vai conseguir.'
   },
   {
-    tituloVideo: 'Solfejo 27 - Dobro x Metade',
-    tituloCabecalho: 'Dobro x Metade',
-    codigoVideo: 'eORjOJvL4co',
-    resumoVideo: 'Importantíssima relação rítmica fácil de perceber.'
+    tituloVideo: 'Solfejo 23',
+    tituloCabecalho: 'Solfejo 23',
+    codigoVideo: 'wdE7EWSVz2I',
+    resumoVideo: 'Você acha que uma melodia para ser interessante precisa ser difícil? Eu acho que não e criei esta melodia para tentar defender a minha ideia. Tente cantar e escreva a sua opinião.'
   },
   {
-    tituloVideo: 'Solfejo 28 - Armaduras com sustenidos',
-    tituloCabecalho: 'Armaduras com sustenidos',
-    codigoVideo: 'GHzbPJ2euxU',
-    resumoVideo: 'Aprenda a simplificar a escrita musical com as armaduras com sustenidos.'
+    tituloVideo: 'Solfejo 24',
+    tituloCabecalho: 'Solfejo 24',
+    codigoVideo: 'sKVWn2pNYhY',
+    resumoVideo: 'Nesta melodia o começo está no quinto grau. Aprenda este intervalo de quarta ascendente que é muito comum no início de melodias diversas.'
   },
   {
-    tituloVideo: 'Solfejo 29 - Armaduras com bemóis',
-    tituloCabecalho: 'Armaduras com bemóis',
-    codigoVideo: 'zSpnqICRvKI',
-    resumoVideo: 'Aprenda a simplificar a escrita musical com as armaduras com bemóis.'
+    tituloVideo: 'Solfejo 25',
+    tituloCabecalho: 'Solfejo 25',
+    codigoVideo: 'gc1ndiMM-wE',
+    resumoVideo: 'Com esta linda melodia em Fá Maior chega uma nova versão do e-book com os solfejos e as aulas.'
   },
   {
-    tituloVideo: 'Solfejo 30 - Dois exemplos',
-    tituloCabecalho: 'Dois exemplos de armaduras',
-    codigoVideo: '9WxJFdF9cws',
-    resumoVideo: 'Veja na prática a importância do conceito de armaduras.'
+    tituloVideo: 'Solfejo 26',
+    tituloCabecalho: 'Solfejo 26',
+    codigoVideo: 'UwB0gA05yxo',
+    resumoVideo: 'Aproveite este solfejo e conheça a anacruse, uma preparação melódica muita presente na música.'
   },
   {
-    tituloVideo: 'Solfejo 31 - Intervalos',
-    tituloCabecalho: 'Intervalos',
-    codigoVideo: 'pH80v1OzVFA',
-    resumoVideo: 'Quer ganhar mais autonomia? Pratique os intervalos.'
+    tituloVideo: 'Solfejo - La Casa de Papel - Bella Ciao',
+    tituloCabecalho: 'Solfejo - La Casa de Papel - Bella Ciao',
+    codigoVideo: 'KiIJf-A9ksw',
+    resumoVideo: 'Solfeje esta conhecida melodia e aprenda os aspectos melódicos dela.'
   },
   {
-    tituloVideo: 'Solfejo 32 - Segundas Maiores e menores',
-    tituloCabecalho: 'Segundas Maiores e menores',
-    codigoVideo: '9d-a0jI-IzY',
-    resumoVideo: 'Conheça e perceba os principais intervalos de segundas.'
+    tituloVideo: 'Solfejo 27',
+    tituloCabecalho: 'Solfejo 27',
+    codigoVideo: 'VXX7aTbz1jI',
+    resumoVideo: 'Linda melodia para solfejar e exemplo de anacruse e terça de picardia.'
   },
   {
-    tituloVideo: 'Solfejo 33 - Terças maiores e menores',
-    tituloCabecalho: 'Terças maiores e menores',
-    codigoVideo: 'lEgotD1sKHk',
-    resumoVideo: 'Conheça e perceba os principais intervalos de terças.'
+    tituloVideo: 'Solfejo Como é grande o meu amor por você - ROBERTO CARLOS',
+    tituloCabecalho: 'Solfejo Como é grande o meu amor por você - ROBERTO CARLOS',
+    codigoVideo: 'Btxg1oDkuXs',
+    resumoVideo: 'Cante a partitura de Como é grande o meu amor por você e veja como a partitura é muito parecida com os solfejos que estamos trabalhando.'
   },
   {
-    tituloVideo: 'Solfejo 34 - Oitava justa',
-    tituloCabecalho: 'Oitava justa',
-    codigoVideo: 'RQv4yL61rLE',
-    resumoVideo: 'Conheça e perceba os principais intervalos de oitavas.'
+    tituloVideo: 'Solfejo 28',
+    tituloCabecalho: 'Solfejo 28',
+    codigoVideo: '5rzczuTJpgs',
+    resumoVideo: 'Cante ou toque esta melodia e aprenda a contar os compassos e também conheça uma dica para cantar o intervalo de quarta justa ascendente.'
   },
   {
-    tituloVideo: 'Solfejo 35 - Intervalos Justos x Maiores e menores',
-    tituloCabecalho: 'Intervalos Justos x Maiores ou menores',
-    codigoVideo: 'm4vOmT3qufY',
-    resumoVideo: 'Por que alguns intervalos são classificados como justos enquanto outros são maiores ou menores?'
+    tituloVideo: 'Solfejo Pra você eu digo sim - Rita Lee',
+    tituloCabecalho: 'Solfejo Pra você eu digo sim - Rita Lee',
+    codigoVideo: 'LjVcjqiLpOg',
+    resumoVideo: 'Veja como é simples solfejar esta linda música dos Beatles que a Rita Lee adaptou para a língua portuguesa.'
   },
   {
-    tituloVideo: 'Solfejo 36 - Sextas Maiores e menores',
-    tituloCabecalho: 'Sextas Maiores e menores',
-    codigoVideo: '5yIGHMmLYhc',
-    resumoVideo: 'Conheça e perceba os principais intervalos de sextas.'
+    tituloVideo: 'Solfejo 29',
+    tituloCabecalho: 'Solfejo 29',
+    codigoVideo: 'RnzlMZgVToo',
+    resumoVideo: 'Neste vídeo você vai solfejar uma melodia que começa no terceiro tempo do compasso ternário, ou seja, é uma anacruse. A tonalidade é Fá Maior.'
   },
   {
-    tituloVideo: 'Solfejo 37 - Sétimas Maiores e menores',
-    tituloCabecalho: 'Sétimas Maiores e menores',
-    codigoVideo: 'mAh_Dt_AZmw',
-    resumoVideo: 'Conheça e perceba os principais intervalos de sétimas.'
+    tituloVideo: 'Solfejo 30',
+    tituloCabecalho: 'Solfejo 30',
+    codigoVideo: '6NVpePofN3A',
+    resumoVideo: 'Vídeo com o trigésimo solfejo desta série que está levando conhecimento para todos que desejam aprender música. Solfejo em fá maior. No e-book você vai encontrar a série completa. Baixe agora.'
   },
   {
-    tituloVideo: 'Solfejo 38 - Inversão de intervalos',
-    tituloCabecalho: 'Inversão de intervalos',
-    codigoVideo: 'd1mtPn229Fo',
-    resumoVideo: 'Conheça esta regrinha para mudar sua vida.'
+    tituloVideo: 'Solfejando com os graus',
+    tituloCabecalho: 'Solfejando com os graus',
+    codigoVideo: 'pzb22DEOGcM',
+    resumoVideo: 'Conheça a melhor ferramenta para praticar o solfejo usando os graus.'
   },
   {
-    tituloVideo: 'Solfejo 39 - Subdivisão binária',
-    tituloCabecalho: 'Subdivisão binária',
-    codigoVideo: 'Lk0LWJV6HYE',
-    resumoVideo: 'Entenda e perceba a subdivisão por trás dos compassos simples.'
+    tituloVideo: 'Exercício para a leitura dos graus',
+    tituloCabecalho: 'Exercício para a leitura dos graus',
+    codigoVideo: 'Q8QYp4V4FlY',
+    resumoVideo: 'Conheça este exercício e transforme o seu solfejo.'
   },
   {
-    tituloVideo: 'Solfejo 40 - Clave de fá',
-    tituloCabecalho: 'Clave de fá',
-    codigoVideo: 'gDjRHvmuz60',
-    resumoVideo: 'Trabalhando com outra clave para ganhar mais autonomia.'
+    tituloVideo: 'Uma linda escala pra você melhorar a sua percepção',
+    tituloCabecalho: 'Uma linda escala pra você melhorar a sua percepção',
+    codigoVideo: 'F9iZ47-C1jU',
+    resumoVideo: 'Cantar a escala maior com uma harmonia como essa é bem interessante. Aproveite.'
   },
   {
-    tituloVideo: 'Solfejo 41 - Exemplos clave de fá',
-    tituloCabecalho: 'Exemplos clave de fá',
-    codigoVideo: 'hmwXJpFgbyQ',
-    resumoVideo: 'Comece a praticar e veja como é simples.'
+    tituloVideo: 'SOLFEJO COM OS GRAUS EM DIVERSAS CLAVES',
+    tituloCabecalho: 'SOLFEJO COM OS GRAUS EM DIVERSAS CLAVES',
+    codigoVideo: 'HR4XysFPqyI',
+    resumoVideo: 'Este vídeo vai abrir a cabeça de muita gente em relação ao solfejo dos graus. Deixe seu comentário ou deixe sua dúvida.'
   },
   {
-    tituloVideo: 'Solfejo 42 - Escala menor primitiva',
-    tituloCabecalho: 'Escala menor primitiva',
-    codigoVideo: 'Ich5bNj5eEw',
-    resumoVideo: 'Percebendo a escala menor primitava e entendendo a sua relação com a escala maior.'
+    tituloVideo: 'Solfejo 31',
+    tituloCabecalho: 'Solfejo 31',
+    codigoVideo: 'wXbgFfjLcxs',
+    resumoVideo: 'Cante este lindo exemplo de um compasso acéfalo. Não sabe o que é isso? Descubra neste vídeo.'
   },
   {
-    tituloVideo: 'Solfejo 43 - Treinando leitura e escrita de música',
-    tituloCabecalho: 'Treinando leitura e escrita de música',
-    codigoVideo: 'n_WRtA29xZE',
-    resumoVideo: 'Que tal começar a aprender a escrever música?'
+    tituloVideo: 'Solfejo 32',
+    tituloCabecalho: 'Solfejo 32',
+    codigoVideo: 'uOpTrL-6le0',
+    resumoVideo: 'Mais um exemplo de compasso acéfalo para praticar. Desenvolva o seu solfejo.'
   },
   {
-    tituloVideo: 'Solfejo 44 - Ditado melódico',
-    tituloCabecalho: 'Ditado melódico',
-    codigoVideo: 'Svz5AmMOtCY',
-    resumoVideo: 'Um primeiro ditado para você acostumar.'
+    tituloVideo: 'Solfejo 33',
+    tituloCabecalho: 'Solfejo 33',
+    codigoVideo: 'QO0-nNeHX0A',
+    resumoVideo: 'Exemplo de um solfejo de compasso acéfalo e começa no quinto grau para você praticar.'
   },
   {
-    tituloVideo: 'Solfejo 45 - Escala menor harmônica',
-    tituloCabecalho: 'Escala menor harmônica',
-    codigoVideo: 'yMuWqTfWi9I',
-    resumoVideo: 'Uma pequena alteração para grandes diferenças.'
+    tituloVideo: 'Solfejo 34',
+    tituloCabecalho: 'Solfejo 34',
+    codigoVideo: 'CcY6ZvYnte4',
+    resumoVideo: 'Este exemplo de compasso acéfalo em Ré Maior tem várias dicas interessantes sobre o solfejo.'
   },
   {
-    tituloVideo: 'Solfejo 46 - Escala menor melódica',
-    tituloCabecalho: 'Escala menor melódica',
-    codigoVideo: 'd3A9jLeDzgw',
-    resumoVideo: 'Subindo a escala com alteração e descendo sem alteração.'
+    tituloVideo: 'Solfejo 35',
+    tituloCabecalho: 'Solfejo 35',
+    codigoVideo: 'Yan09wvyrt4',
+    resumoVideo: 'Cante esta melodia em Fá Maior e baixe a nova versão do e-book com todas as melodias e aulas.'
   },
   {
-    tituloVideo: 'Solfejo 47 - Escala Bachiana e resumo',
-    tituloCabecalho: 'Escala Bachiana e resumo',
-    codigoVideo: 'fMD-Q8qal7w',
-    resumoVideo: 'Um resumo com as principais escalas menores.'
+    tituloVideo: 'Você consegue diferenciar os compassos tético, acéfalo e anacrústico',
+    tituloCabecalho: 'Você consegue diferenciar os compassos tético, acéfalo e anacrústico',
+    codigoVideo: 'UAZvnyHIfuU',
+    resumoVideo: 'Perceba a diferença entre esses tipos de compassos com exemplos bem conhecidos.'
   },
   {
-    tituloVideo: 'Solfejo 48 - Grupos rítmicos',
-    tituloCabecalho: 'Grupos rítmicos',
-    codigoVideo: 'u59RMgkflv8',
-    resumoVideo: 'Começando a agrupar símbolos rítmicos.'
+    tituloVideo: 'O Segredo das Semicolcheias',
+    tituloCabecalho: 'O Segredo das Semicolcheias',
+    codigoVideo: 'GbE0nafzvzY',
+    resumoVideo: 'Conheça os principais usos da semicolcheia e domine a leitura rítmica.'
   },
   {
-    tituloVideo: 'Solfejo 49 - Tercinas ou quiálteras de 3',
-    tituloCabecalho: 'Tercinas ou quiálteras de 3',
-    codigoVideo: '07VBGhIT7o0',
-    resumoVideo: 'Perceba este importante elemento que será a base dos compassos compostos.'
+    tituloVideo: 'Solfejo 36',
+    tituloCabecalho: 'Solfejo 36',
+    codigoVideo: 'y9YbSQKbNLI',
+    resumoVideo: 'Comece a solfejar as semicolcheias com este exercício fantástico.'
   },
   {
-    tituloVideo: 'Solfejo 50 - Compassos compostos',
-    tituloCabecalho: 'Compassos compostos',
-    codigoVideo: 'DtaOA3sJOd0',
-    resumoVideo: 'Começando a entender os compassos compostos.'
+    tituloVideo: 'Solfejo 37',
+    tituloCabecalho: 'Solfejo 37',
+    codigoVideo: '7bdUrjApimw',
+    resumoVideo: 'Este vídeo apresenta dicas incríveis pra você tocar as semicolcheias.'
   },
   {
-    tituloVideo: 'Solfejo 51 - Ligaduras de duração',
-    tituloCabecalho: 'Ligaduras de duração',
-    codigoVideo: 'N8Z7Up1Ye0I',
-    resumoVideo: 'Aprenda a aumentar a duração de um som.'
+    tituloVideo: 'Solfejo 38',
+    tituloCabecalho: 'Solfejo 38',
+    codigoVideo: 'jqeMIz0MmiA',
+    resumoVideo: 'Neste solfejo você vai cantar as semicolcheias e perceber que os motivos ajudam a gente a solfejar.'
   },
   {
-    tituloVideo: 'Solfejo 52 - Clave de dó',
-    tituloCabecalho: 'Clave de dó',
-    codigoVideo: 'O3Xvvm1wE50',
-    resumoVideo: 'Uma clave pouco usada mas que você vai entender rapidamente.'
+    tituloVideo: 'Solfejo 39',
+    tituloCabecalho: 'Solfejo 39',
+    codigoVideo: '54R1ZWUObeM',
+    resumoVideo: 'As 4 semicolcheias estão ficando simples de solfejar? Este exemplo deixa o grupo de semicolcheias bem evidente. Vamos cantar.'
   },
   {
-    tituloVideo: 'Solfejo 53 - Relação entre as claves',
-    tituloCabecalho: 'Relação entre as claves',
-    codigoVideo: 'wR977l8JVcM',
-    resumoVideo: 'Entenda como e porque essas diferentes claves se relacionam.'
+    tituloVideo: 'Solfejo 40',
+    tituloCabecalho: 'Solfejo 40',
+    codigoVideo: '4fsfCK2Z7bc',
+    resumoVideo: 'Com este incrível solfejo lançamos a nova versão do e-book, agora com 40 solfejos. Destrave o seu solfejo.'
   },
   {
-    tituloVideo: 'Solfejo 54 - Ligaduras e ponto de aumento',
-    tituloCabecalho: 'Ligaduras e ponto de aumento',
-    codigoVideo: 'JRwZ7yglHDA',
-    resumoVideo: 'Simplificando a escrita musical com o ponto de aumento.'
+    tituloVideo: 'Semicolcheias - Exemplo de John Williams',
+    tituloCabecalho: 'Semicolcheias - Exemplo de John Williams',
+    codigoVideo: 'xyUZhDIPKD8',
+    resumoVideo: 'Solfeje este exemplo do grupo de 4 semicolcheias e veja como você está evoluindo com a série Solfejos Para Praticar.'
   },
   {
-    tituloVideo: 'Solfejo 55 - Síncopes',
-    tituloCabecalho: 'Síncopes',
-    codigoVideo: 'Ofu2-5nyzN0',
-    resumoVideo: 'Conheça este importante elemento musical muito usado na MPB.'
+    tituloVideo: 'Solfejo 41',
+    tituloCabecalho: 'Solfejo 41',
+    codigoVideo: 'Fg1Cz2aNzdM',
+    resumoVideo: 'Neste vídeo iniciamos um novo grupo rítmico e uma nova tonalidade. Um ótimo exercício para quem está estudando solfejo.'
   },
   {
-    tituloVideo: 'Anacruse, Tético e Acéfalo',
-    tituloCabecalho: 'Anacruse, Tético e Acéfalo',
-    codigoVideo: 'aGX17QJauoA',
-    resumoVideo: 'Principais maneiras de classificar uma compasso pelo início da frase.'
+    tituloVideo: 'Solfejo 42',
+    tituloCabecalho: 'Solfejo 42',
+    codigoVideo: 'TItP3wK4Ejo',
+    resumoVideo: 'Melodia maravilhosa para você desenvolver a sua leitura musical. Toque e cante comigo. Baixe o e-book para o curso gratuito completo.'
   },
   {
-    tituloVideo: 'Solfejo 57 - Modo jônio',
-    tituloCabecalho: 'Modo jônio',
-    codigoVideo: 'VeboQODP20I',
-    resumoVideo: 'Percebendo os modos: Modo jônio. Começando do grau 1.'
+    tituloVideo: 'Solfejo 43',
+    tituloCabecalho: 'Solfejo 43',
+    codigoVideo: '3Q1sqUT8HCY',
+    resumoVideo: 'Cante esta melodia e aprenda uma superdica para turbinar a sua leitura rítmica.'
   },
   {
-    tituloVideo: 'Solfejo 58 - Modo dórico',
-    tituloCabecalho: 'Modo dórico',
-    codigoVideo: 'EgxyJAESLnY',
-    resumoVideo: 'Percebendo os modos: Modo dórico. Começando do grau 2.'
+    tituloVideo: 'Solfejo 44',
+    tituloCabecalho: 'Solfejo 44',
+    codigoVideo: 'az4Y1ioCvJA',
+    resumoVideo: 'Melodia simples para solfejar em Lá Maior para ganhar desenvoltura com as semicolcheias.'
   },
   {
-    tituloVideo: 'Solfejo 59 - Modo frígio',
-    tituloCabecalho: 'Modo frígio',
-    codigoVideo: '8XaAaph-dfg',
-    resumoVideo: 'Percebendo os modos: Modo frígio. Começando do grau 3.'
+    tituloVideo: 'Solfejo 45',
+    tituloCabecalho: 'Solfejo 45',
+    codigoVideo: '0ndwoWLS5CE',
+    resumoVideo: 'Cante esta melodia e aproveite para baixar a nova versão do e-book. Estamos em Lá Maior e seguimos com as semicolcheias.'
   },
   {
-    tituloVideo: 'Solfejo 60 - Modo lídio',
-    tituloCabecalho: 'Modo lídio',
-    codigoVideo: 'V2j4Fv_ql28',
-    resumoVideo: 'Percebendo os modos: Modo lídio. Começando do grau 4.'
+    tituloVideo: 'Solfejo 46',
+    tituloCabecalho: 'Solfejo 46',
+    codigoVideo: 'sP_4bqDAZ80',
+    resumoVideo: 'Neste solfejo começamos a trabalhar a tonalidade de Si Bemol Maior e também o grupo de duas semicolcheias e uma colcheia. Adorei este.'
   },
   {
-    tituloVideo: 'Solfejo 61 - Modo mixolídio',
-    tituloCabecalho: 'Modo mixolídio',
-    codigoVideo: 'J09UpN_Ti7M',
-    resumoVideo: 'Percebendo os modos: Modo mixolídio. Começando do grau 5.'
+    tituloVideo: 'Solfejo 47',
+    tituloCabecalho: 'Solfejo 47',
+    codigoVideo: '-cApfv1_BxM',
+    resumoVideo: 'Cante esta linda melodia e desenvolva o seu solfejo com esta série incrível. Baixe o e-book atualizado no link abaixo:'
   },
   {
-    tituloVideo: 'Solfejo 62 - Modo eólio',
-    tituloCabecalho: 'Modo eólio',
-    codigoVideo: 'pDDoh-uqUgQ',
-    resumoVideo: 'Percebendo os modos: Modo eólio. Começando do grau 6.'
+    tituloVideo: 'Solfejo 48',
+    tituloCabecalho: 'Solfejo 48',
+    codigoVideo: '9ewf6cl9nY4',
+    resumoVideo: 'Cante esta melodia e desenvolva a sua percepção. A série completa está no e-book abaixo:'
   },
   {
-    tituloVideo: 'Solfejo 63 - Modo lócrio',
-    tituloCabecalho: 'Modo lócrio',
-    codigoVideo: 'RhvCulmPm08',
-    resumoVideo: 'Percebendo os modos: Modo lócrio. Começando do grau 7.'
+    tituloVideo: 'Solfejo 49',
+    tituloCabecalho: 'Solfejo 49',
+    codigoVideo: 'JdVcNZQAtF8',
+    resumoVideo: 'Esta melodia ficou linda. Aproveite para se divertir e treinar o seu solfejo.'
   },
   {
-    tituloVideo: 'Seqüências numéricas - Tutoriais em música',
-    tituloCabecalho: 'Seqüências numéricas',
-    codigoVideo: '9L4fI4pCO0Q',
-    resumoVideo: 'Muitas sequências numéricas.'
+    tituloVideo: 'Solfejo 50',
+    tituloCabecalho: 'Solfejo 50',
+    codigoVideo: 'ROWkLE7gR6A',
+    resumoVideo: 'Linda melodia para você cantar e desenvolver a sua percepção musical. Nova versão do e-book com os 50 solfejos e as 50 videoaulas.'
   },
   {
-    tituloVideo: 'Tutoriais em música - Sequencias Numéricas 2',
-    tituloCabecalho: 'Sequencias Numéricas 2',
-    codigoVideo: 'oo9SdH8y1cw',
-    resumoVideo: 'Mais sequências numéricas para você treinar.'
+    tituloVideo: 'Solfejo 52',
+    tituloCabecalho: 'Solfejo 52',
+    codigoVideo: 'uqj-IBdvAbY',
+    resumoVideo: 'Nesta linda melodia você vai aprimorar um ritmo que é muito usado na música popular brasileira: este grupo formado por semicolcheia, colcheia e semicolcheia.'
   },
   {
-    tituloVideo: 'Solfejo 68 - Ditados Sequencias Numéricas',
-    tituloCabecalho: 'Ditados Sequencias Numéricas',
-    codigoVideo: 'k0uJvbMT9JY',
-    resumoVideo: 'Escute, perceba e escreva algumas sequências numéricas.'
+    tituloVideo: 'Solfejo 54',
+    tituloCabecalho: 'Solfejo 54',
+    codigoVideo: 'ZzSzHF2vkAQ',
+    resumoVideo: 'Desenvolva a sua leitura em Lá Maior com essa linda melodia.'
   },
   {
-    tituloVideo: 'Tutoriais em música - Sequências na pauta',
-    tituloCabecalho: 'Sequências na pauta',
-    codigoVideo: 'fLHa8M3W7rk',
-    resumoVideo: 'Ótima maneira de praticar tudo isso que você aprendeu aqui.'
+    tituloVideo: 'Solfejo 55',
+    tituloCabecalho: 'Solfejo 55',
+    codigoVideo: 'WCVp-8bZbxg',
+    resumoVideo: 'Linda melodia em mi bemol maior para você praticar.'
   },
   {
-    tituloVideo: 'Tutoriais em música - Sequencias Numéricas 3',
-    tituloCabecalho: 'Sequencias Numéricas 3',
-    codigoVideo: 'vD3d1qNHcBM',
-    resumoVideo: 'Coloque em prática tudo que você vem estudando.'
+    tituloVideo: 'Solfejo 56',
+    tituloCabecalho: 'Solfejo 56',
+    codigoVideo: 'Hi5gFkMph8Q',
+    resumoVideo: 'Desenvolva a leitura rítmica e o solfejo com esta linda melodia.'
   },
   {
-    tituloVideo: 'Tutoriais em música - Sequencias Numéricas 4',
-    tituloCabecalho: 'Sequencias Numéricas 4',
-    codigoVideo: 'nNGRfsB1d1k',
-    resumoVideo: 'Não pare de ouvir nem pare de pensar.'
+    tituloVideo: 'Solfejo 57',
+    tituloCabecalho: 'Solfejo 57',
+    codigoVideo: 'Rwhlr8pJN6g',
+    resumoVideo: 'Pratique a colcheia pontuada com a semicolcheia neste lindo exercício.'
   },
   {
-    tituloVideo: 'Solfejo 72 - Melodia simples',
-    tituloCabecalho: 'Melodia simples',
-    codigoVideo: 'rDwm273u614',
-    resumoVideo: 'Uma super evolução desde que você começou. Concorda comigo?'
+    tituloVideo: 'Solfejo 58',
+    tituloCabecalho: 'Solfejo 58',
+    codigoVideo: 'n4WeUuUAmTA',
+    resumoVideo: 'Desenvolva a colcheia pontuada e a semicolcheia neste solfejo em lá maior.'
+  },
+  {
+    tituloVideo: 'Solfejo 59',
+    tituloCabecalho: 'Solfejo 59',
+    codigoVideo: 'm7NPrFeLtiQ',
+    resumoVideo: 'Desenvolva a sua leitura musical com esta linda melodia em Si Bemol Maior.'
+  },
+  {
+    tituloVideo: 'Solfejo 60',
+    tituloCabecalho: 'Solfejo 60',
+    codigoVideo: 'qSdznCRiKH8',
+    resumoVideo: 'Cante esta incrível melodia e aproveite para baixar a nova versão do e-book.'
+  },
+  {
+    tituloVideo: 'Solfejo 61',
+    tituloCabecalho: 'Solfejo 61',
+    codigoVideo: 'ryYrlbqVbYI',
+    resumoVideo: 'Desenvolva a leitura rítmica e o solfejo com este vídeo.'
+  },
+  {
+    tituloVideo: 'Solfejo 62',
+    tituloCabecalho: 'Solfejo 62',
+    codigoVideo: 'zvBL4iIr2zg',
+    resumoVideo: 'Desenvolva o seu solfejo e baixe o nosso e-book para praticar.'
+  },
+  {
+    tituloVideo: 'Solfejo 63',
+    tituloCabecalho: 'Solfejo 63',
+    codigoVideo: 'o6a1q__XDoM',
+    resumoVideo: 'Semicolcheia e colcheia pontuada fazem parte do grupo rítmico que estamos trabalhando.'
+  },
+  {
+    tituloVideo: 'Solfejo 64',
+    tituloCabecalho: 'Solfejo 64',
+    codigoVideo: 'vrUEp0_IsLI',
+    resumoVideo: 'Desenvolva o solfejo e a percepção com esta simples melodia.'
+  },
+  {
+    tituloVideo: 'Solfejo 65',
+    tituloCabecalho: 'Solfejo 65',
+    codigoVideo: 'fL0C5yeTJE8',
+    resumoVideo: 'Com esta linda melodia você desenvolve a sua musicalidade e a sua percepção musical.'
+  },
+  {
+    tituloVideo: 'Solfejo 66',
+    tituloCabecalho: 'Solfejo 66',
+    codigoVideo: 'XuD8k5UL-NM',
+    resumoVideo: 'Vamos começar a trabalhar as quiálteras!!! Cante comigo e desenvolva a musicalidade e a percepção!!'
+  },
+  {
+    tituloVideo: 'Solfejo 67',
+    tituloCabecalho: 'Solfejo 67',
+    codigoVideo: 'SFhcmondPt0',
+    resumoVideo: 'Desenvolva a sua percepção e a sua musicalidade com esta linda melodia.'
+  },
+  {
+    tituloVideo: 'Solfejo 68',
+    tituloCabecalho: 'Solfejo 68',
+    codigoVideo: 'egspfT43XEM',
+    resumoVideo: 'Este solfejo ficou lindão!! Cante e deixe o comentário.'
   }
 ]
 
