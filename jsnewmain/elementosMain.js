@@ -79,7 +79,7 @@ if (solfParaPraticar) {
             <div class="descricao">
                 <h2 class="descricao__titulo">Solfejos para praticar - A série completa</h2>
                 <h3 class="descricao__categoria">Tutoriais</h3>
-                <p class="descricao__texto">Aprenda os detalhes de cada solfejo nas videoaulas ou apenas cante os solfejos nos shorts.</p>
+                <p class="descricao__texto">Aprenda os detalhes de cada solfejo nas videoaulas ou apenas cante os solfejos nos shorts. Clique na imagem para baixar o e-book.</p>
             </div>
             <a target="_blank" href="https://carlosveigafilho.com.br/Solfejos/SolfejosParaPraticar.pdf">
                 <img src="./img/CapaSolfejosParaPraticar.png" alt="Capa do e-book" class="descricao__imagem">
