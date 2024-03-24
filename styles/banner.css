@@ -15,6 +15,10 @@
     margin-top: 1em;
 }
 
+a.banner__texto {
+    color: var(--branco);
+}
+
 @media screen and (min-width: 900px) {
 
     .banner_titulo {

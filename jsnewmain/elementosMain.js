@@ -106,8 +106,8 @@ if (metronomo) {
             </a>
         </div>
         <div class="card__botoes">
-            <a target="_blank" href="https://carlosveigafilho.com.br/VideoaulasSolfejosParaPraticar/" class="botao-conhecer">Videoaulas</a>
-            <a target="_blank" href="https://carlosveigafilho.com.br/ShortsSolfejosParaPraticar/" class="botao-comprar">Shorts</a>
+            <a target="_blank" href="./VideoaulasMetronomo/" class="botao-conhecer">Videoaulas</a>
+            <a target="_blank" href="https://carlosveigafilho.com.br/ShortsMetronomo/" class="botao-comprar">Shorts</a>
         </div>
 `;
 }
