@@ -2,44 +2,44 @@ const dados = [
   {
     tituloVideo: 'Metrônomo 01',
     tituloCabecalho: 'Metrônomo 1',
-    codigoVideo: 'qxif7bONnNY',
-    resumoVideo: 'Solfejo em dó maior para quem quiser praticar.'
+    codigoVideo: 'D52BFv-PyDw',
+    resumoVideo: 'Conheça a Semínima e desenvolva a sua leitura rítmica com esta série incrível.'
   },
   {
     tituloVideo: 'Metrônomo 02',
     tituloCabecalho: 'Metrônomo 2',
-    codigoVideo: '1HMTla97Kjo',
-    resumoVideo: 'Aproveite este vídeo para treinar um solfejo em compasso ternário e aprenda várias dicas importantes para melhorar o seu solfejo.'
+    codigoVideo: '7b4jDNtAJfM',
+    resumoVideo: 'Neste vídeo você vai conhecer o que é uma ligadura de duração, o que é uma mínima, e vai conseguir fazer a leitura rítmica.'
   },
   {
     tituloVideo: 'Metrônomo 03',
     tituloCabecalho: 'Metrônomo 3',
-    codigoVideo: 'FeoJudws8x4',
-    resumoVideo: 'Terceiro vídeo da série que vai deixar você craque no solfejo. Aprenda o que é um motivo e veja como essa informação ajuda você a cantar corretamente.'
+    codigoVideo: 'vlrX1MQvLKs',
+    resumoVideo: 'Neste vídeo eu mostro a situação que realmente necessita uma ligadura de duração.'
   },
   {
     tituloVideo: 'Metrônomo 04',
     tituloCabecalho: 'Metrônomo 4',
-    codigoVideo: 'zsf8m8h9ygk',
-    resumoVideo: 'Neste solfejo você vai praticar um ritmo que tem a semínima pontuada, uma situação rítmica muito encontrada no mundo musical. Pratique e ganhe autonomia.'
+    codigoVideo: 'P-aSMWLcwzs',
+    resumoVideo: 'Desenvolva a sua percepção rítmica e aprenda este importante conceito da música.'
   },
   {
     tituloVideo: 'Metrônomo 05',
     tituloCabecalho: 'Metrônomo 5',
-    codigoVideo: 'hlcdVgTnKR0',
-    resumoVideo: 'Lindo solfejo para você desenvolver a sua leitura musical. Aproveite também para tocar a melodia no seu instrumento.'
+    codigoVideo: 'XrKg4RT_rqo',
+    resumoVideo: 'Pratique a leitura rítmica da semibreve e baixe a versão do e-book.'
   },
   {
     tituloVideo: 'Metrônomo 06',
     tituloCabecalho: 'Metrônomo 6',
-    codigoVideo: 'wNogNico1x4',
-    resumoVideo: 'Cante este solfejo e perceba a sonoridade do campo harmônico menor. Assista aos vídeos da primeira série para perceber a diferença em relação ao campo harmônico maior.'
+    codigoVideo: 'FppkGXiRftU',
+    resumoVideo: 'Desenvolva a leitura rítmica com este exercício e este super e-book.'
   },
   {
     tituloVideo: 'Metrônomo 07',
     tituloCabecalho: 'Metrônomo 7',
-    codigoVideo: 'xqeutRvSkUA',
-    resumoVideo: 'Sétimo solfejo desta série que está desvendando os segredos do solfejo. Saiba como analisar uma alteração que aparece no meio da melodia.'
+    codigoVideo: '9o1MyOJQu-g',
+    resumoVideo: 'Mínima e Semibreve: Conheça a sutil diferença na escrita dessas pausas e a enorme diferença na execução delas.'
   }
 ]
 
