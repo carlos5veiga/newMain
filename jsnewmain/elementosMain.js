@@ -78,7 +78,7 @@ if (solfParaPraticar) {
         <div class="card__descricao">
             <div class="descricao">
                 <h2 class="descricao__titulo">Solfejos para praticar - A série completa</h2>
-                <h3 class="descricao__categoria">Tutoriais</h3>
+                <h3 class="descricao__categoria">Solfejo</h3>
                 <p class="descricao__texto">Aprimore o seu solfejo nas videoaulas ou apenas cante os solfejos nos shorts. Clique na imagem para baixar o e-book gratis.</p>
             </div>
             <a target="_blank" href="https://carlosveigafilho.com.br/Solfejos/SolfejosParaPraticar.pdf">
@@ -98,7 +98,7 @@ if (metronomo) {
         <div class="card__descricao">
             <div class="descricao">
                 <h2 class="descricao__titulo">Estudando com o metrônomo</h2>
-                <h3 class="descricao__categoria">Tutoriais</h3>
+                <h3 class="descricao__categoria">Ritmo</h3>
                 <p class="descricao__texto">Desenvolva a leitura rítmica com estes exercícios. Clique na imagem para baixar o e-book gratuitamente.</p>
             </div>
             <a target="_blank" href="https://carlosveigafilho.com.br/EstMet/EstudandoMetronomo.pdf">
