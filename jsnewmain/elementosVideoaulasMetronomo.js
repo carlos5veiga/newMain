@@ -1,4 +1,4 @@
-import { dados } from './dadosVideoaulasPraticar.js'
+import { dados } from './dadosVideoaulasMetronomo.js'
 
 const cabecalho = document.getElementById("cabecalho");
 if (cabecalho) {
