@@ -48,3 +48,12 @@ document.getElementById("branco").onclick = function () {
     const imagem1 = document.getElementById("imagem_ditado");
     imagem1.src = "./images/Mel" + numero + " Branco.jpg";
 }
+
+const currentYear = new Date().getFullYear();
+
+const conteudoRodape = '<h2 class="rodape__titulo">Carlos Veiga Filho</h2><h3 class="rodape__texto">Copyright &copy; 2010-'+currentYear+'</h3>';
+
+const rodape = document.getElementById("rodape");
+if (rodape) {
+    rodape.innerHTML = conteudoRodape;
+}
