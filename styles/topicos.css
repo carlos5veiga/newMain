@@ -21,6 +21,11 @@
     margin: 2em .5em;
 }
 
+.topicos__item2 {
+    margin: .5em .5em;
+    color: var(--branco);
+}
+
 .topicos__link {
     color: var(--branco);
     padding: 1em;

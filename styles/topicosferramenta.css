@@ -17,8 +17,19 @@
     justify-content: center;
 }
 
+.topicos__lista2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .topicos__item {
     margin: 2em .5em;
+}
+
+.topicos__item2 {
+    margin: .5em .5em;
+    color: var(--branco);
 }
 
 .topicos__link {
