@@ -52,7 +52,7 @@ document.getElementById("branco").onclick = function () {
 const bannerTitulo = document.getElementById("banner-titulo");
 if (bannerTitulo) {
     bannerTitulo.innerHTML = `
-        <h2 class="banner_titulo">Ditados Melódicos</h2>
+        <h2 class="banner_titulo">Ditados Clave de Fá</h2>
         <p class="banner__texto">Pressione os botões de controle para estudar.</p>
 `;
 }
