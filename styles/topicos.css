@@ -22,8 +22,8 @@
 }
 
 .topicos__item2 {
-    margin: .5em .5em;
     color: var(--branco);
+    margin: .5em .5em;
 }
 
 .topicos__link {
