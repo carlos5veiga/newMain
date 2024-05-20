@@ -82,7 +82,7 @@ if (centralIntervalos) {
                 <p class="descricao__texto">Conheça esta maravilhosa central com vídeos, exercícios e games.</p>
             </div>
             <a target="_blank" href="https://carlosveigafilho.com.br/intervalosmusicais/index.html">
-                <img src="./img/CapaSolfejosParaPraticar.png" alt="Capa da Central dos Intervalos" class="descricao__imagem">
+                <img src="./img/imagemCentralIntervalos.png" alt="Capa da Central dos Intervalos" class="descricao__imagem">
             </a>
         </div>
         <div class="card__botoes">
