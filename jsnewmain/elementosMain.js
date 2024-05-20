@@ -72,6 +72,26 @@ if (playlists) {
 `;
 }
 
+const centralIntervalos = document.getElementById("div-card-centralIntervalos");
+if (centralIntervalos) {
+    centralIntervalos.innerHTML = `
+        <div class="card__descricao">
+            <div class="descricao">
+                <h2 class="descricao__titulo">Central dos Intervalos</h2>
+                <h3 class="descricao__categoria">Ferramentas</h3>
+                <p class="descricao__texto">Conheça esta maravilhosa central com vídeos, exercícios e games.</p>
+            </div>
+            <a target="_blank" href="https://carlosveigafilho.com.br/intervalosmusicais/index.html">
+                <img src="./img/CapaSolfejosParaPraticar.png" alt="Capa da Central dos Intervalos" class="descricao__imagem">
+            </a>
+        </div>
+        <div class="card__botoes">
+            <a target="_blank" href="https://carlosveigafilho.com.br/intervalosmusicais/index.html" class="botao-conhecer">Página de estudos</a>
+            <a target="_blank" href="https://carlosveigafilho.com.br/intervalosmusicais/centralInterv.html" class="botao-comprar">Central dos Intervalos</a>
+        </div>
+`;
+}
+
 const solfParaPraticar = document.getElementById("div-card-solfParaPraticar");
 if (solfParaPraticar) {
     solfParaPraticar.innerHTML = `
