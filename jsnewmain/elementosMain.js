@@ -112,6 +112,27 @@ if (solfParaPraticar) {
 `;
 }
 
+
+const metronomoFa = document.getElementById("div-card-metronomo-fa");
+if (metronomoFa) {
+    metronomo.innerHTML = `
+        <div class="card__descricao">
+            <div class="descricao">
+                <h2 class="descricao__titulo">Metrônomo Clave de Fá</h2>
+                <h3 class="descricao__categoria">Ritmo</h3>
+                <p class="descricao__texto">Ganhe fluência na leitura da clave de fá. Clique na imagem para baixar o e-book gratuitamente.</p>
+            </div>
+            <a target="_blank" href="https://carlosveigafilho.com.br/EstMet/MetronomoClaveFa.pdf">
+                <img src="./img/CapaMetronomoFa.jpg" alt="Capa do e-book" class="descricao__imagem">
+            </a>
+        </div>
+        <div class="card__botoes">
+            <a target="_blank" href="#" class="botao-conhecer">Videoaulas</a>
+            <a target="_blank" href="#" class="botao-comprar">Shorts</a>
+        </div>
+`;
+}
+
 const metronomo = document.getElementById("div-card-metronomo");
 if (metronomo) {
     metronomo.innerHTML = `
