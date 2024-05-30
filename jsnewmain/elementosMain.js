@@ -115,7 +115,7 @@ if (solfParaPraticar) {
 
 const metronomoFa = document.getElementById("div-card-metronomo-fa");
 if (metronomoFa) {
-    metronomo.innerHTML = `
+    metronomoFa.innerHTML = `
         <div class="card__descricao">
             <div class="descricao">
                 <h2 class="descricao__titulo">Metrônomo Clave de Fá</h2>
@@ -127,8 +127,6 @@ if (metronomoFa) {
             </a>
         </div>
         <div class="card__botoes">
-            <a target="_blank" href="#" class="botao-conhecer">Videoaulas</a>
-            <a target="_blank" href="#" class="botao-comprar">Shorts</a>
         </div>
 `;
 }
