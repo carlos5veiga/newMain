@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebook 01</title>
+    <link rel="shortcut icon" href="../../img/IconeTuts.gif" type="image/x-icon">
+    <link rel="stylesheet" href="../../reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../../newstyles.css">
+</head>
+<body>
+    <header class="cabecalho" id="cabecalho"></header>
+
+    <section class="banner">
+        <h2 class="banner_titulo">Ebook 70 melodias</h2>
+        <p class="banner__texto">Estude no andamento que você preferir.</p>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Ebook 01</h2>
+        
+        <div class="card__botoes">
+            <a href="#" class="botao-conhecer">Anterior</a>
+            <a href="./ebook02.html" class="botao-comprar">Seguinte</a>
+        </div>
+
+        <div class="solfejo">
+            <img id="imagem_solfejo" alt="treino" class="imagem__solfejo" width="100%">
+        </div>
+    </section>
+
+    <audio id="audio1" src="./sounds/0160bpm.mp3" autostart="false" ></audio>
+
+    <section class="topicos" id="topicos">
+        <h2 class="topicos__titulo">Andamentos</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a id="60bpm" class="topicos__link">60 bpm</a>
+            </li>
+            <li class="topicos__item">
+                <a id="70bpm" class="topicos__link">70 bpm</a>
+            </li>
+            <li class="topicos__item">
+                <a id="80bpm" class="topicos__link">80 bpm</a>
+            </li>
+            <li class="topicos__item">
+                <a id="90bpm" class="topicos__link">90 bpm</a>
+            </li>
+            <li class="topicos__item">
+                <a id="100bpm" class="topicos__link">100 bpm</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Curso</h2>
+
+        <div class="card" id="div-card-scoreplay"></div>
+
+    </section>
+
+    <footer class="rodape" id="rodape"></footer>
+
+	<script src="./js/treino.js"></script>
+    <script src="../../jsnewmain/elementos.js"></script>
+</body>
+</html>
