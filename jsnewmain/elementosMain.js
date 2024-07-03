@@ -82,7 +82,7 @@ if (centralIntervalos) {
                 <p class="descricao__texto">Conheça esta maravilhosa central com vídeos, exercícios e games.</p>
             </div>
             <a target="_blank" href="https://carlosveigafilho.com.br/intervalosmusicais/index.html">
-                <img src="./img/imagemCentralIntervalos.png" alt="Capa da Central dos Intervalos" class="descricao__imagem">
+                <img src="/img/imagemCentralIntervalos.png" alt="Capa da Central dos Intervalos" class="descricao__imagem">
             </a>
         </div>
         <div class="card__botoes">
@@ -102,7 +102,7 @@ if (solfParaPraticar) {
                 <p class="descricao__texto">Aprimore o seu solfejo nas videoaulas ou apenas cante os solfejos nos shorts. Clique na imagem para baixar o e-book gratis.</p>
             </div>
             <a target="_blank" href="https://carlosveigafilho.com.br/Solfejos/SolfejosParaPraticar.pdf">
-                <img src="./img/CapaSolfejosParaPraticar.png" alt="Capa do e-book" class="descricao__imagem">
+                <img src="/img/CapaSolfejosParaPraticar.png" alt="Capa do e-book" class="descricao__imagem">
             </a>
         </div>
         <div class="card__botoes">
@@ -123,7 +123,7 @@ if (metronomoFa) {
                 <p class="descricao__texto">Ganhe fluência na leitura da clave de fá. Clique na imagem para baixar o e-book gratuitamente.</p>
             </div>
             <a target="_blank" href="https://carlosveigafilho.com.br/EstMet/MetronomoClaveFa.pdf">
-                <img src="./img/CapaMetronomoFa.jpg" alt="Capa do e-book" class="descricao__imagem">
+                <img src="/img/CapaMetronomoFa.jpg" alt="Capa do e-book" class="descricao__imagem">
             </a>
         </div>
         <div class="card__botoes">
@@ -141,7 +141,7 @@ if (metronomo) {
                 <p class="descricao__texto">Desenvolva a leitura rítmica com estes exercícios. Clique na imagem para baixar o e-book gratuitamente.</p>
             </div>
             <a target="_blank" href="https://carlosveigafilho.com.br/EstMet/EstudandoMetronomo.pdf">
-                <img src="./img/CapaMetronomo.jpg" alt="Capa do e-book" class="descricao__imagem">
+                <img src="/img/CapaMetronomo.jpg" alt="Capa do e-book" class="descricao__imagem">
             </a>
         </div>
         <div class="card__botoes">
@@ -161,7 +161,7 @@ if (livroAnHarm) {
                 <p class="descricao__texto">Aprenda a fazer uma análise harmônica completa.</p>
             </div>
             <a target="_blank" href="https://www.amazon.com.br/An%C3%A1lise-Harm%C3%B4nica-para-Estudantes-M%C3%BAsica-ebook/dp/B09CCMDD6Q/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2N6LPKLZMKXNO&keywords=an%C3%A1lise+harm%C3%B4nica+para+estudantes+de+m%C3%BAsica&qid=1692020657&sprefix=an%C3%A1lise+harm%C3%B4nica+para+estudantes+de+m%C3%BAsica%2Caps%2C201&sr=8-1">
-                <img src="./img/LivroAnHarm.jpg" alt="Capa do livro Análise Harmônica para Estudantes de Música" class="descricao__imagem">
+                <img src="/img/LivroAnHarm.jpg" alt="Capa do livro Análise Harmônica para Estudantes de Música" class="descricao__imagem">
             </a>
         </div>
         <div class="card__botoes">
@@ -176,7 +176,7 @@ if (divCardScoreplay) {
     divCardScoreplay.innerHTML = `
         <div class="card__imagem-solo">
             <a target="_blank" href="https://tutoriaisemmusica.com.br/scoreplay">
-                <img src="../../img/Scoreplay.jpg" alt="Imagem do curso scoreplay" class="descricao__imagem" height="160px">
+                <img src="/img/Scoreplay.jpg" alt="Imagem do curso scoreplay" class="descricao__imagem" height="160px">
             </a>
         </div>
         <div class="card__botao-solo">
@@ -190,7 +190,7 @@ if (divCardTeoria) {
     divCardTeoria.innerHTML = `
         <div class="card__imagem-solo">
             <a target="_blank" href="https://tutoriaisemmusica.com.br/teoriamusical">
-                <img src="../../img/Teoria Musical.jpg" alt="Imagem do curso teoria musical" class="descricao__imagem" height="160px">
+                <img src="/img/Teoria Musical.jpg" alt="Imagem do curso teoria musical" class="descricao__imagem" height="160px">
             </a>
         </div>
         <div class="card__botao-solo">
