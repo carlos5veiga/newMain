@@ -422,7 +422,7 @@
     },
     {
         "nome": "Raimundo",
-        "naipe": "Baixo",
+        "naipe": "Baritono",
         "coral": "Ars e Penta",
         "niver": "08/05"
     },
@@ -434,7 +434,7 @@
     },
     {
         "nome": "Rubens",
-        "naipe": "Baixo",
+        "naipe": "Baritono",
         "coral": "Penta",
         "niver": "23/06"
     },
@@ -764,7 +764,7 @@
     },
     {
         "nome": "Sonia",
-        "naipe": "Alto",
+        "naipe": "Baritono",
         "coral": "Ars Cantandi",
         "niver": "20/01"
     },
@@ -953,5 +953,23 @@
         "naipe": "Alto",
         "coral": "CMS",
         "niver": "01/11"
+    },
+    {
+        "nome": "Julia",
+        "naipe": "Soprano",
+        "coral": "Bahiana",
+        "niver": "22/12"
+    },
+    {
+        "nome": "Luizinho",
+        "naipe": "Baritono",
+        "coral": "Penta",
+        "niver": "01/02"
+    },
+    {
+        "nome": "Claudia",
+        "naipe": "Soprano",
+        "coral": "Penta",
+        "niver": "09/02"
     }
 ]
