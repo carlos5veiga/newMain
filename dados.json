@@ -704,7 +704,7 @@
     },
     {
         "nome": "Cristiane",
-        "naipe": "Alto",
+        "naipe": "Baritono",
         "coral": "Ars Cantandi",
         "niver": "30/08"
     },
@@ -971,5 +971,17 @@
         "naipe": "Soprano",
         "coral": "Penta",
         "niver": "09/02"
+    },
+    {
+        "nome": "Conça",
+        "naipe": "Soprano",
+        "coral": "Ars Cantandi",
+        "niver": "04/12"
+    },
+    {
+        "nome": "Tania",
+        "naipe": "Baritono",
+        "coral": "Ars Cantandi",
+        "niver": "10/08"
     }
 ]
