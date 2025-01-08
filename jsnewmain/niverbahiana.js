@@ -2,8 +2,8 @@ const textoH2 = document.getElementById("banner-titulo-id");
 const textoH2Mes = document.getElementById("banner-mes-id");
 const textoH2Lista = document.getElementById("banner-lista-id");
 const dataHoje = new Date();
-const dia = dataHoje.getDate().toString();
-const mes = (dataHoje.getMonth() + 1).toString();
+const dia = dataHoje.getDate().toString().padStart(2, '0');
+const mes = (dataHoje.getMonth() + 1).toString().padStart(2, '0');
 const divNiver = document.getElementById("niver-hoje");
 const divNiverMes = document.getElementById("niver-mes");
 const divNiverLista = document.getElementById("niver-lista");
@@ -49,13 +49,15 @@ function niverMes(data) {
     })
     if (aniversariantes.length>0) {
         textoH2Mes.innerText = `Aniversariantes deste mês`;
+        const listaOrdenada = aniversariantes.sort(compareFn);
+        listaOrdenada.map((pessoa) => {
+            const li = document.createElement("li");
+            li.innerHTML = `<p class="banner__texto">${pessoa.nome}, ${pessoa.naipe} - ${pessoa.niver}</p>`;
+            divNiverMes.appendChild(li);
+        })
+    } else {
+        textoH2Mes.innerText = `Não temos aniversariantes neste mês.`;
     }
-    const listaOrdenada = aniversariantes.sort(compareFn);
-    listaOrdenada.map((pessoa) => {
-        const li = document.createElement("li");
-        li.innerHTML = `<p class="banner__texto">${pessoa.nome}, ${pessoa.naipe} - ${pessoa.niver}</p>`;
-        divNiverMes.appendChild(li);
-    })
 }
 
 function compareFn(a, b) {
