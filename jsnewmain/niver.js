@@ -49,7 +49,7 @@ function niverMes(data) {
         const listaOrdenada = aniversariantes.sort(compareFn);
         listaOrdenada.map((pessoa) => {
             const li = document.createElement("li");
-            li.innerHTML = `<p class="banner__texto">${pessoa.nome}, ${pessoa.naipe} - ${pessoa.niver}</p>`;
+            li.innerHTML = `<p class="banner__texto">${pessoa.nome}, ${pessoa.naipe} (${pessoa.coral}) - ${pessoa.niver}</p>`;
             divNiverMes.appendChild(li);
         })
     } else {
