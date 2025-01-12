@@ -98,7 +98,7 @@ if (solfParaPraticar) {
         <div class="card__descricao">
             <div class="descricao">
                 <h2 class="descricao__titulo">Solfejos para praticar - A série completa</h2>
-                <h3 class="descricao__categoria">Solfejo</h3>
+                <h3 class="descricao__categoria">E-Book</h3>
                 <p class="descricao__texto">Aprimore o seu solfejo nas videoaulas ou apenas cante os solfejos nos shorts. Clique na imagem para baixar o e-book gratis.</p>
             </div>
             <a target="_blank" href="https://carlosveigafilho.com.br/Solfejos/SolfejosParaPraticar.pdf">
@@ -108,6 +108,23 @@ if (solfParaPraticar) {
         <div class="card__botoes">
             <a target="_blank" href="https://carlosveigafilho.com.br/VideoaulasSolfejosParaPraticar/" class="botao-conhecer">Videoaulas</a>
             <a target="_blank" href="https://carlosveigafilho.com.br/ShortsSolfejosParaPraticar/" class="botao-comprar">Shorts</a>
+        </div>
+`;
+}
+
+const tutoriaisSolfejo = document.getElementById("div-card-tutoriaisSolfejo");
+if (tutoriaisSolfejo) {
+    tutoriaisSolfejo.innerHTML = `
+        <div class="card">
+            <div class="card__imagem-texto">
+                <a target="_blank" href="./IntroducaoSolfejo/index.html">
+                    <img src="https://img.youtube.com/vi/qqw3War57BQ/hqdefault.jpg" alt="Imagem do vídeo solfejo 01 Introducao" class="descricao__imagem" height="160px">
+                </a>
+                <p class="texto-card__imagem-texto">Esta é a primeira série que gravei, iniciada em dezembro de 2010.<br>Comece aqui a sua jornada.</p>
+            </div>
+            <div class="card__botao-solo">
+                <a target="_blank" href="./IntroducaoSolfejo/index.html" class="botao-conhecer">Assista</a>
+            </div>
         </div>
 `;
 }
