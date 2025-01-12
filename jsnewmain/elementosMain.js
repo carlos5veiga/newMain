@@ -115,16 +115,14 @@ if (solfParaPraticar) {
 const tutoriaisSolfejo = document.getElementById("div-card-tutoriaisSolfejo");
 if (tutoriaisSolfejo) {
     tutoriaisSolfejo.innerHTML = `
-        <div class="card">
-            <div class="card__imagem-texto">
-                <a target="_blank" href="./IntroducaoSolfejo/index.html">
-                    <img src="https://img.youtube.com/vi/qqw3War57BQ/hqdefault.jpg" alt="Imagem do vídeo solfejo 01 Introducao" class="descricao__imagem" height="160px">
-                </a>
-                <p class="texto-card__imagem-texto">Esta é a primeira série que gravei, iniciada em dezembro de 2010.<br>Comece aqui a sua jornada.</p>
-            </div>
-            <div class="card__botao-solo">
-                <a target="_blank" href="./IntroducaoSolfejo/index.html" class="botao-conhecer">Assista</a>
-            </div>
+        <div class="card__imagem-texto">
+            <a target="_blank" href="./IntroducaoSolfejo/index.html">
+                <img src="https://img.youtube.com/vi/qqw3War57BQ/hqdefault.jpg" alt="Imagem do vídeo solfejo 01 Introducao" class="descricao__imagem" height="160px">
+            </a>
+            <p class="texto-card__imagem-texto">Esta é a primeira série que gravei, iniciada em dezembro de 2010.<br>Comece aqui a sua jornada.</p>
+        </div>
+        <div class="card__botao-solo">
+            <a target="_blank" href="./IntroducaoSolfejo/index.html" class="botao-conhecer">Assista</a>
         </div>
 `;
 }
