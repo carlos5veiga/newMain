@@ -130,6 +130,17 @@ const dados = [
     bpm90: 'GGUWE9tfCzo',
     bpm100: 'mSV4Guuhfqw',
     bpm110: 'dnBJ_pFPHtM'
+  },
+  {
+    tituloVideo: 'Metrônomo 13',
+    tituloCabecalho: 'Metrônomo 13',
+    codigoVideo: 'EdLuieBjcUg',
+    resumoVideo: 'Continue desenvolvendo a sua leitura rítmica das colcheias com este maravilhoso exercício.',
+    bpm70: 'LVagUVHeQGU',
+    bpm80: 'cM5Fy72FHOc',
+    bpm90: 'r6PlkbVPYYI',
+    bpm100: '3KmH2CpyiG4',
+    bpm110: '_2Tfsgl4T64'
   }
 ]
 
