@@ -141,6 +141,17 @@ const dados = [
     bpm90: 'r6PlkbVPYYI',
     bpm100: '3KmH2CpyiG4',
     bpm110: '_2Tfsgl4T64'
+  },
+  {
+    tituloVideo: 'Metrônomo 14',
+    tituloCabecalho: 'Metrônomo 14',
+    codigoVideo: 'jDgQ8BW6We4',
+    resumoVideo: 'Com este exercício você vai melhorar muito a sua leitura das colcheias e das pausas de colcheias.',
+    bpm70: 'OSTcgyzOA4M',
+    bpm80: 'WD9-njZ8NMU',
+    bpm90: 'tv0WtwzDwpI',
+    bpm100: 'bZlyuvpcZ8g',
+    bpm110: '_8aXQVkJor0'
   }
 ]
 
