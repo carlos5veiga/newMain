@@ -983,5 +983,53 @@
         "naipe": "Baritono",
         "coral": "Ars Cantandi",
         "niver": "10/08"
+    },
+    {
+        "nome": "Juliana",
+        "naipe": "Soprano",
+        "coral": "Divinas",
+        "niver": "11/02"
+    },
+    {
+        "nome": "Carol",
+        "naipe": "Soprano",
+        "coral": "Divinas",
+        "niver": "13/03"
+    },
+    {
+        "nome": "Ana Claudia",
+        "naipe": "Alto",
+        "coral": "Divinas",
+        "niver": "05/07"
+    },
+    {
+        "nome": "Karla",
+        "naipe": "Alto",
+        "coral": "Divinas",
+        "niver": "23/07"
+    },
+    {
+        "nome": "Djara",
+        "naipe": "Soprano",
+        "coral": "Divinas",
+        "niver": "10/09"
+    },
+    {
+        "nome": "Clarissa",
+        "naipe": "Soprano",
+        "coral": "Divinas",
+        "niver": "30/10"
+    },
+    {
+        "nome": "Helena",
+        "naipe": "Alto",
+        "coral": "Novos Cantos",
+        "niver": "12/06"
+    },
+    {
+        "nome": "Graça",
+        "naipe": "Soprano",
+        "coral": "CMS",
+        "niver": "20/04"
     }
 ]
