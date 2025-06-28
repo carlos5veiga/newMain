@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://unpkg.com/tone"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Clique no botão para tocar uma nota!</h1>
+    <button id="playNote">Tocar Nota</button>
+  
+    <script>
+      // Cria o sintetizador e conecta ao destino (os alto-falantes)
+      const synth = new Tone.Synth().toDestination();
+  
+      // Adiciona o evento de clique no botão
+      document.getElementById("playNote").addEventListener("click", async () => {
+        // Inicia o áudio (necessário para interação com o navegador)
+        await Tone.start(); 
+  
+        // Toca a nota 'C4' por uma colcheia (8n)
+        synth.triggerAttackRelease("C4", "8n");
+        setTimeout(() => {
+        // Toca a segunda nota (D4)
+        synth.triggerAttackRelease("D4", "8n");
+      }, 1000); // 400ms de intervalo entre as notas
+      });
+    </script>
+  </body>
+</html>
