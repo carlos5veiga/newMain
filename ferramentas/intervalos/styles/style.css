@@ -27,12 +27,8 @@ body {
 .cabecalho {
     color: var(--cor-texto-cabecalho-rodape);
     text-align: center;
-<<<<<<< HEAD
     padding: 1em 6em 0em 6em;
     margin-bottom: 1em;
-=======
-    padding: 1em 6em;
->>>>>>> 48102bc091ed96668bbd0b613367881791e9c856
 }
 
 .secao_principal {

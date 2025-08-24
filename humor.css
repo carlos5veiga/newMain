@@ -1,0 +1,68 @@
+ .titulo {
+     font-size: 2rem;
+ }
+
+ .container-flexbox {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+ }
+
+ .box {
+     flex: 1 1 100%;
+ }
+
+ .box2 {
+     max-width: 100%;
+     padding-right: 0;
+ }
+
+ .texto-p {
+     font-size: 1rem;
+ }
+
+ .capa {
+     margin-top: 1rem;
+     max-width: 35%;
+ }
+
+ .center {
+     text-align: center;
+ }
+
+ .imagem-carrossel {
+     max-width: 30%;
+     margin-top: 1rem;
+ }
+
+ .carrossel-texto {
+     font-weight: 500;
+     color: #002F52;
+     margin-top: .5rem;
+
+ }
+
+
+ @media (min-width: 768px) {
+     .titulo {
+         font-size: 3rem;
+     }
+
+     .container-flexbox {
+         flex-direction: row;
+         align-items: center;
+     }
+
+     .box {
+         flex: 1 1 0;
+     }
+
+     .box2 {
+         max-width: 50%;
+         padding-right: 10rem;
+     }
+
+     .texto-p {
+         font-size: 1.5rem;
+     }
+ }
