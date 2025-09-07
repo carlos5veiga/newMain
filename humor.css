@@ -83,6 +83,12 @@ img .max-img {
 
  }
 
+ .banner2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
 
  @media (min-width: 768px) {
      .titulo {
