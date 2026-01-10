@@ -127,6 +127,21 @@ if (tutoriaisSolfejo) {
 `;
 }
 
+const semanaMiMaior = document.getElementById("div-card-semana-mi-maior");
+if (semanaMiMaior) {
+    semanaMiMaior.innerHTML = `
+        <div class="card__imagem-texto">
+            <a target="_blank" href="./IntroducaoSolfejo/index.html">
+                <img src="https://img.youtube.com/vi/mWAzHYehl8s/hqdefault.jpg" alt="Imagem do vídeo Mi Maior" class="descricao__imagem" height="160px">
+            </a>
+            <p class="texto-card__imagem-texto">Esta é a Semana em Mi Maior. Criada em janeiro de 2026.<br>Pratique muito esta tonalidade.</p>
+        </div>
+        <div class="card__botao-solo">
+            <a target="_blank" href="./SemanaMiMaior/index.html" class="botao-conhecer">Semana em Mi Maior</a>
+        </div>
+`;
+}
+
 
 const solfejoPraticar = document.getElementById("div-card-solfejo-praticar");
 if (solfejoPraticar) {
