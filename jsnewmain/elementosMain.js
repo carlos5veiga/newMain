@@ -119,10 +119,25 @@ if (tutoriaisSolfejo) {
             <a target="_blank" href="./IntroducaoSolfejo/index.html">
                 <img src="https://img.youtube.com/vi/qqw3War57BQ/hqdefault.jpg" alt="Imagem do vídeo solfejo 01 Introducao" class="descricao__imagem" height="160px">
             </a>
-            <p class="texto-card__imagem-texto">Esta é a primeira série que gravei, iniciada em dezembro de 2010.<br>Comece aqui a sua jornada.</p>
+            <p class="texto-card__imagem-texto">Esta é a primeira série que gravei, iniciada em dezembro de 2010.<br>Comece aqui a sua jornada no solfejo.</p>
         </div>
         <div class="card__botao-solo">
             <a target="_blank" href="./IntroducaoSolfejo/index.html" class="botao-conhecer">Assista</a>
+        </div>
+`;
+}
+
+const semanasTonais = document.getElementById("div-card-semanas-tonais");
+if (semanasTonais) {
+    semanasTonais.innerHTML = `
+        <div class="card__imagem-texto">
+            <a target="_blank" href="./semanasTonais.html">
+                <img src="https://img.youtube.com/vi/mWAzHYehl8s/hqdefault.jpg" alt="Imagem do vídeo Mi Maior" class="descricao__imagem" height="160px">
+            </a>
+            <p class="texto-card__imagem-texto">Muitos exercícios agrupados por tonalidade.<br>Pratique bastante estes solfejos.</p>
+        </div>
+        <div class="card__botao-solo">
+            <a target="_blank" href="./semanasTonais.html" class="botao-conhecer">Semanas Tonais</a>
         </div>
 `;
 }
@@ -131,7 +146,7 @@ const semanaMiMaior = document.getElementById("div-card-semana-mi-maior");
 if (semanaMiMaior) {
     semanaMiMaior.innerHTML = `
         <div class="card__imagem-texto">
-            <a target="_blank" href="./IntroducaoSolfejo/index.html">
+            <a target="_blank" href="./SemanaMiMaior/index.html">
                 <img src="https://img.youtube.com/vi/mWAzHYehl8s/hqdefault.jpg" alt="Imagem do vídeo Mi Maior" class="descricao__imagem" height="160px">
             </a>
             <p class="texto-card__imagem-texto">Esta é a Semana em Mi Maior. Criada em janeiro de 2026.<br>Pratique muito esta tonalidade.</p>
@@ -142,6 +157,20 @@ if (semanaMiMaior) {
 `;
 }
 
+const semanaFaMaior = document.getElementById("div-card-semana-fa-maior");
+if (semanaFaMaior) {
+    semanaFaMaior.innerHTML = `
+        <div class="card__imagem-texto">
+            <a target="_blank" href="./SemanaFaMaior/index.html">
+                <img src="https://img.youtube.com/vi/Avwu3_ROlJE/hqdefault.jpg" alt="Imagem do vídeo Fá Maior" class="descricao__imagem" height="160px">
+            </a>
+            <p class="texto-card__imagem-texto">Esta é a Semana em Fá Maior. Criada em janeiro de 2026.<br>Pratique muito esta tonalidade.</p>
+        </div>
+        <div class="card__botao-solo">
+            <a target="_blank" href="./SemanaFaMaior/index.html" class="botao-conhecer">Semana em Fá Maior</a>
+        </div>
+`;
+}
 
 const solfejoPraticar = document.getElementById("div-card-solfejo-praticar");
 if (solfejoPraticar) {

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Veiga Filho</title>
+    <link rel="shortcut icon" href="./img/IconeTuts.gif" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="newstylesmain.css">
+</head>
+<body>
+    <header class="cabecalho" id="cabecalho"></header>
+
+    <section class="banner">
+        <h2 class="banner_titulo">Semanas Tonais</h2>
+        <p class="banner__texto">A cada semana um mergulho em uma tonalidade diferente.</p>
+        <p class="banner__texto">Explicações de muitos solfejos em cada tonalidade.</p>
+        <p class="banner__texto">Diversos shorts com sequências numéricas para treinar.</p>
+    </section>
+
+    <div>
+        <h2 class="carrossel__titulo">Percepção Musical</h2>
+        <div class="card" id="div-card-semana-fa-maior"></div>
+        <div class="card" id="div-card-semana-mi-maior"></div>
+        <div class="card" id="div-card-tutoriaisSolfejo"></div>
+        <div class="card" id="div-card-solfParaPraticar"></div>
+        <div class="card" id="div-card-solfejo-praticar"></div>
+        
+        <div class="card" id="div-card-metronomo"></div>
+        <div class="card" id="div-card-metronomo-fa"></div>
+       
+        <div class="card" id="div-card-centralIntervalos"></div>
+        
+    </div>
+
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Cursos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><a target="_blank" href="https://tutoriaisemmusica.com.br/scoreplay"><img src="./img/imagem scoreplay.jpg" alt="imagem do curso scoreplay"></a></div>
+            <div class="swiper-slide"><a target="_blank" href="https://tutoriaisemmusica.com.br/teoriamusical"><img src="./img/imagem teoria.jpg" alt="imagem do curso teoria musical"></a></div>
+            <div class="swiper-slide"><a target="_blank" href="https://tutoriaisemmusica.com.br/intervalosmusicais"><img src="./img/imagem intervalos.jpg" alt="imagem do curso intervalos musicais"></a></div>
+            <div class="swiper-slide"><a target="_blank" href="https://tutoriaisemmusica.com.br/15melodiasparatocar"><img src="./img/imagem melodias.jpg" alt="imagem do curso 15 melodias"></a></div>
+            <div class="swiper-slide"><a target="_blank" href="https://tutoriaisemmusica.com.br/finaledescomplicado"><img src="./img/imagem finale.jpg" alt="imagem do curso finale"></a></div>
+            </div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+        <h2 class="carrossel__titulo carrosel2">Ferramentas</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><a target="_blank" href="https://carlosveigafilho.com.br/ferramentas/solfejos/treino01.html"><img src="./img/FerramentaSolfejo.jpg" alt="imagem da ferramenta solfejo"></a></div>
+            <div class="swiper-slide"><a target="_blank" href="https://carlosveigafilho.com.br/ferramentas/intervalos/"><img src="./img/FerramentaCentralIntervalos.jpg" alt="imagem da ferramenta intervalos"></a></div>
+            <div class="swiper-slide"><a target="_blank" href="https://carlosveigafilho.com.br/ferramentas/ditados/melodicos/treino01.html"><img src="./img/FerramentaDitadoMelodico.jpg" alt="imagem da ferramenta ditado melódico"></a></div>
+            </div>
+            
+            <!-- If we need navigation buttons 
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>   -->
+
+        </div>
+
+        <div class="card" id="div-card-livroAnHarm"></div>
+
+    </section>
+
+    <section class="topicos" id="secao-playlists"></section>
+
+    <footer class="rodape" id="rodape"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets"
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            }
+        });
+    </script>
+    <script src="./jsnewmain/elementosMain.js"></script>
+</body>
+</html>
