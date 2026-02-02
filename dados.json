@@ -96,12 +96,6 @@
         "niver": "02/06"
     },
     {
-        "nome": "Angélica",
-        "naipe": "Soprano",
-        "coral": "CMS",
-        "niver": "20/04"
-    },
-    {
         "nome": "Isabel",
         "naipe": "Soprano",
         "coral": "CMS",
@@ -154,12 +148,6 @@
         "naipe": "Alto",
         "coral": "CMS",
         "niver": "02/03"
-    },
-    {
-        "nome": "Amanda",
-        "naipe": "Alto",
-        "coral": "CMS",
-        "niver": "30/12"
     },
     {
         "nome": "Magnólia",
@@ -217,12 +205,6 @@
         "niver": "14/11"
     },
     {
-        "nome": "Leonardo",
-        "naipe": "Baritono",
-        "coral": "Ars Cantandi",
-        "niver": "07/04"
-    },
-    {
         "nome": "Alzira",
         "naipe": "Alto",
         "coral": "Bahiana",
@@ -245,12 +227,6 @@
         "naipe": "Soprano",
         "coral": "Bahiana",
         "niver": "08/03"
-    },
-    {
-        "nome": "Diego",
-        "naipe": "Barítono",
-        "coral": "Penta",
-        "niver": "06/07"
     },
     {
         "nome": "Jussara",
@@ -311,12 +287,6 @@
         "naipe": "Alto",
         "coral": "Bahiana",
         "niver": "02/10"
-    },
-    {
-        "nome": "Vidalba",
-        "naipe": "Soprano",
-        "coral": "CMS e Bahiana",
-        "niver": "04/03"
     },
     {
         "nome": "Graça Maria",
@@ -397,12 +367,6 @@
         "niver": "02/02"
     },
     {
-        "nome": "Alice",
-        "naipe": "Soprano",
-        "coral": "Bahiana",
-        "niver": "06/02"
-    },
-    {
         "nome": "Denise",
         "naipe": "Alto",
         "coral": "Penta",
@@ -419,12 +383,6 @@
         "naipe": "Soprano",
         "coral": "Penta",
         "niver": "18/03"
-    },
-    {
-        "nome": "Raimundo",
-        "naipe": "Baritono",
-        "coral": "Ars e Penta",
-        "niver": "08/05"
     },
     {
         "nome": "França",
@@ -455,12 +413,6 @@
         "naipe": "Baritono",
         "coral": "Penta",
         "niver": "26/07"
-    },
-    {
-        "nome": "Fátima",
-        "naipe": "Alto",
-        "coral": "Penta",
-        "niver": "24/09"
     },
     {
         "nome": "Juci",
@@ -497,12 +449,6 @@
         "naipe": "Alto",
         "coral": "Ars Cantandi, Novos Cantos e Penta",
         "niver": "16/12"
-    },
-    {
-        "nome": "Krebus",
-        "naipe": "Baritono",
-        "coral": "Penta",
-        "niver": "29/12"
     },
     {
         "nome": "Sueli",
@@ -595,12 +541,6 @@
         "niver": "02/10"
     },
     {
-        "nome": "Rosa",
-        "naipe": "Soprano",
-        "coral": "Novos Cantos",
-        "niver": "09/10"
-    },
-    {
         "nome": "Tatiana",
         "naipe": "Soprano",
         "coral": "Novos Cantos",
@@ -623,12 +563,6 @@
         "naipe": "Baritono",
         "coral": "Novos Cantos",
         "niver": "13/12"
-    },
-    {
-        "nome": "Albano",
-        "naipe": "Baritono",
-        "coral": "Novos Cantos",
-        "niver": "17/01"
     },
     {
         "nome": "Dainha",
@@ -679,12 +613,6 @@
         "niver": "07/06"
     },
     {
-        "nome": "Aline",
-        "naipe": "Soprano",
-        "coral": "Ars Cantandi",
-        "niver": "08/06"
-    },
-    {
         "nome": "Bensabath",
         "naipe": "Baritono",
         "coral": "Ars Cantandi",
@@ -703,12 +631,6 @@
         "niver": "11/08"
     },
     {
-        "nome": "Cristiane",
-        "naipe": "Baritono",
-        "coral": "Ars Cantandi",
-        "niver": "30/08"
-    },
-    {
         "nome": "Claudinha",
         "naipe": "Baritono",
         "coral": "Ars Cantandi",
@@ -723,14 +645,8 @@
     {
         "nome": "Aidil",
         "naipe": "Soprano",
-        "coral": "Ars Cantandi",
+        "coral": "Novos Cantos",
         "niver": "11/09"
-    },
-    {
-        "nome": "Rosangela",
-        "naipe": "Alto",
-        "coral": "Ars Cantandi",
-        "niver": "23/09"
     },
     {
         "nome": "Augustão",
@@ -757,22 +673,10 @@
         "niver": "16/12"
     },
     {
-        "nome": "Vanilda",
-        "naipe": "Alto",
-        "coral": "Ars Cantandi",
-        "niver": "17/12"
-    },
-    {
         "nome": "Sonia",
         "naipe": "Baritono",
         "coral": "Ars Cantandi",
         "niver": "20/01"
-    },
-    {
-        "nome": "Naira",
-        "naipe": "Soprano",
-        "coral": "Ars Cantandi",
-        "niver": "29/01"
     },
     {
         "nome": "Ana Lucia",
@@ -785,12 +689,6 @@
         "naipe": "Alto",
         "coral": "Ars Cantandi",
         "niver": "11/02"
-    },
-    {
-        "nome": "Elba",
-        "naipe": "Alto",
-        "coral": "Ars Cantandi",
-        "niver": "15/02"
     },
     {
         "nome": "Gilda",
@@ -833,12 +731,6 @@
         "naipe": "Alto",
         "coral": "Bahiana",
         "niver": "19/11"
-    },
-    {
-        "nome": "Agildete",
-        "naipe": "Alto",
-        "coral": "Bahiana",
-        "niver": "10/12"
     },
     {
         "nome": "Gildete",
@@ -901,12 +793,6 @@
         "niver": "09/05"
     },
     {
-        "nome": "Cecília",
-        "naipe": "Baritono",
-        "coral": "Bahiana",
-        "niver": "26/04"
-    },
-    {
         "nome": "Célia Cardoso",
         "naipe": "Baritono",
         "coral": "Bahiana",
@@ -967,13 +853,7 @@
         "niver": "01/02"
     },
     {
-        "nome": "Claudia",
-        "naipe": "Soprano",
-        "coral": "Penta",
-        "niver": "09/02"
-    },
-    {
-        "nome": "Conça",
+        "nome": "Conceição",
         "naipe": "Soprano",
         "coral": "Ars Cantandi",
         "niver": "04/12"
@@ -997,7 +877,7 @@
         "niver": "13/03"
     },
     {
-        "nome": "Ana Claudia",
+        "nome": "Ana Claudia e Ana Paula",
         "naipe": "Alto",
         "coral": "Divinas",
         "niver": "05/07"
