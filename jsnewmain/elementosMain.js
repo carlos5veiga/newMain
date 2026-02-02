@@ -172,6 +172,21 @@ if (semanaFaMaior) {
 `;
 }
 
+const semanaSolMaior = document.getElementById("div-card-semana-sol-maior");
+if (semanaSolMaior) {
+    semanaSolMaior.innerHTML = `
+        <div class="card__imagem-texto">
+            <a target="_blank" href="./SemanaSolMaior/index.html">
+                <img src="https://img.youtube.com/vi/UawlAgnJrVo/hqdefault.jpg" alt="Imagem do vídeo Sol Maior" class="descricao__imagem" height="160px">
+            </a>
+            <p class="texto-card__imagem-texto">Esta é a Semana em Sol Maior. Criada em janeiro de 2026.<br>Pratique muito esta tonalidade.</p>
+        </div>
+        <div class="card__botao-solo">
+            <a target="_blank" href="./SemanaSolMaior/index.html" class="botao-conhecer">Semana em Sol Maior</a>
+        </div>
+`;
+}
+
 const solfejoPraticar = document.getElementById("div-card-solfejo-praticar");
 if (solfejoPraticar) {
     solfejoPraticar.innerHTML = `
