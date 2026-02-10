@@ -6,6 +6,12 @@
         "niver": "15/04"
     },
     {
+        "nome": "Heliana",
+        "naipe": "Alto",
+        "coral": "CMS",
+        "niver": "08/02"
+    },
+    {
         "nome": "Nádia",
         "naipe": "Soprano",
         "coral": "CMS",
@@ -1006,12 +1012,6 @@
         "naipe": "Alto",
         "coral": "CMS",
         "niver": "23/06"
-    },
-    {
-        "nome": "Heliana",
-        "naipe": "Alto",
-        "coral": "CMS",
-        "niver": "02/02"
     },
     {
         "nome": "Veralucia",
