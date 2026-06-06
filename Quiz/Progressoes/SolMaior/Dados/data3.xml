@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<All>
+
+<task>
+<question>A progressão 1 é:</question>
+<option>I - ii - iii - IV</option>
+<option>I - ii - iii - V</option>
+<option>I - ii - vi - V</option>
+</task>
+
+<task>
+<question>A progressão 2 é:</question>
+<option>I - iii - vi - ii</option>
+<option>I - ii - vi - iii</option>
+<option>I - ii - iii - vi</option>
+</task>
+
+<task>
+<question>A progressão 3 é:</question>
+<option>I - IV - V - vi</option>
+<option>I - V - IV - ii</option>
+<option>I - IV - V - ii</option>
+</task>
+
+<task>
+<question>A progressão 4 é:</question>
+<option>I - viiº - vi - V</option>
+<option>I - viiº - vi - IV</option>
+<option>I - viiº - ii - V</option>
+</task>
+
+<task>
+<question>A progressão 5 é:</question>
+<option>I - iii - vi - viiº</option>
+<option>I - ii - vi - viiº</option>
+<option>I - ii - iii - viiº</option>
+</task>
+
+
+</All>

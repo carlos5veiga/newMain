@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<All>
+
+<task>
+<question>O pentacorde 1 é:</question>
+<option>Menor</option>
+<option>Maior</option>
+<option>Justo</option>
+</task>
+
+<task>
+<question>O pentacorde 2 é:</question>
+<option>Maior</option>
+<option>Menor</option>
+<option>Justo</option>
+</task>
+
+<task>
+<question>O pentacorde 3 é:</question>
+<option>Menor</option>
+<option>Maior</option>
+<option>Justo</option>
+</task>
+
+<task>
+<question>O pentacorde 4 é:</question>
+<option>Maior</option>
+<option>Menor</option>
+<option>Justo</option>
+</task>
+
+<task>
+<question>O pentacorde 5 é:</question>
+<option>Maior</option>
+<option>Menor</option>
+<option>Justo</option>
+</task>
+
+</All>

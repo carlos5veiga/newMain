@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<All>
+
+<task>
+<question>A distância do intervalo 1 é:</question>
+<option>Quatro tons</option>
+<option>Quatro tons e meio</option>
+<option>Cinco tons e meio</option>
+</task>
+
+<task>
+<question>A distância do intervalo 2 é:</question>
+<option>Cinco tons</option>
+<option>Cinco tons e meio</option>
+<option>Seis tons</option>
+</task>
+
+<task>
+<question>A distância do intervalo 3 é:</question>
+<option>Dois tons e meio</option>
+<option>Três tons e meio</option>
+<option>Quatro tons e meio</option>
+</task>
+
+<task>
+<question>A distância do intervalo 4 é:</question>
+<option>Meio tom</option>
+<option>Zero</option>
+<option>Um tom</option>
+</task>
+
+<task>
+<question>A distância do intervalo 5 é:</question>
+<option>Três tons e meio</option>
+<option>Três tons</option>
+<option>Dois tons e meio</option>
+</task>
+
+
+</All>

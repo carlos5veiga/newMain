@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<All>
+
+<task>
+<question>Armadura 1 determina a tonalidade de:</question>
+<option>Dó Maior</option>
+<option>Fá Maior</option>
+<option>Ré Maior</option>
+</task>
+
+<task>
+<question>Armadura 2 determina a tonalidade de:</question>
+<option>Sol Maior</option>
+<option>Lá Maior</option>
+<option>Dó Maior</option>
+</task>
+
+<task>
+<question>Armadura 3 determina a tonalidade de:</question>
+<option>Sol Bemol Maior</option>
+<option>Ré Bemol Maior</option>
+<option>Lá Bemol Maior</option>
+</task>
+
+<task>
+<question>Armadura 4 determina a tonalidade de:</question>
+<option>Si Bemol Maior</option>
+<option>Dó Bemol Maior</option>
+<option>Fá Maior</option>
+</task>
+
+<task>
+<question>Armadura 5 determina a tonalidade de:</question>
+<option>Si Maior</option>
+<option>Dó Sustenido Maior</option>
+<option>Fá Sustenido Maior</option>
+</task>
+
+
+</All>

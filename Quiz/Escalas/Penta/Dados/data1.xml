@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<All>
+
+<task>
+<question>A escala 1 é:</question>
+<option>Menor Harmônica</option>
+<option>Menor Primitiva</option>
+<option>Menor Melódica</option>
+</task>
+
+<task>
+<question>A escala 2 é:</question>
+<option>Maior</option>
+<option>Menor Natural</option>
+<option>Menor Melódica</option>
+</task>
+
+<task>
+<question>A escala 3 é:</question>
+<option>Menor Primitiva</option>
+<option>Menor Harmônica</option>
+<option>Maior</option>
+</task>
+
+<task>
+<question>A escala 4 é:</question>
+<option>Menor Melódica</option>
+<option>Menor Natural</option>
+<option>Menor Primitiva</option>
+</task>
+
+<task>
+<question>A escala 5 é:</question>
+<option>Menor Harmônica</option>
+<option>Menor Melódica</option>
+<option>Menor Natural</option>
+</task>
+
+
+</All>

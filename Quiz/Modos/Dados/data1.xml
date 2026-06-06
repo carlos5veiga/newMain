@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<All>
+
+<task>
+<question>O modo 1 é:</question>
+<option>Lídio</option>
+<option>Mixolídio</option>
+<option>Jônio</option>
+</task>
+
+<task>
+<question>O modo 2 é:</question>
+<option>Eólio</option>
+<option>Dórico</option>
+<option>Frígio</option>
+</task>
+
+<task>
+<question>O modo 3 é:</question>
+<option>Lócrio</option>
+<option>Frígio</option>
+<option>Eólio</option>
+</task>
+
+<task>
+<question>O modo 4 é:</question>
+<option>Mixolídio</option>
+<option>Lídio</option>
+<option>Jônio</option>
+</task>
+
+<task>
+<question>O modo 5 é:</question>
+<option>Dórico</option>
+<option>Eólio</option>
+<option>Mixolídio</option>
+</task>
+
+
+</All>

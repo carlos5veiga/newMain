@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<All>
+
+<task>
+<question>Em Sol Maior a progressão é:</question>
+<option>G - D - Em - C</option>
+<option>G - C - Em - D</option>
+<option>G - D - Am - G</option>
+</task>
+
+<task>
+<question>Em Dó Maior a progressão é:</question>
+<option>C - G - Am - F</option>
+<option>C - G - Em - F</option>
+<option>C - G - Dm - F</option>
+</task>
+
+<task>
+<question>Em Lá Maior a progressão é:</question>
+<option>A - E - F#m - D</option>
+<option>A - D - F#m - E</option>
+<option>A - E - F#m - E</option>
+</task>
+
+<task>
+<question>Em Ré Maior a progressão é:</question>
+<option>D - A - Bm - G</option>
+<option>D - G - Bm - A</option>
+<option>D - A - B - G</option>
+</task>
+
+<task>
+<question>Em Si Bemol Maior a progressão é:</question>
+<option>Bb - F - Gm - Eb</option>
+<option>Bb - Eb - Fm - Eb</option>
+<option>Bb - F - G - Eb</option>
+</task>
+
+
+</All>

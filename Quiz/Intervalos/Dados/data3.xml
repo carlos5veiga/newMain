@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<All>
+
+<task>
+<question>O intervalo 1 é uma:</question>
+<option>Sexta Maior</option>
+<option>Sétima Menor</option>
+<option>Sétima Maior</option>
+</task>
+
+<task>
+<question>O intervalo 2 é uma:</question>
+<option>Terça Maior</option>
+<option>Quarta Justa</option>
+<option>Terça Menor</option>
+</task>
+
+<task>
+<question>O intervalo 3 é uma:</question>
+<option>Segunda Menor</option>
+<option>Segunda Maior</option>
+<option>Terça Menor</option>
+</task>
+
+<task>
+<question>O intervalo 4 é uma:</question>
+<option>Sétima Maior</option>
+<option>Sexta Maior</option>
+<option>Sexta Menor</option>
+</task>
+
+<task>
+<question>O intervalo 5 é uma:</question>
+<option>Quarta Justa</option>
+<option>Quinta Justa</option>
+<option>Oitava Justa</option>
+</task>
+
+
+</All>

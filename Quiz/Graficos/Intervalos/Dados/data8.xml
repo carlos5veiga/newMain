@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<All>
+
+<task>
+<question>O intervalo 1 é:</question>
+<option>Uníssono</option>
+<option>Segunda maior</option>
+<option>Segunda menor</option>
+</task>
+
+<task>
+<question>O intervalo 2 é:</question>
+<option>Terça maior</option>
+<option>Segunda maior</option>
+<option>Terça menor</option>
+</task>
+
+<task>
+<question>O intervalo 3 é:</question>
+<option>Terça menor</option>
+<option>Segunda maior</option>
+<option>Terça maior</option>
+</task>
+
+<task>
+<question>O intervalo 4 é:</question>
+<option>Segunda menor</option>
+<option>Segunda maior</option>
+<option>Terça menor</option>
+</task>
+
+<task>
+<question>O intervalo 5 é:</question>
+<option>Segunda maior</option>
+<option>Segunda menor</option>
+<option>Terça menor</option>
+</task>
+
+</All>
