@@ -98,7 +98,7 @@
     {
         "nome": "Isabel",
         "naipe": "Soprano",
-        "coral": "CMS",
+        "coral": "CMS e Penta",
         "niver": "22/09"
     },
     {
@@ -109,7 +109,7 @@
     },
     {
         "nome": "Ruy",
-        "naipe": "Barítono",
+        "naipe": "Tenor",
         "coral": "CMS",
         "niver": "18/06"
     },
@@ -197,7 +197,6 @@
         "coral": "Ars Cantandi",
         "niver": "12/04"
     },
-    
     {
         "nome": "Marilene",
         "naipe": "Soprano",
@@ -247,7 +246,7 @@
         "niver": "02/04"
     },
     {
-        "nome": "Maria das Graças",
+        "nome": "Maria das Graças Barbosa",
         "naipe": "Alto",
         "coral": "Bahiana",
         "niver": "23/08"
@@ -369,7 +368,7 @@
     {
         "nome": "Denise",
         "naipe": "Alto",
-        "coral": "Penta",
+        "coral": "Penta e Divinas",
         "niver": "02/02"
     },
     {
@@ -423,7 +422,7 @@
     {
         "nome": "Clarissa",
         "naipe": "Soprano",
-        "coral": "Penta",
+        "coral": "Penta e Divinas",
         "niver": "30/10"
     },
     {
@@ -471,7 +470,7 @@
     {
         "nome": "Isabella",
         "naipe": "Soprano",
-        "coral": "Novos Cantos",
+        "coral": "Ars Cantandi",
         "niver": "14/05"
     },
     {
@@ -645,7 +644,7 @@
     {
         "nome": "Aidil",
         "naipe": "Soprano",
-        "coral": "Novos Cantos",
+        "coral": "Ars Cantandi",
         "niver": "11/09"
     },
     {
@@ -788,7 +787,7 @@
     },
     {
         "nome": "Ligia Veloso",
-        "naipe": "Alto",
+        "naipe": "Soprano",
         "coral": "Bahiana",
         "niver": "09/05"
     },
@@ -895,13 +894,7 @@
         "niver": "10/09"
     },
     {
-        "nome": "Clarissa",
-        "naipe": "Soprano",
-        "coral": "Divinas",
-        "niver": "30/10"
-    },
-    {
-        "nome": "Helena",
+        "nome": "Helena Viana",
         "naipe": "Alto",
         "coral": "Novos Cantos",
         "niver": "12/06"
@@ -911,5 +904,227 @@
         "naipe": "Soprano",
         "coral": "CMS",
         "niver": "20/04"
+    },
+    {
+        "nome": "Denise",
+        "naipe": "Soprano",
+        "coral": "Bahiana",
+        "niver": "23/05"
+    },
+    {
+        "nome": "Edmea",
+        "naipe": "Alto",
+        "coral": "Bahiana",
+        "niver": "21/10"
+    },
+    {
+        "nome": "Tania Regina",
+        "naipe": "Alto",
+        "coral": "CMS",
+        "niver": "05/01"
+    },
+    {
+        "nome": "Ana Maria Oliveira dos Santos",
+        "naipe": "Soprano",
+        "coral": "CMS",
+        "niver": "26/07"
+    },
+    {
+        "nome": "Ademir Ribeiro",
+        "naipe": "Barítono",
+        "coral": "CMS",
+        "niver": "30/04"
+    },
+    {
+        "nome": "Clarissa Passos",
+        "naipe": "Soprano",
+        "coral": "Penta",
+        "niver": "07/03"
+    },
+    {
+        "nome": "Jefferson",
+        "naipe": "Barítono",
+        "coral": "Penta",
+        "niver": "06/04"
+    },
+    {
+        "nome": "Maria do Rosario",
+        "naipe": "Soprano",
+        "coral": "Penta",
+        "niver": "03/05"
+    },
+    {
+        "nome": "José Trocoli",
+        "naipe": "Barítono",
+        "coral": "Penta",
+        "niver": "26/05"
+    },
+    {
+        "nome": "Juliana",
+        "naipe": "Soprano",
+        "coral": "Penta",
+        "niver": "16/06"
+    },
+    {
+        "nome": "Cida",
+        "naipe": "Soprano",
+        "coral": "Penta",
+        "niver": "12/10"
+    },
+    {
+        "nome": "Noelma",
+        "naipe": "Barítono",
+        "coral": "Penta",
+        "niver": "30/11"
+    },
+    {
+        "nome": "Nabor",
+        "naipe": "Barítono",
+        "coral": "Novos Cantos",
+        "niver": "17/02"
+    },
+    {
+        "nome": "Salete",
+        "naipe": "Soprano",
+        "coral": "Novos Cantos",
+        "niver": "05/03"
+    },
+    {
+        "nome": "Girlene",
+        "naipe": "Soprano",
+        "coral": "Novos Cantos",
+        "niver": "13/05"
+    },
+    {
+        "nome": "Mônica",
+        "naipe": "Alto",
+        "coral": "Novos Cantos",
+        "niver": "18/05"
+    },
+    {
+        "nome": "Isabela Fadul",
+        "naipe": "Alto",
+        "coral": "Novos Cantos",
+        "niver": "09/09"
+    },
+    {
+        "nome": "Ivone",
+        "naipe": "Alto",
+        "coral": "Novos Cantos",
+        "niver": "07/10"
+    },
+    {
+        "nome": "Iracema",
+        "naipe": "Alto",
+        "coral": "Novos Cantos",
+        "niver": "27/11"
+    },
+    {
+        "nome": "Marlene",
+        "naipe": "Alto",
+        "coral": "Novos Cantos",
+        "niver": "17/12"
+    },
+    {
+        "nome": "Naira",
+        "naipe": "Soprano",
+        "coral": "Ars Cantandi",
+        "niver": "29/01"
+    },
+    {
+        "nome": "Elba",
+        "naipe": "Alto",
+        "coral": "Ars Cantandi",
+        "niver": "15/02"
+    },
+    {
+        "nome": "Antonio Curcino",
+        "naipe": "Barítono",
+        "coral": "Ars Cantandi",
+        "niver": "03/04"
+    },
+    {
+        "nome": "Dudu",
+        "naipe": "Barítono",
+        "coral": "Ars Cantandi",
+        "niver": "03/06"
+    },
+    {
+        "nome": "Miriam Celeste",
+        "naipe": "Alto",
+        "coral": "Ars Cantandi",
+        "niver": "05/07"
+    },
+    {
+        "nome": "Anna Cristina Diniz",
+        "naipe": "Alto",
+        "coral": "Ars Cantandi",
+        "niver": "29/11"
+    },
+    {
+        "nome": "Nize",
+        "naipe": "Alto",
+        "coral": "Bahiana",
+        "niver": "16/02"
+    },
+    {
+        "nome": "Valdemira",
+        "naipe": "Alto",
+        "coral": "Bahiana",
+        "niver": "08/07"
+    },
+    {
+        "nome": "Itamar",
+        "naipe": "Soprano",
+        "coral": "Bahiana",
+        "niver": "28/03"
+    },
+    {
+        "nome": "Nívea",
+        "naipe": "Alto",
+        "coral": "Bahiana",
+        "niver": "14/09"
+    },
+    {
+        "nome": "Telma",
+        "naipe": "Alto",
+        "coral": "Bahiana",
+        "niver": "25/12"
+    },
+    {
+        "nome": "Gicelia",
+        "naipe": "Soprano",
+        "coral": "Bahiana",
+        "niver": "23/07"
+    },
+    {
+        "nome": "Gildete Matos",
+        "naipe": "Soprano",
+        "coral": "CMS",
+        "niver": "17/05"
+    },
+    {
+        "nome": "Creuza",
+        "naipe": "Alto",
+        "coral": "CMS",
+        "niver": "06/06"
+    },
+    {
+        "nome": "Maria de Fátima B. Ferreira",
+        "naipe": "Alto",
+        "coral": "CMS",
+        "niver": "06/05"
+    },
+    {
+        "nome": "Graça Novata",
+        "naipe": "Alto",
+        "coral": "CMS",
+        "niver": "16/08"
+    },
+    {
+        "nome": "Jussara",
+        "naipe": "Soprano",
+        "coral": "CMS",
+        "niver": "01/07"
     }
 ]
