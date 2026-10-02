@@ -7,20 +7,20 @@ if (cabecalho) {
     </label>
     <ul class="lista-menu">
         <li class="lista-menu__titulo">Categorias</li>
-        <li class="lista-menu__item"><a href="../tutoriais.html" class="lista-menu__link">Tutoriais</a></li>
+        <li class="lista-menu__item"><a href="/tutoriais.html" class="lista-menu__link">Tutoriais</a></li>
         <li class="lista-menu__item"><a target="_blank" href="https://tutoriaisemmusica.com.br" class="lista-menu__link">Cursos</a></li>
-        <li class="lista-menu__item"><a href="../ferramentas.html" class="lista-menu__link">Ferramentas</a></li>
-        <li class="lista-menu__item"><a href="../livros.html" class="lista-menu__link">Livros</a></li>
+        <li class="lista-menu__item"><a href="/ferramentas.html" class="lista-menu__link">Ferramentas</a></li>
+        <li class="lista-menu__item"><a href="/livros.html" class="lista-menu__link">Livros</a></li>
         <li class="lista-menu__item"><a target="_blank" href="https://carlosveigafilho.com.br/repertorio/index.html" class="lista-menu__link">Corais</a></li>
     </ul>
     <a href="/index.html"><img src="https://carlosveigafilho.com.br/img/LogoTuts40.png" class="cabecalho__imagem" alt="Logo dos Tutoriais em Música"></a>
     <h1 class="titulo-principal">Carlos Veiga Filho</h1>
 
     <ul class="opcoes">
-        <li class="opcoes__item"><a href="../tutoriais.html" class="opcoes__link">Tutoriais</a></li>
+        <li class="opcoes__item"><a href="/tutoriais.html" class="opcoes__link">Tutoriais</a></li>
         <li class="opcoes__item"><a target="_blank" href="https://tutoriaisemmusica.com.br" class="opcoes__link">Cursos</a></li>
-        <li class="opcoes__item"><a href="../ferramentas.html" class="opcoes__link">Ferramentas</a></li>
-        <li class="opcoes__item"><a href="../livros.html" class="opcoes__link">Livros</a></li>
+        <li class="opcoes__item"><a href="/ferramentas.html" class="opcoes__link">Ferramentas</a></li>
+        <li class="opcoes__item"><a href="/livros.html" class="opcoes__link">Livros</a></li>
         <li class="opcoes__item"><a target="_blank" href="https://carlosveigafilho.com.br/repertorio/index.html" class="opcoes__link">Corais</a></li>
     </ul>
 `;

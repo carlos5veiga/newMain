@@ -1,0 +1,29 @@
+#main{
+	display: flex;
+	margin: auto;
+	width: 80%;
+}
+
+.colunas{
+	background-color: #333742;
+	border: 2px solid yellow;
+	color: white;
+	padding: 20px 20px;
+	text-align: center;
+}
+
+.colunas h2, h3{
+	color: yellow;
+}
+
+.foto{
+	padding: 20px 20px;
+}
+
+a:link{
+	color: white;
+}
+
+a:visited{
+	color: white;
+}
