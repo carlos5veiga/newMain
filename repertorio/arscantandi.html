@@ -1,78 +1,93 @@
 <!doctype html>
 <html lang="pt-br">
-  	<head>
-		<!-- Required meta tags -->
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
-			
-		<link rel="stylesheet" href="styles.css">
-		<title>Ars Cantandi</title>
-		
-		<link rel="shortcut icon" href="https://www.carlosveigafilho.com.br/TutsIcone.gif" type="image/gif" />
-
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-H9L5D8BG84"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'G-H9L5D8BG84');
-		</script>
-  	</head>
-  
-	<body>
-
-		<!-- NAVBAR -->  
-		<nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top">
-	  		<a class="navbar-brand" href="index.html">Corais</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<a class="nav-link" href="arscantandi.html">Ars Cantandi</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="bahiana.html">Bahiana</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="cms.html">CMS</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="novoscantos.html">Novos Cantos</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="pentagono.html">Pentágono</a>
-				</li>
-			</div>
-		</nav>
-	
-		<header>
-			<center><img src="images/marcaars.png" alt="Coral Ars Cantandi" width="300" height="105" </center>
-		</header>
-
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-4 bg-light">
-					<h3>Repertório</h3>
-					<p><a href="avemaria.html">Ave Maria</a></p>
-					<p><a href="syiahamba.html">Syiahamba</a></p>
-					<p><a href="maravilha.html">Que maravilha</a></p>
-					<p><a href="Encontros.html">Encontros e despedidas</a></p>
-					<p><a href="quemsabeamor.html">Quem sabe isso quer dizer amor</a></p>
-					<p><a href="baianidade.html">Baianidade Nagô</a></p>
-					<p><a href="SaberViver.html">É preciso saber viver</a></p>
-					<p><a href="abusou.html">Você abusou</a></p>
-					<p><a href="AguaBeber.html">Água de beber</a></p>
-					<p><a href="PrimVis.html">A Primeira Vista</a></p>
-					<p><a href="vidaboa.html">Vida boa</a></p>
-					<p><a href="Oxum.html">É d'Oxum</a></p>
-					<p><a href="IllBeThere.html">I'll be there</a></p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#192f3b">
+  <title>Ars Cantandi | Repertório e ensaios</title>
+  <link rel="stylesheet" href="grupos.css">
+  <link rel="shortcut icon" href="https://www.carlosveigafilho.com.br/TutsIcone.gif" type="image/gif">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9L5D8BG84"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-H9L5D8BG84');
+  </script>
+  <script src="grupos.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#repertorio">Ir para o repertório</a>
+  <header class="site-header">
+    <nav class="wrap navigation" aria-label="Grupos corais">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">♪</span>Corais</a>
+      <ul class="group-links">
+        <li><a href="arscantandi.html" aria-current="page">Ars Cantandi</a></li>
+        <li><a href="bahiana.html">Bahiana</a></li>
+        <li><a href="cms.html">CMS</a></li>
+        <li><a href="divinas.html">Divinas</a></li>
+        <li><a href="fieb.html">FIEB</a></li>
+        <li><a href="novoscantos.html">Novos Cantos</a></li>
+        <li><a href="pentagono.html">Pentágono</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="group-title">
+      <div>
+        <p class="eyebrow">Vozes que se encontram</p>
+        <h1 id="group-title">Ars Cantandi</h1>
+        <p class="intro">Nosso espaço de encontro com a música.<br>Repertório, ensaios e apresentações do grupo.</p>
+        <div class="hero-links"><a href="#repertorio">Explorar repertório ↓</a><a href="#agenda">Consultar agenda ↓</a></div>
+      </div>
+      <!-- A referência anterior images/marcaars.png não existe no repositório. -->
+      <img class="group-photo" src="../img/ars600.png" alt="Integrantes do Ars Cantandi e marca do grupo" width="600" height="400">
+    </section>
+    <div class="content-grid">
+      <section class="repertoire" id="repertorio" aria-labelledby="repertoire-title">
+        <div class="section-heading"><h2 id="repertoire-title">Repertório</h2><span class="count" id="song-count" role="status" aria-live="polite" aria-atomic="true">13 músicas</span></div>
+        <p class="section-description">Escolha uma música para acessar o material de estudo.</p>
+        <label class="search" for="song-search">Buscar no repertório</label>
+        <input type="search" id="song-search" placeholder="Digite o nome de uma música…" aria-controls="song-list" autocomplete="off">
+        <ol class="songs" id="song-list">
+            <li><a href="avemaria.html"><span class="song-number" aria-hidden="true">01</span><span class="song-title">Ave Maria</span><span class="song-arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="syiahamba.html"><span class="song-number" aria-hidden="true">02</span><span class="song-title">Syiahamba</span><span class="song-arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="maravilha.html"><span class="song-number" aria-hidden="true">03</span><span class="song-title">Que maravilha</span><span class="song-arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="Encontros.html"><span class="song-number" aria-hidden="true">04</span><span class="song-title">Encontros e despedidas</span><span class="song-arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="quemsabeamor.html"><span class="song-number" aria-hidden="true">05</span><span class="song-title">Quem sabe isso quer dizer amor</span><span class="song-arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="baianidade.html"><span class="song-number" aria-hidden="true">06</span><span class="song-title">Baianidade Nagô</span><span class="song-arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="SaberViver.html"><span class="song-number" aria-hidden="true">07</span><span class="song-title">É preciso saber viver</span><span class="song-arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="abusou.html"><span class="song-number" aria-hidden="true">08</span><span class="song-title">Você abusou</span><span class="song-arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="AguaBeber.html"><span class="song-number" aria-hidden="true">09</span><span class="song-title">Água de beber</span><span class="song-arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="PrimVis.html"><span class="song-number" aria-hidden="true">10</span><span class="song-title">A Primeira Vista</span><span class="song-arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="vidaboa.html"><span class="song-number" aria-hidden="true">11</span><span class="song-title">Vida boa</span><span class="song-arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="Oxum.html"><span class="song-number" aria-hidden="true">12</span><span class="song-title">É d'Oxum</span><span class="song-arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="IllBeThere.html"><span class="song-number" aria-hidden="true">13</span><span class="song-title">I'll be there</span><span class="song-arrow" aria-hidden="true">↗</span></a></li>
+        </ol>
+        <p class="empty" id="empty-results" hidden>Nenhuma música encontrada. Tente outro nome.</p>
+      </section>
+      <aside class="agenda" id="agenda" aria-label="Agenda e avisos">
+        <section class="panel notice" aria-labelledby="notice-title">
+          <p class="eyebrow">Mural do grupo</p>
+          <h2 id="notice-title">Avisos</h2>
+          <p>As inscrições para 2026 terminam em maio.</p>
+          <p>Informações: (71)9 9921-6546 (WhatsApp)</p>
+        </section>
+        <section class="panel rehearsal" aria-labelledby="rehearsal-title">
+          <p class="eyebrow">Nosso encontro semanal</p>
+          <h2 id="rehearsal-title">Ensaios</h2>
+          <p>Os ensaios acontecem às segundas-feiras no Pituba Parque Center, das 19:15 às 21:00.</p>
+        </section>
+        <section class="panel" aria-labelledby="shows-title">
+          <p class="eyebrow">No palco</p>
+          <h2 id="shows-title">Programação</h2>
+          <p class="section-description">Nenhuma programação publicada nesta página.</p>
+        </section>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-content"><span>Ars Cantandi · Repertório e encontros</span><a href="index.html">Todos os corais ↗</a></div></footer>
+  <!-- Histórico: conteúdo originalmente comentado, preservado para consulta. -->
 <!-- 
 
 
@@ -86,7 +101,6 @@
 					<p><a href="Aleluia3v.html">Aleluia 3 vozes</a></p>
 					<p><a href="noitesagrada.html">Noite Sagrada</a></p>
 					<p><a href="IllBeThere.html">I'll be there</a></p> -->
-
 <!--
 					<p><a href="maisumavez.html">Mais uma vez</a></p>
 					<p><a href="ceusantoamaro.html">Céu de Santo Amaro</a></p>
@@ -172,32 +186,5 @@
 					<p><a href="Planetag.html">Planeta água</a></p>
 
 					-->
-
-				</div>
-				<div class="col-8">
-		
-					<div class="col-12 bg-info">
-						<h3>Avisos</h3>
-						<p>As inscrições para 2026 terminam em maio.</p>
-						<p>Os ensaios acontecem às segundas-feiras no Pituba Parque Center, das 19:15 às 21:00.</p>
-						<p>Informações: (71)9 9921-6546 (WhatsApp)</p>
-					</div>
-
-					<div class="col-12 bg-secondary">
-						<h3>Ensaios</h3>
-					</div>
-
-					<div class="col-12 bg-warning">
-						<h3>Programação</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-  	</body>
+</body>
 </html>
