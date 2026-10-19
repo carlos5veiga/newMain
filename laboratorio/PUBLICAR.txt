@@ -1,0 +1,91 @@
+PUBLICAR E TESTAR O LABORATÓRIO
+
+1. Envie a pasta laboratorio completa para a hospedagem estática do site.
+   Mantenha as subpastas audio/piano e vendor, com maiúsculas e minúsculas
+   exatamente como estão. Não é necessário build, npm, Node no servidor,
+   banco de dados ou integração com a página principal.
+
+2. Acesse pelo endereço completo, com HTTPS e barra final:
+   https://SEU-DOMINIO/laboratorio/
+   Também é possível abrir https://SEU-DOMINIO/laboratorio/index.html
+   Para uso offline no celular, HTTP por IP da rede local não é suficiente.
+   HTTPS precisa ser fornecido pela hospedagem; a pasta não emite certificado.
+
+3. No próprio celular, abra:
+   https://SEU-DOMINIO/laboratorio/verificar.html
+   Toque em Verificar arquivos publicados e depois em Ouvir piano.
+   A verificação acessa somente o seu domínio e pode transferir cerca de 3 MB.
+   Ela detecta arquivos ausentes, páginas HTML devolvidas no lugar de scripts
+   ou áudio e tipos incorretos de JavaScript/CSS.
+
+4. Volte ao laboratório e toque em Preparar uso offline.
+   Aguarde Disponível offline, com 25 amostras e a partitura padrão salva.
+   Ative modo avião e desligue também o Wi-Fi. Reabra o mesmo endereço.
+   Confira melodia e harmonia, andamento, volume, zoom e cursor em retrato
+   e paisagem. Depois repita com fones e alto-falantes do aparelho.
+   Não há instalação obrigatória. Use o navegador normal do aparelho;
+   navegadores internos de redes sociais e modo privado podem limitar recursos.
+
+O QUE ENVIAR
+
+Arquivos de execução: index.html, style.css, app.js, audio.js, offline.js,
+sw.js, verificar.html, diagnostico.js, a partitura solfejo01.mxl (ou
+solfejo01.musicxml), a pasta vendor inteira e a pasta audio inteira.
+Preserve os créditos e as licenças distribuídos nessas pastas.
+
+Pode enviar a pasta inteira. Os arquivos verificar*.cjs, servidor.cjs e
+PUBLICAR.txt são auxiliares locais e não precisam estar na hospedagem.
+O MusicXML original deve ser enviado sem edição.
+
+REQUISITOS DA HOSPEDAGEM
+
+Servir arquivos estáticos, com index.html como página da pasta.
+Servir .js como text/javascript ou application/javascript; .css como
+text/css e .mp3 preferencialmente como audio/mpeg. MXL é um arquivo binário:
+application/vnd.recordare.musicxml ou application/octet-stream.
+Não redirecionar arquivos ausentes para a página principal do site.
+Não aplicar cache imutável ou de longa duração a sw.js e index.html.
+Recomendado para scripts/HTML: Cache-Control: no-cache.
+As amostras fixas podem receber cache HTTP, além do armazenamento offline.
+Se a hospedagem tiver cabeçalhos globais de segurança, eles precisam permitir
+scripts e workers do próprio domínio. Não é necessário permitir CDNs.
+
+Nenhum ajuste foi feito na configuração da hospedagem, no DNS ou no certificado.
+A ferramenta de verificação informa o que o navegador consegue usar no endereço
+publicado. Se houver erro de MIME ou HTTPS, corrija-o no painel da hospedagem.
+
+ATUALIZAR UMA PUBLICAÇÃO EXISTENTE
+
+Envie os arquivos alterados e o sw.js correspondente. Em mudanças futuras,
+incremente VERSION no início de sw.js para gerar uma nova versão do pacote.
+Mantenha o endereço da pasta. Ao detectar a nova versão, a interface oferece
+Atualizar laboratório; o usuário escolhe quando interromper e recarregar.
+As amostras de piano já salvas são reaproveitadas, pois o banco fixo é o mesmo.
+Se as gravações forem substituídas no futuro, use novos nomes/caminhos de áudio.
+Evite deixar uma publicação pela metade; prefira envio completo antes do teste.
+
+LIMITES DO USO OFFLINE
+
+O armazenamento vale para aquele navegador e endereço. O navegador pode remover
+os arquivos por falta de espaço, configuração de privacidade ou limpeza manual.
+Arquivos escolhidos pelo seletor não são persistidos: abra-os novamente depois.
+A cópia offline automática da partitura refere-se ao arquivo padrão da pasta.
+Trocar de domínio ou de navegador exige preparar os arquivos novamente.
+Ao colocar a página em segundo plano ou bloquear a tela, a execução é parada.
+
+TESTES LOCAIS OPCIONAIS, COM NODE INSTALADO
+
+Na raiz do repositório:
+node laboratorio/servidor.cjs
+Abra http://127.0.0.1:8000/laboratorio/
+Os caminhos também funcionam quando a pasta é a raiz do servidor.
+
+Testes automatizados, também na raiz:
+node laboratorio/verificar.cjs
+node laboratorio/verificar-audio.cjs
+node laboratorio/verificar-offline.cjs
+node laboratorio/verificar-interface.cjs
+node laboratorio/verificar-publicacao.cjs
+
+Esses testes usam simulações de áudio/cache. Não substituem o teste auditivo,
+visual e de desempenho em um celular real.

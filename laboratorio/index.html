@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#104c58">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; worker-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'">
+  <title>Laboratório MusicXML</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="vendor/jszip-3.10.1.min.js"></script>
+  <script defer src="vendor/opensheetmusicdisplay-1.9.3.min.js"></script>
+  <script defer src="audio.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="offline.js"></script>
+</head>
+<body>
+  <header><div class="wrap">
+    <p class="eyebrow">LABORATÓRIO EXPERIMENTAL</p>
+    <h1>Explore uma partitura MusicXML</h1>
+    <p>Veja, escute e descubra os dados musicais do seu solfejo.</p>
+  </div></header>
+  <main class="wrap">
+    <section class="offline-panel" aria-label="Disponibilidade offline">
+      <p id="offlineStatus" role="status" aria-live="polite">Verificando disponibilidade offline…</p>
+      <div class="controls">
+        <button id="prepareOffline" type="button" disabled>Preparar uso offline</button>
+        <button id="updateApp" type="button" hidden>Atualizar laboratório</button>
+      </div>
+      <p class="muted">Salve o laboratório, a partitura da pasta e o piano neste navegador. Nenhuma instalação é necessária. Se o navegador remover os arquivos, prepare-os novamente com conexão.</p>
+    </section>
+    <p id="status" role="status" aria-live="polite">Carregando partitura…</p>
+    <noscript>Ative o JavaScript para carregar e reproduzir a partitura.</noscript>
+    <section class="panel transport" id="transport" aria-labelledby="audioHeading">
+      <h2 id="audioHeading">Ouça e explore</h2>
+      <div class="transport-grid">
+        <div class="transport-buttons">
+          <button id="play" class="primary" type="button" disabled>Reproduzir</button>
+          <button id="stop" type="button" disabled>Parar</button>
+        </div>
+        <label>Andamento <span class="range-control"><input id="tempo" type="range" min="30" max="240" step="1" value="120"><output id="tempoOut">120 BPM</output></span></label>
+        <label>Volume <span class="range-control"><input id="masterVolume" type="range" min="0" max="100" value="80" step="5"><output id="masterVolumeOut">80%</output></span></label>
+      </div>
+      <p id="playing" class="live" role="status">Pronto para explorar</p>
+    </section>
+    <details class="panel options-panel">
+      <summary>Som e opções de reprodução</summary>
+      <div class="option-grid">
+        <label>Reproduzir <select id="playbackMode">
+          <option value="both">Melodia e harmonia</option>
+          <option value="melody">Somente melodia</option>
+          <option value="harmony">Somente harmonia</option>
+        </select></label>
+        <label>Melodia <select id="track" disabled></select></label>
+        <label>Som da melodia <select id="timbre">
+          <option value="piano">Piano acústico · Salamander</option>
+          <option value="electric">Piano elétrico · cristalino</option>
+          <option value="flute">Flauta · expressiva</option>
+          <option value="sine">Senoidal · referência simples</option>
+        </select></label>
+        <label>Som da harmonia <select id="harmonyTimbre">
+          <option value="piano">Piano acústico · Salamander</option>
+          <option value="electric">Piano elétrico · cristalino</option>
+        </select></label>
+        <label>Brilho <span class="range-control"><input id="brightness" type="range" min="0" max="100" value="65" step="5"><output id="brightnessOut">65%</output></span></label>
+        <label>Volume da harmonia <span class="range-control"><input id="harmonyVolume" type="range" min="0" max="100" step="5" value="45"><output id="harmonyVolumeOut">45%</output></span></label>
+        <label class="checkbox-label"><input id="followCursor" type="checkbox" checked> Acompanhar cursor com rolagem</label>
+      </div>
+      <p class="muted">Piano acústico com a ressonância da gravação original, sem reverberação adicional. Brilho e volume respondem durante a reprodução. Trocar timbre, andamento, modo ou volume da harmonia interrompe a execução. Os botões Ouvir tocam apenas a nota. BPM em semínimas por minuto; Lá4 = 440 Hz.</p>
+    </details>
+    <section class="panel" aria-labelledby="scoreHeading">
+      <div class="toolbar">
+        <h2 id="scoreHeading">Partitura</h2>
+        <div class="controls zoom-controls">
+          <button id="zoomMinus" type="button" disabled aria-label="Reduzir partitura">−</button>
+          <label>Zoom <input id="zoom" type="range" min="50" max="200" step="10" value="100" disabled><output id="zoomOut">100%</output></label>
+          <button id="zoomPlus" type="button" disabled aria-label="Ampliar partitura">+</button>
+          <button id="resetZoom" type="button" disabled>Restaurar</button>
+        </div>
+      </div>
+      <p class="muted">O cursor acompanha a execução. Em ampliações maiores, deslize a partitura na horizontal.</p>
+      <div id="score" tabindex="0" aria-label="Partitura musical renderizada, com rolagem horizontal"></div>
+    </section>
+    <details class="panel" aria-labelledby="dataHeading">
+      <summary id="dataHeading">Dados musicais e notas individuais</summary>
+      <p id="summary">Aguardando arquivo.</p>
+      <p id="harmonyInfo">Aguardando arquivo.</p>
+      <div class="tablewrap"><table>
+        <caption>Cifras da parte e pauta selecionadas. Posição em semínimas a partir de 1 no compasso.</caption>
+        <thead><tr><th scope="col">Compasso</th><th scope="col">Posição</th><th scope="col">Cifra</th><th scope="col">Semínimas</th><th scope="col">Reprodução</th></tr></thead>
+        <tbody id="harmonies"></tbody>
+      </table></div>
+      <div class="tablewrap"><table>
+        <caption>Compassos e alterações musicais da parte selecionada</caption>
+        <thead><tr><th scope="col">Compasso</th><th scope="col">Fórmula</th><th scope="col">Tonalidade / armadura</th><th scope="col">Semínimas</th></tr></thead>
+        <tbody id="measures"></tbody>
+      </table></div>
+      <div class="tablewrap noteswrap"><table>
+        <caption>Notas e pausas da melodia selecionada (Dó central = Dó4)</caption>
+        <thead><tr><th scope="col">#</th><th scope="col">Compasso</th><th scope="col">Nota escrita</th><th scope="col">Som (Hz)</th><th scope="col">Figura</th><th scope="col">Semínimas</th><th scope="col">Ouvir</th></tr></thead>
+        <tbody id="notes"></tbody>
+      </table></div>
+    </details>
+    <details class="panel">
+      <summary>Escolher arquivo de partitura</summary>
+      <p>Carregamento inicial: <code>solfejo01.mxl</code> ou <code>solfejo01.musicxml</code>, nesta pasta. Você também pode abrir um arquivo local, sem enviá-lo.</p>
+      <div class="controls">
+        <label class="file">Abrir arquivo <input id="file" type="file" accept=".mxl,.musicxml,.xml"></label>
+        <button id="reload" type="button">Recarregar arquivo da pasta</button>
+      </div>
+      <p class="muted">Arquivos abertos pelo seletor precisam ser selecionados novamente após reabrir a página. O pacote offline salva a partitura padrão da pasta.</p>
+    </details>
+    <details class="panel details">
+      <summary>Sobre este experimento e créditos</summary>
+      <p>Para testar este endereço no seu aparelho, abra a <a href="verificar.html">verificação de publicação e áudio</a>.</p>
+      <p>O arquivo original é apenas lido. Partitura, extração e áudio funcionam localmente, sem envio de dados, microfone ou integração com outras páginas.</p>
+      <p>Piano: Salamander Grand Piano, Yamaha C5 gravado por Alexander Holm, licença CC BY 3.0. Seleção local de 25 amostras MP3, transpostas entre notas próximas. <a href="audio/piano/CREDITOS.txt">Créditos, origem e licença</a>. Esta versão não inclui todas as camadas de intensidade ou pedal da coleção original. Piano elétrico e flauta são sintetizados.</p>
+      <p>A reprodução percorre a voz e pauta selecionadas na ordem escrita, incluindo notas simultâneas e ligaduras. Não executa repetições, casas, saltos, ornamentos, dinâmica, rubato ou mudanças de andamento do arquivo. Notas de graça e percussão aparecem nos dados, mas não são sintetizadas.</p>
+      <p>A harmonia usa as cifras codificadas no MusicXML: baixo grave e acorde em posição fechada, sustentados até a próxima cifra ou o fim da peça. Tipos não suportados, funções em algarismos romanos e policordes são indicados na tabela e ficam em silêncio; N.C. interrompe o acorde anterior.</p>
+      <p class="muted">Bibliotecas locais: OpenSheetMusicDisplay 1.9.3 (BSD-3-Clause) e JSZip 3.10.1 (MIT). Licenças: <a href="vendor/OSMD-LICENSE.txt">OSMD</a> e <a href="vendor/JSZip-LICENSE.txt">JSZip</a>. O modo offline requer HTTPS ou localhost e armazenamento permitido pelo navegador.</p>
+    </details>
+  </main>
+</body>
+</html>

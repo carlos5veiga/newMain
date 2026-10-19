@@ -1,0 +1,12 @@
+Salamander Grand Piano — gravações de um Yamaha C5 por Alexander Holm.
+Licença da distribuição utilizada: Creative Commons Attribution 3.0 (CC BY 3.0).
+Texto e condições: https://creativecommons.org/licenses/by/3.0/
+Informações originais incluídas em LICENCA-ORIGEM.txt.
+
+Fonte das versões MP3: https://github.com/Tonejs/audio/tree/efd8296360f9526e379bfbe5c1698ff54d6a1d34/salamander
+Revisão fixa: efd8296360f9526e379bfbe5c1698ff54d6a1d34.
+Este laboratório inclui 25 arquivos MP3 da coleção, sem editar os arquivos de áudio.
+Na reprodução: transposição entre amostras próximas, envelope, equalização,
+panorama e compressão aplicados localmente pela Web Audio API.
+Sem afiliação ou endosso do autor. Não é uma implementação completa SFZ,
+não contém todas as camadas de velocidade nem pedal da coleção original.
