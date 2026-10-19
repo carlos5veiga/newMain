@@ -1,69 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutoriais em Música</title>
-    <link rel="shortcut icon" href="./img/IconeTuts.gif" type="image/x-icon">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="newstylesmain.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ferramentas de estudo musical | Carlos Veiga Filho</title>
+  <meta name="description" content="Pratique sua percepção musical com ferramentas gratuitas de solfejo, intervalos e ditado melódico, desenvolvidas por Carlos Veiga Filho.">
+  <meta name="theme-color" content="#192f3b">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Ferramentas de estudo musical | Carlos Veiga Filho">
+  <meta property="og:description" content="Ouça, cante e pratique. Ferramentas gratuitas para desenvolver sua percepção musical, no seu ritmo.">
+  <meta property="og:url" content="https://carlosveigafilho.com.br/ferramentas.html">
+  <link rel="canonical" href="https://carlosveigafilho.com.br/ferramentas.html">
+  <link rel="icon" href="img/IconeTuts.gif">
+  <link rel="stylesheet" href="styles/principal.css">
+  <link rel="stylesheet" href="styles/ferramentas.css">
 </head>
 <body>
-    <header class="cabecalho" id="cabecalho"></header>
-
-    <section class="banner">
-        <h2 class="banner_titulo">Conheça as ferramentas gratuitas</h2>
-        <p class="banner__texto">São diversos apps para você estudar a sua percepção musical.</p>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="wrap navigation">
+      <a class="brand" href="index.html" aria-label="Carlos Veiga Filho — início"><img src="img/principal/logo.png" width="40" height="40" alt="" decoding="async"><span>Carlos Veiga Filho<small>Tutoriais em Música</small></span></a>
+      <nav class="main-nav" aria-label="Menu principal">
+        <a href="tutoriais.html">Tutoriais</a><a href="index.html#cursos">Cursos</a><a href="ferramentas.html" aria-current="page">Ferramentas</a><a href="livros.html">Livros</a><a href="repertorio/index.html">Corais</a>
+        <a class="nav-channel" href="https://www.youtube.com/channel/UCgrta3Ub--dhvK8eeLxNt3g" target="_blank" rel="noopener">Meu canal <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="wrap tools-hero" aria-labelledby="tools-title">
+      <div>
+        <p class="eyebrow">Ferramentas gratuitas · Percepção musical</p>
+        <h1 id="tools-title">Ouça com atenção.<br><em>Pratique com intenção.</em></h1>
+        <p class="hero-intro">Cante uma melodia, reconheça um intervalo, escreva o que ouviu. Escolha uma ferramenta e faça da prática musical parte do seu dia.</p>
+        <div class="actions"><a class="button" href="#ferramentas">Escolha seu exercício <span aria-hidden="true">↓</span></a><a class="text-link" href="tutoriais.html">Explore as videoaulas <span aria-hidden="true">→</span></a></div>
+      </div>
+      <aside class="practice-note" aria-labelledby="practice-title">
+        <p class="eyebrow">Um momento para estudar</p>
+        <h2 id="practice-title">Comece com calma.<br>Avance no seu ritmo.</h2>
+        <ol class="practice-steps">
+          <li><strong>Escolha um foco</strong><span>Solfejo, intervalos ou ditado melódico.</span></li>
+          <li><strong>Ouça e experimente</strong><span>Cante, compare ou escreva o que escutou.</span></li>
+          <li><strong>Volte ao exercício</strong><span>Repita com atenção e observe suas descobertas.</span></li>
+        </ol>
+      </aside>
     </section>
 
-    <section class="carrossel">
-        <h2 class="carrossel__titulo">Ferramentas</h2>
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-            <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><a target="_blank" href="https://carlosveigafilho.com.br/ferramentas/solfejos/treino01.html"><img src="./img/FerramentaSolfejo.jpg" alt="imagem dda ferramenta solfejo"></a></div>
-            <div class="swiper-slide"><a target="_blank" href="https://carlosveigafilho.com.br/ferramentas/intervalos/"><img src="./img/FerramentaCentralIntervalos.jpg" alt="imagem da ferramenta intervalos"></a></div>
-            <div class="swiper-slide"><a target="_blank" href="https://carlosveigafilho.com.br/ferramentas/ditados/melodicos/treino01.html"><img src="./img/FerramentaDitadoMelodico.jpg" alt="imagem da ferramenta ditado melódico"></a></div>
-            </div>
-            
-            <!-- If we need navigation buttons 
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>   -->
-
+    <section class="study-section" id="ferramentas" aria-labelledby="catalog-title">
+      <div class="wrap section">
+        <div class="section-heading"><div><p class="eyebrow">Escolha por onde começar</p><h2 id="catalog-title">Três caminhos para treinar seu ouvido.</h2></div><p>Acesso gratuito.<br>Pratique no seu ritmo.</p></div>
+        <div class="resource-grid tools-list">
+          <article class="resource-card">
+            <img src="img/FerramentaSolfejo.jpg" alt="Prévia da ferramenta de treino de solfejo" loading="lazy" decoding="async">
+            <div><p class="eyebrow">01 / Leitura e canto</p><h3>Treino de solfejo</h3><p>Pratique a leitura musical e o canto com os exercícios de solfejo. Comece pelo primeiro treino e siga a sequência.</p><a class="card-link" href="ferramentas/solfejos/treino01.html">Praticar solfejo <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="resource-card">
+            <img src="img/FerramentaCentralIntervalos.jpg" alt="Prévia da ferramenta de intervalos musicais" loading="lazy" decoding="async">
+            <div><p class="eyebrow">02 / Relações entre notas</p><h3>Intervalos musicais</h3><p>Explore as distâncias entre as notas. Escolha um intervalo na central e pratique sua percepção dessas relações.</p><a class="card-link" href="ferramentas/intervalos/index.html">Praticar intervalos <span aria-hidden="true">→</span></a></div>
+          </article>
+          <article class="resource-card">
+            <img src="img/FerramentaDitadoMelodico.jpg" alt="Prévia da ferramenta de ditado melódico" loading="lazy" decoding="async">
+            <div><p class="eyebrow">03 / Escuta e escrita</p><h3>Ditado melódico</h3><p>Ouça a melodia, tente registrá-la e confira a resposta. Relacione o que você escuta com a escrita na partitura.</p><a class="card-link" href="ferramentas/ditados/melodicos/treino01.html">Praticar ditado <span aria-hidden="true">→</span></a></div>
+          </article>
         </div>
-
-        <div class="card" id="div-card-livroAnHarm"></div>
-
+      </div>
     </section>
 
-    <section class="topicos" id="secao-playlists"></section>
-
-    <footer class="rodape" id="rodape"></footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            spaceBetween: 10,
-            slidesPerView: 3,
-            pagination: {
-                el: ".swiper-pagination",
-                type: "bullets"
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            }
-        });
-    </script>
-    <script src="./jsnewmain/elementosMain.js"></script>
+    <section class="wrap section book-section" aria-labelledby="book-title">
+      <div class="book-art"><img src="img/principal/livro.jpg" width="480" height="623" alt="Capa da edição em português de Análise Harmônica para Estudantes de Música" loading="lazy" decoding="async"></div>
+      <div class="book-copy">
+        <p class="eyebrow">Para aprofundar seus estudos</p>
+        <h2 id="book-title">Da escuta à compreensão.<br><em>Conheça o livro.</em></h2>
+        <p><strong>Análise Harmônica para Estudantes de Música</strong> reúne explicações, exemplos e exercícios para estudar acordes, funções harmônicas, cadências e frases.</p>
+        <p>O livro também tem uma edição em inglês: <strong lang="en">Harmonic Analysis for Music Students</strong>.</p>
+        <div class="actions"><a class="button" href="livros.html">Conheça o livro e leia uma amostra <span aria-hidden="true">→</span></a></div>
+        <div class="small-links book-editions"><a href="livros.html#comprar">Comprar livro em português →</a><a href="https://www.amazon.com/dp/B0CW1R7841" target="_blank" rel="noopener">Comprar livro em inglês ↗</a></div>
+      </div>
+    </section>
+    <section class="wrap playlist-section" aria-labelledby="playlist-title"><div><p class="eyebrow">Continue no YouTube</p><h2 id="playlist-title">Uma playlist. Muitas descobertas.</h2></div><div class="playlist-links"><a href="https://www.youtube.com/playlist?list=PLPPAfvKjYPk2k7d1KcoGJxPVotCPQuCYb" target="_blank" rel="noopener">Minicurso Solfejo <span aria-hidden="true">↗</span></a><a href="https://www.youtube.com/playlist?list=PLPPAfvKjYPk0sxktVnfbIcs2LPiFBTQFw" target="_blank" rel="noopener">Estudando Música <span aria-hidden="true">↗</span></a><a href="https://www.youtube.com/playlist?list=PLPPAfvKjYPk2XlppJArrQSWMf2cenDLxi" target="_blank" rel="noopener">Música e Metrônomo <span aria-hidden="true">↗</span></a><a href="https://www.youtube.com/playlist?list=PLPPAfvKjYPk0s3tSiLsMydzLy-lrBqzIh" target="_blank" rel="noopener">Harmonia na Prática <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-content"><a class="footer-brand" href="index.html">Carlos Veiga Filho<small>Tutoriais em Música</small></a><p>© 2010–<span id="year">2026</span> Carlos Veiga Filho</p><a href="#conteudo">Voltar ao início ↑</a></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

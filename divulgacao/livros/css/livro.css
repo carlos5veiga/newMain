@@ -51,3 +51,19 @@ h2 { font-size:clamp(30px,3.2vw,42px); line-height:1.18; letter-spacing:-.025em;
 @media(max-width:900px){ .hero { gap:32px; }.book-stage { padding:28px; }.reader-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); }.nav { flex-wrap:wrap; padding-block:16px; gap:12px; }.sample-section { padding:30px; } }
 @media(max-width:620px){ .wrap { width:calc(100% - 32px); }.hero { grid-template-columns:minmax(0,1fr); padding-block:36px; gap:36px; }.book-stage { max-width:340px; width:100%; margin:auto; }.book-cover { max-width:220px; }.nav-links { gap:6px 18px; }.benefit-strip,.topics,.sample-grid,.buy-grid,.video-grid,.author-note { grid-template-columns:minmax(0,1fr); }.benefit-strip { gap:16px; }.section { padding-block:40px; }.sample-section { padding:26px 20px; }.sample-grid { gap:12px; }.sample-card { padding:18px; }.buy-card { padding:24px; }.reader-gallery img { height:190px; }.closing { flex-direction:column; align-items:flex-start; padding:26px; }.author-note { gap:18px; }.actions .button { width:100%; } }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Language navigation shared by the Portuguese and English book pages. */
+.nav-links { margin-left:auto; }
+.language-switch { display:flex; align-items:center; gap:8px; flex-shrink:0; font-size:13px; }
+.language-switch a { padding:10px 2px; text-decoration:none; }
+.language-switch a[aria-current="page"] { color:var(--wine); font-weight:700; text-decoration:underline; }
+.language-switch a:hover { color:var(--wine); }
+.original-title { color:var(--muted); font-style:italic; font-size:14px; margin-top:-8px; }
+.language-note { padding:16px 20px; border-left:3px solid var(--wine); background:var(--sand); color:var(--ink); font-size:14px; }
+@media(max-width:1100px){ .nav { flex-wrap:wrap; padding-block:16px; gap:12px 24px; }.language-switch { margin-left:auto; } }
+@media(max-width:620px){ .nav-links { order:3; width:100%; margin-left:0; }.language-switch { gap:6px; } }
+
+.buy-card.english-edition { grid-column:1 / -1; scroll-margin-top:24px; }
+
+.language-label { font-size:11px; color:var(--muted); }
+#portuguese-edition { scroll-margin-top:24px; }

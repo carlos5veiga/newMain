@@ -1,0 +1,20 @@
+/* Page-specific additions to the shared home-page layout. */
+.main-nav a[aria-current="page"] { color:var(--accent); font-weight:700; text-decoration:underline; text-underline-offset:6px; }
+.tools-hero { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); align-items:center; gap:64px; padding-block:64px; }
+.tools-hero .hero-intro { max-width:560px; }
+.practice-note { padding:32px; background:var(--sand); border:1px solid var(--line); border-radius:10px; }
+.practice-note h2 { font-size:clamp(28px,2.7vw,36px); }
+.practice-steps { list-style:none; counter-reset:practice; padding:0; margin:26px 0 0; }
+.practice-steps li { counter-increment:practice; position:relative; padding:18px 0 18px 42px; border-top:1px solid #d2cbbc; }
+.practice-steps li:last-child { padding-bottom:0; }
+.practice-steps li::before { content:"0" counter(practice); position:absolute; left:0; top:18px; color:var(--accent); font-size:12px; font-weight:700; }
+.practice-steps strong { display:block; font-size:14px; }
+.practice-steps span { display:block; color:var(--muted); font-size:13px; }
+#ferramentas { scroll-margin-top:24px; }
+.tools-list .resource-card { flex-direction:column; }
+.tools-list .resource-card > img { width:100%; height:200px; min-height:0; object-fit:contain; padding:20px; background:var(--white); border-bottom:1px solid var(--line); }
+.tools-list .card-link { border-top:1px solid var(--line); padding-top:16px; }
+.book-editions { margin-top:14px; }
+@media(max-width:1050px){ .tools-hero { gap:32px; } }
+@media(max-width:760px){ .tools-hero { grid-template-columns:minmax(0,1fr); padding-block:38px; gap:30px; }.practice-note { padding:26px; }.tools-list .resource-card { flex-direction:row; }.tools-list .resource-card > img { width:34%; height:auto; border-bottom:0; border-right:1px solid var(--line); padding:14px; } }
+@media(max-width:480px){ .tools-list .resource-card { flex-direction:column; }.tools-list .resource-card > img { width:100%; height:200px; border-right:0; border-bottom:1px solid var(--line); }.practice-note { padding:24px; } }
