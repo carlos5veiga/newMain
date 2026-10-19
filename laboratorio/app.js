@@ -1,7 +1,12 @@
 /* Laboratório independente: leitura local, sem uploads ou alteração do original. */
 (() => {
   'use strict';
+  // Resolve the published score beside app.js, independently of the page URL,
+  // a hosting alias, query string or the phone's local file picker.
+  const APP_BASE = new URL('./', document.currentScript?.src || location.href);
   const $ = id => document.getElementById(id);
+  // Use the same breakpoint as the compact layout; preserve manual zoom on resize.
+  const defaultZoom = () => window.matchMedia('(max-width: 600px)').matches ? 60 : 80;
   const children = (node, name) => Array.from(node?.children || []).filter(el => el.localName === name);
   const child = (node, name) => children(node, name)[0];
   const value = (node, name, fallback = '') => child(node, name)?.textContent.trim() ?? fallback;
@@ -96,6 +101,21 @@
     const entry = path && archive.file(path);
     if (!entry) throw new Error('Partitura indicada no manifesto MXL não encontrada.');
     return entry.async('string');
+  }
+
+  async function readPublishedScore() {
+    const failures = [];
+    for (const filename of ['solfejo01.mxl', 'solfejo01.xml', 'solfejo01.musicxml']) {
+      const url = new URL(filename, APP_BASE).href;
+      try {
+        const response = await fetch(url, { cache: 'no-store' });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const blob = await response.blob();
+        const xml = await readScore(blob, filename);
+        return { xml, score: extractScore(parseXML(xml)), filename };
+      } catch (error) { failures.push(`${url}: ${error.message}`); }
+    }
+    throw new Error(`Arquivo ausente ou bloqueado na hospedagem. Envie solfejo01.xml para ${APP_BASE.href} (junto de index.html). O MXL original também pode ser usado. Não é necessário escolher um arquivo do celular. ${failures.join(' | ')}`);
   }
 
   function keyLabel(key) {
@@ -249,7 +269,7 @@
         timbre: $('timbre').value, brightness: Number($('brightness').value), volume: Number($('masterVolume').value)
       }), message => { if (this.preparingToken === this.token) $('playing').textContent = message; });
       await this.context.resume();
-      if (this.context.state !== 'running') throw new Error('O navegador bloqueou o áudio. Clique novamente em Reproduzir.');
+      if (this.context.state !== 'running') throw new Error('O navegador bloqueou o áudio. Clique novamente em Play.');
     }
     stop(natural = false) {
       this.token++; clearInterval(this.timer);
@@ -258,7 +278,7 @@
         for (const voice of this.nodes) voice.stop();
         this.nodes.clear();
       }
-      $('stop').disabled = true; $('play').textContent = 'Reproduzir';
+      $('stop').disabled = true; $('play').textContent = 'Play';
       state.scoreCursor?.hide();
       $('playing').textContent = 'Reprodução parada';
       for (const id of state.highlighted) state.rows.get(id)?.classList.remove('active');
@@ -309,7 +329,7 @@
       this.engine.update();
       const origin = this.context.currentTime + .08;
       let next = 0;
-      $('stop').disabled = false; $('play').textContent = 'Recomeçar';
+      $('stop').disabled = false; $('play').textContent = 'Play';
       const tick = () => {
         if (token !== this.token) return;
         const now = this.context.currentTime;
@@ -336,34 +356,12 @@
   }
   const player = new Player();
   function status(message, error = false) { $('status').textContent = message; $('status').classList.toggle('error', error); }
-  function row(values) {
-    const tr = document.createElement('tr');
-    for (const value of values) { const td = document.createElement('td'); td.textContent = value; tr.append(td); }
-    return tr;
-  }
   function selectedTrack() { return state.score?.tracks.get($('track').value); }
   function showTrack() {
-    player.stop(); state.rows.clear(); $('notes').replaceChildren(); $('measures').replaceChildren(); $('harmonies').replaceChildren();
+    player.stop();
     const track = selectedTrack(); if (!track) return;
     const part = state.score.parts.find(p => p.id === track.part);
     const harmonies = harmonyTimeline(part, track.staff);
-    const warnings = harmonies.filter(h => h.warning);
-    $('harmonyInfo').textContent = harmonies.length ? `${harmonies.length} cifras encontradas. Acordes sustentados até a próxima cifra, com baixo indicado e timbre de acompanhamento selecionável.${warnings.length ? ` ${warnings.length} cifra(s) não serão sintetizadas; veja a tabela.` : ''}` : 'Nenhuma cifra codificada encontrada nesta parte e pauta. A harmonia não é deduzida da melodia.';
-    for (const h of harmonies) $('harmonies').append(row([h.measure, fmt(h.offset + 1), h.label, fmt(h.duration), h.warning || (h.pitches.length ? 'Disponível' : 'Sem acorde')]));
-    $('summary').textContent = `${state.score.title} · ${part.measures.length} compassos · ${track.events.filter(e => !e.rest).length} notas · ${track.events.filter(e => e.rest).length} pausas · ${fmt(part.duration)} semínimas`;
-    for (const measure of part.measures) {
-      const tr = row([measure.number, measure.time, measure.key, fmt(measure.duration)]);
-      if (measure.changes.length > 1) tr.title = `Alterações internas: ${measure.changes.join(' → ')}`;
-      $('measures').append(tr);
-    }
-    for (const [i, event] of track.events.entries()) {
-      const tr = row([i + 1, event.measure, event.label, event.frequency ? fmt(event.frequency) : '—', event.figure, fmt(event.duration)]);
-      const td = document.createElement('td'), button = document.createElement('button');
-      button.type = 'button'; button.textContent = 'Ouvir'; button.disabled = event.rest || event.grace || event.midi === null;
-      button.setAttribute('aria-label', `Ouvir ${event.label}, compasso ${event.measure}, nota ${i + 1}`);
-      button.addEventListener('click', () => player.play([{ ...event, start: 0 }], event.duration, true, event.start).catch(audioError));
-      td.append(button); tr.append(td); $('notes').append(tr); state.rows.set(event.id, tr);
-    }
     const hasMelody = track.events.some(e => !e.rest && !e.grace && e.midi !== null);
     const hasHarmony = harmonies.some(h => h.pitches.length && h.duration > 0);
     $('play').disabled = $('playbackMode').value === 'harmony' ? !hasHarmony : $('playbackMode').value === 'melody' ? !hasMelody : !hasMelody && !hasHarmony;
@@ -380,20 +378,11 @@
     const generation = ++state.generation;
     player.stop(); state.busy = true; state.score = null; state.osmd = null; state.scoreCursor = null;
     for (const id of ['play', 'track', 'zoom', 'zoomMinus', 'zoomPlus', 'resetZoom']) $(id).disabled = true;
-    for (const id of ['notes', 'measures', 'harmonies', 'track', 'score']) $(id).replaceChildren();
-    $('harmonyInfo').textContent = 'Aguardando arquivo.';
-    state.rows.clear(); $('summary').textContent = 'Aguardando arquivo.'; status('Lendo a partitura…');
+    for (const id of ['track', 'score']) $(id).replaceChildren();
+    state.rows.clear(); status(file ? 'Lendo o arquivo selecionado…' : 'Carregando automaticamente a partitura desta página…');
     try {
-      let blob = file, filename = file?.name;
-      if (!file) {
-        for (const name of ['solfejo01.mxl', 'solfejo01.musicxml']) {
-          const response = await fetch(name, { cache: 'no-store' });
-          if (response.ok) { blob = await response.blob(); filename = name; break; }
-          if (response.status !== 404) throw new Error(`Falha HTTP ${response.status} ao buscar ${name}.`);
-        }
-        if (!blob) throw new Error('Arquivo ausente. Coloque solfejo01.mxl ou solfejo01.musicxml na pasta laboratorio, ou use Abrir arquivo.');
-      }
-      const xml = await readScore(blob, filename), score = extractScore(parseXML(xml));
+      const source = file ? { xml: await readScore(file, file.name), filename: file.name } : await readPublishedScore();
+      const { xml, filename } = source, score = source.score || extractScore(parseXML(xml));
       if (generation !== state.generation) return;
       state.score = score;
       for (const track of score.tracks.values()) { const option = document.createElement('option'); option.value = track.id; option.textContent = track.label; $('track').append(option); }
@@ -409,20 +398,18 @@
       renderer.Zoom = Number($('zoom').value) / 100; renderer.render();
       state.scoreCursor = new ScoreCursor(renderer);
       for (const id of ['zoom', 'zoomMinus', 'zoomPlus', 'resetZoom']) $(id).disabled = false;
-      status(`${filename} carregado. Original preservado. Andamento inicial: ${fmt(score.tempo)} BPM; reprodução manual entre 30 e 240 BPM.`);
+      status('');
     } catch (error) {
       if (generation !== state.generation) return;
       const hint = location.protocol === 'file:' ? ' Abra por um servidor HTTP estático ou use Abrir arquivo.' : '';
       status(`Não foi possível carregar ou renderizar a partitura: ${error.message}${hint}`, true);
     } finally { if (generation === state.generation) state.busy = false; }
   }
-  $('file').addEventListener('change', event => { const file = event.target.files[0]; if (file) load(file); event.target.value = ''; });
-  $('reload').addEventListener('click', () => load());
   $('track').addEventListener('change', showTrack);
   $('zoom').addEventListener('input', zoom);
   $('zoomMinus').addEventListener('click', () => { $('zoom').value = Math.max(50, Number($('zoom').value) - 10); zoom(); });
   $('zoomPlus').addEventListener('click', () => { $('zoom').value = Math.min(200, Number($('zoom').value) + 10); zoom(); });
-  $('resetZoom').addEventListener('click', () => { $('zoom').value = 100; zoom(); });
+  $('resetZoom').addEventListener('click', () => { $('zoom').value = defaultZoom(); zoom(); });
   $('tempo').addEventListener('input', () => { player.stop(); $('tempoOut').textContent = `${$('tempo').value} BPM`; });
   $('timbre').addEventListener('change', () => player.stop());
   $('harmonyTimbre').addEventListener('change', () => player.stop());
@@ -439,5 +426,7 @@
   window.addEventListener('pagehide', () => player.stop());
   window.addEventListener('lab:before-update', () => player.stop());
   document.addEventListener('visibilitychange', () => { if (document.hidden) player.stop(); });
+  $('zoom').value = defaultZoom();
+  $('zoomOut').textContent = `${$('zoom').value}%`;
   load();
 })();

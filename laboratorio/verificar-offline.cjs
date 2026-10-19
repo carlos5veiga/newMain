@@ -39,7 +39,7 @@ async function fetchAsset(url) {
   if (!fs.existsSync(file)) return new Response('Ausente', { status: 404 });
   return new Response(fs.readFileSync(file));
 }
-vm.runInNewContext(fs.readFileSync(path.join(__dirname, 'sw.js'), 'utf8'), { self, caches, URL, Response, AbortController, setTimeout, clearTimeout, fetch: fetchAsset });
+vm.runInNewContext(fs.readFileSync(path.join(__dirname, 'sw.js'), 'utf8'), { self, caches, URL, Response, TextDecoder, AbortController, setTimeout, clearTimeout, fetch: fetchAsset });
 async function lifecycle(type) { let task; handlers.get(type)({ waitUntil: promise => { task = promise; } }); await task; }
 async function message(type) {
   let task, reply;
@@ -83,8 +83,12 @@ async function resource(relative, method = 'GET', verify = false) {
   await message('LAB_ACTIVATE_UPDATE'); assert(skipped);
   const oldName = [...stores.keys()].find(name => name.startsWith('musicxml-lab:/laboratorio/:'));
   const nextSource = fs.readFileSync(path.join(__dirname, 'sw.js'), 'utf8').replace(/const VERSION = '[^']+';/, "const VERSION = 'test-upgrade';");
-  vm.runInNewContext(nextSource, { self, caches, URL, Response, AbortController, setTimeout, clearTimeout, fetch: fetchAsset });
+  vm.runInNewContext(nextSource, { self, caches, URL, Response, TextDecoder, AbortController, setTimeout, clearTimeout, fetch: fetchAsset });
+  failPath = 'solfejo01.mxl';
   await lifecycle('install');
+  const upgraded = await caches.open('musicxml-lab:/laboratorio/:test-upgrade');
+  assert(await upgraded.match(new URL('solfejo01.xml', BASE).href), 'MXL bloqueado deve salvar a cópia XML para leitura offline');
+  failPath = '';
   assert((await message('LAB_OFFLINE_STATUS')).ready, 'Atualização deve preservar as 25 amostras já salvas');
   await lifecycle('activate');
   assert(!stores.has(oldName)); assert(stores.has('other-application-cache'));

@@ -1,8 +1,8 @@
 /* Controle de disponibilidade e atualização, sem interferir no restante do site. */
 (() => {
   'use strict';
-  const status = document.getElementById('offlineStatus');
-  const prepare = document.getElementById('prepareOffline');
+  const status = document.getElementById('offlineStatus') || document.createElement('p');
+  const prepare = document.getElementById('prepareOffline') || document.createElement('button');
   const update = document.getElementById('updateApp');
   let registration, busy = false, hadController = !!navigator.serviceWorker?.controller;
   const render = result => {

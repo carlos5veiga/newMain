@@ -22,7 +22,7 @@ function element() {
     assert.equal(redirect.status, 308); assert.equal(redirect.headers.get('location'), '/laboratorio/');
     for (const mount of ['/', '/laboratorio/']) {
       const base = `http://127.0.0.1:${port}${mount}`;
-      for (const page of ['index.html', 'verificar.html']) {
+      for (const page of ['index.html', 'verificar.html', 'recuperar-cache.html']) {
         const html = await (await fetch(base + page)).text();
         for (const match of html.matchAll(/(?:src|href)="([^"]+)"/g)) {
           const url = new URL(match[1], base);

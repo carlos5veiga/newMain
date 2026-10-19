@@ -68,8 +68,11 @@
     }));
     try { totalBytes += await inspect('solfejo01.mxl', 'mxl'); line('fileChecks', true, 'solfejo01.mxl'); }
     catch {
-      try { totalBytes += await inspect('solfejo01.musicxml', 'xml'); line('fileChecks', true, 'solfejo01.musicxml'); }
-      catch { errors++; line('fileChecks', false, 'Nenhuma partitura padrão válida. Envie solfejo01.mxl ou solfejo01.musicxml.'); }
+      let found = false;
+      for (const file of ['solfejo01.xml', 'solfejo01.musicxml']) {
+        try { totalBytes += await inspect(file, 'xml'); line('fileChecks', true, file); found = true; break; } catch { /* Try the next supported extension. */ }
+      }
+      if (!found) { errors++; line('fileChecks', false, 'Nenhuma partitura padrão válida. Envie solfejo01.xml para a mesma pasta de index.html.'); }
     }
     $('fileResult').textContent = errors ? `${errors} problema(s) encontrados. Confira os arquivos indicados. Se estiver sem rede, execute a verificação novamente com conexão.` : `Arquivos conferidos diretamente no servidor: ${(totalBytes / 1000000).toFixed(2).replace('.', ',')} MB. Agora teste o piano e o modo offline.`;
     $('checkFiles').disabled = false;

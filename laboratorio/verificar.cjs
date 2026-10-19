@@ -52,12 +52,18 @@ class TestEngine {
     return { stop() {} };
   }
 }
-const context = vm.createContext({ console, JSZip, Blob, fetch, setTimeout, clearTimeout, setInterval: callback => { intervalTick = callback; return 1; }, clearInterval() {},
-  document: { getElementById: id => elements[id], createElement: element, addEventListener() {} },
-  window: { AudioContext, JSZip, LabAudio: { Engine: TestEngine }, addEventListener() {} }, location: { protocol: 'http:' },
+const context = vm.createContext({ console, URL, JSZip, Blob, fetch, setTimeout, clearTimeout, setInterval: callback => { intervalTick = callback; return 1; }, clearInterval() {},
+  document: { currentScript: { src: 'https://carlosveigafilho.com.br/laboratorio/app.js' }, getElementById: id => elements[id], createElement: element, addEventListener() {} },
+  window: { AudioContext, JSZip, LabAudio: { Engine: TestEngine }, matchMedia: () => ({ matches: false }), addEventListener() {} }, location: { protocol: 'https:', href: 'https://carlosveigafilho.com.br/outro-endereco?teste=1' },
   DOMParser: class { parseFromString(text) { return parse(text); } } });
 const source = fs.readFileSync(path.join(root, 'app.js'), 'utf8').replace(/\n  load\(\);\n\}\)\(\);\s*$/, '\n  globalThis.testAPI = { extractScore, parseXML, readScore, readHarmony, harmonyTimeline, Player, ScoreCursor, load, state };\n})();');
 assert(source.includes('globalThis.testAPI'), 'Ponto de entrada do teste não encontrado');
+vm.runInContext(source, context);
+assert.equal(elements.zoom.value, 80, 'Zoom inicial no desktop');
+context.window.matchMedia = () => ({ matches: true });
+vm.runInContext(source, context);
+assert.equal(elements.zoom.value, 60, 'Zoom inicial no celular');
+context.window.matchMedia = () => ({ matches: false });
 vm.runInContext(source, context);
 const { extractScore, parseXML, readScore, readHarmony, harmonyTimeline, Player, ScoreCursor, state } = context.testAPI;
 const scoreXML = body => `<score-partwise version="4.0"><part-list><score-part id="P1"><part-name>Teste</part-name></score-part></part-list><part id="P1">${body}</part></score-partwise>`;
@@ -101,6 +107,8 @@ const note = (pitch, duration, extra = '') => `<note>${pitch ? `<pitch><step>${p
   assert.deepEqual(Array.from(harmonyTimeline(harmonyPart, '1'), h => h.duration), [1.5, .5, 2], 'Offsets e N.C. devem delimitar a harmonia');
   assert.equal(harmonyTimeline(harmonyPart, '2').length, 2, 'Cifras de outra pauta não devem tocar');
   assert.equal(await readScore(new Blob([xml]), 'solfejo01.musicxml'), xml);
+  assert.deepEqual(fs.readFileSync(path.join(root, 'solfejo01.musicxml')), Buffer.from(xml), 'XML alternativo deve ser idêntico ao XML interno do MXL');
+  assert.deepEqual(fs.readFileSync(path.join(root, 'solfejo01.xml')), Buffer.from(xml), 'XML de extensão padrão deve ser idêntico ao original');
   const synthetic = extractScore(parseXML(scoreXML(`<measure number="0"><attributes><divisions>6</divisions><key><fifths>2</fifths><mode>major</mode></key><time><beats>6</beats><beat-type>8</beat-type></time><transpose><chromatic>-2</chromatic><octave-change>-1</octave-change></transpose></attributes>${note(['F', 1, 5], 9, '<type>quarter</type><dot/><tie type="start"/>')}${note(['A', -1, 5], 9, '<chord/>')}${note(null, 3)}<backup><duration>12</duration></backup>${note(['C', 0, 4], 12, '<voice>2</voice>')}</measure><measure number="1"><attributes><divisions>3</divisions><time><beats>3</beats><beat-type>4</beat-type></time><key><fifths>-2</fifths><mode>minor</mode></key></attributes>${note(['F', 0, 4], 1, '<time-modification><actual-notes>3</actual-notes><normal-notes>2</normal-notes></time-modification>')}<forward><duration>3</duration></forward>${note(['C', 2, 6], 3)}</measure>`)));
   const events = [...synthetic.tracks.values()][0].events;
   assert.equal(events[0].midi, 64); // F#5 transposed down 14 semitones.
@@ -129,15 +137,25 @@ const note = (pitch, duration, extra = '') => `<note>${pitch ? `<pitch><step>${p
   context.opensheetmusicdisplay = context.window.opensheetmusicdisplay = {
     OpenSheetMusicDisplay: class { async load(text) { assert.equal(text, xml); } render() { renders++; } }
   };
-  context.fetch = async name => name.endsWith('.mxl') ? { ok: false, status: 404 } : { ok: true, blob: async () => new Blob([xml]) };
+  let scoreRequests = [];
+  context.fetch = async name => {
+    scoreRequests.push(name);
+    assert(name.startsWith('https://carlosveigafilho.com.br/laboratorio/'), 'Partitura deve vir da pasta publicada, não do endereço alternativo da página');
+    return name.endsWith('.mxl') ? { ok: false, status: 403 } : { ok: true, blob: async () => new Blob([xml]) };
+  };
   await context.testAPI.load();
-  assert(elements.status.textContent.includes('solfejo01.musicxml carregado'));
-  assert.equal(elements.notes.children.length, 39);
-  assert.equal(elements.measures.children.length, 9);
-  assert.equal(elements.harmonies.children.length, 11);
+  assert.equal(elements.status.textContent, '');
+  assert.equal(elements.zoom.value, 80);
   assert.equal(elements.play.disabled, false);
   assert.equal(renders, 1);
   assert.equal(audioContexts, 0, 'Carregar partitura não pode iniciar áudio');
+  assert.deepEqual(scoreRequests, ['https://carlosveigafilho.com.br/laboratorio/solfejo01.mxl', 'https://carlosveigafilho.com.br/laboratorio/solfejo01.xml']);
+  context.fetch = async name => ({ ok: true, blob: async () => new Blob([name.endsWith('.mxl') ? '<html>Fallback indevido da hospedagem</html>' : xml]) });
+  await context.testAPI.load();
+  assert.equal(elements.status.textContent, '', 'MXL devolvido como HTML deve usar o XML alternativo');
+  context.fetch = async name => name.endsWith('.musicxml') ? { ok: true, blob: async () => new Blob([xml]) } : { ok: false, status: 404 };
+  await context.testAPI.load();
+  assert.equal(elements.status.textContent, '', 'A extensão MusicXML também continua aceita');
   const p = new Player();
   const base = { id: 1, midi: 69, frequency: 440, start: 0, duration: 1, label: 'Lá4', measure: '1' };
   await p.play([ { ...base, tieStart: true }, { ...base, start: 1, tieStop: true } ], 2);

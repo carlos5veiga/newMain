@@ -29,13 +29,25 @@ PUBLICAR E TESTAR O LABORATÓRIO
 O QUE ENVIAR
 
 Arquivos de execução: index.html, style.css, app.js, audio.js, offline.js,
-sw.js, verificar.html, diagnostico.js, a partitura solfejo01.mxl (ou
-solfejo01.musicxml), a pasta vendor inteira e a pasta audio inteira.
+sw.js, verificar.html, diagnostico.js, a partitura solfejo01.mxl e sua cópia
+solfejo01.xml, solfejo01.musicxml, a pasta vendor inteira e a pasta audio inteira.
 Preserve os créditos e as licenças distribuídos nessas pastas.
 
 Pode enviar a pasta inteira. Os arquivos verificar*.cjs, servidor.cjs e
 PUBLICAR.txt são auxiliares locais e não precisam estar na hospedagem.
 O MusicXML original deve ser enviado sem edição.
+Envie também recuperar-cache.html e recuperar-cache.js. Se um celular continuar
+mostrando uma versão antiga, abra /laboratorio/recuperar-cache.html e toque em
+Renovar arquivos e abrir laboratório. Essa recuperação preserva as amostras
+de piano e só renova os arquivos do aplicativo dentro do cache do laboratório.
+Esses dois arquivos ficam fora do pacote offline para chegar sempre do servidor.
+A aplicação busca a partitura automaticamente ao abrir a página. O celular
+não precisa ter o arquivo localmente. As cópias solfejo01.xml e solfejo01.musicxml foram extraídas
+do MXL original e serve de alternativa em hospedagens que bloqueiam .mxl.
+Se trocar a partitura futuramente, atualize as cópias juntas.
+Se /laboratorio/solfejo01.mxl, /laboratorio/solfejo01.xml e /laboratorio/solfejo01.musicxml retornarem
+404, os arquivos não foram publicados no caminho esperado: envie-os para
+a mesma pasta que contém app.js e index.html.
 
 REQUISITOS DA HOSPEDAGEM
 

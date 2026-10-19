@@ -1,7 +1,7 @@
 /* Cache exclusivo do laboratório. Incremente VERSION quando publicar arquivos
    novos; uma versão instalada só substitui a atual após ação do usuário. */
 'use strict';
-const VERSION = '2026-10-19-2';
+const VERSION = '2026-10-19-7';
 const BASE = self.registration.scope;
 const PREFIX = `musicxml-lab:${new URL(BASE).pathname}:`;
 const CACHE = PREFIX + VERSION;
@@ -12,7 +12,7 @@ const CORE = ['index.html', 'style.css', 'audio.js', 'app.js', 'offline.js', 've
 const PIANO = [];
 for (let octave = 1; octave <= 6; octave++) for (const note of ['C', 'Ds', 'Fs', 'A']) PIANO.push(`audio/piano/${note}${octave}.mp3`);
 PIANO.push('audio/piano/C7.mp3');
-const SCORES = ['solfejo01.mxl', 'solfejo01.musicxml'];
+const SCORES = ['solfejo01.mxl', 'solfejo01.xml', 'solfejo01.musicxml'];
 const allowed = new Set([...CORE, ...PIANO, ...SCORES].map(path => new URL(path, BASE).href));
 let preparing = null;
 
@@ -23,6 +23,12 @@ async function download(cache, path, timeout = 20000) {
   try {
     const response = await fetch(url, { cache: 'reload', signal: controller.signal });
     if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
+    const score = SCORES.find(name => new URL(name, BASE).href === url);
+    if (score) {
+      const bytes = new Uint8Array(await response.clone().arrayBuffer());
+      const valid = score.endsWith('.mxl') ? bytes[0] === 80 && bytes[1] === 75 : /<(?:[\w-]+:)?score-partwise[\s>]/.test(new TextDecoder().decode(bytes));
+      if (!valid) throw new Error(`${score}: o servidor não entregou uma partitura válida.`);
+    }
     await cache.put(url, response.clone());
     return response;
   } finally { clearTimeout(timer); }
