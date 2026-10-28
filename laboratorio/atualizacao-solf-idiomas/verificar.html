@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#104c58">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'">
+  <title>Verificar publicação · Laboratório MusicXML</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="audio.js"></script>
+  <script defer src="diagnostico.js"></script>
+</head>
+<body>
+  <header><div class="wrap"><p class="eyebrow">LABORATÓRIO EXPERIMENTAL</p><h1>Verificação no aparelho</h1><p>Confira a publicação e experimente o piano neste navegador.</p></div></header>
+  <main class="wrap">
+    <p><a href="./">Voltar ao laboratório</a></p>
+    <section class="panel">
+      <h2>Endereço e recursos do navegador</h2>
+      <ul id="capabilities" class="check-list"></ul>
+      <p id="offlineCheck" role="status">Verificando arquivos offline…</p>
+    </section>
+    <section class="panel">
+      <h2>Arquivos da hospedagem</h2>
+      <p>Com conexão, este teste confere os scripts, a partitura e as 25 amostras diretamente no servidor. Pode transferir aproximadamente 3 MB. Não envia dados a serviços externos.</p>
+      <button id="checkFiles" class="primary" type="button">Verificar arquivos publicados</button>
+      <p id="fileResult" class="diagnostic-summary" role="status">Aguardando verificação.</p>
+      <ul id="fileChecks" class="check-list"></ul>
+    </section>
+    <section class="panel">
+      <h2>Teste auditivo</h2>
+      <p>Toque para ouvir um acorde de Dó maior e uma pequena sequência de notas do piano. Confira o volume do aparelho e se a saída é o alto-falante, fone ou Bluetooth esperado.</p>
+      <div class="controls"><button id="testPiano" type="button">Ouvir piano</button><button id="stopPiano" type="button" disabled>Parar som</button></div>
+      <p id="audioResult" role="status">O áudio só começa após o toque.</p>
+    </section>
+    <section class="panel">
+      <h2>Teste de uso offline</h2>
+      <ol>
+        <li>Volte ao laboratório com conexão e toque em Preparar uso offline.</li>
+        <li>Aguarde a indicação de aplicativo, 25 amostras e partitura padrão salvos.</li>
+        <li>Ative o modo avião e desligue também o Wi-Fi.</li>
+        <li>Reabra o mesmo endereço, reproduza a melodia e mude o andamento.</li>
+        <li>Confira os botões em retrato e paisagem, o zoom e a rolagem do cursor.</li>
+      </ol>
+      <p class="muted">Acesso pelo navegador é suficiente; não há instalação obrigatória. O armazenamento pertence a este navegador e endereço. Se o navegador apagar os arquivos, será necessário prepará-los novamente com conexão. Este teste não substitui a conferência visual e sonora no aparelho.</p>
+    </section>
+  </main>
+</body>
+</html>

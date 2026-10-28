@@ -33,7 +33,7 @@ class Context {
   createOscillator() { return this.source('oscillator'); }
 }
 let requests = 0, active = 0, maxActive = 0, fail = false;
-const sandbox = { window: {}, console, fetch: async file => {
+const sandbox = { window: {}, console, AbortController, setTimeout, clearTimeout, fetch: async file => {
   assert(file.startsWith('audio/piano/'), 'O áudio deve ser local');
   requests++; maxActive = Math.max(maxActive, ++active);
   await new Promise(resolve => setImmediate(resolve)); active--;
@@ -42,7 +42,7 @@ const sandbox = { window: {}, console, fetch: async file => {
   return { ok: true, arrayBuffer: async () => bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength) };
 } };
 vm.runInNewContext(fs.readFileSync(path.join(__dirname, 'audio.js'), 'utf8'), sandbox);
-const { Engine, bank, closest } = sandbox.window.LabAudio;
+const { Engine, bank, closest, preload } = sandbox.window.LabAudio;
 (async () => {
   assert.equal(bank.length, 25);
   for (const sample of bank) { const data = fs.readFileSync(path.join(__dirname, sample.file)); assert(data.length > 1000); assert(data.subarray(0, 3).toString() === 'ID3' || data[0] === 255, sample.file); }
@@ -52,6 +52,12 @@ const { Engine, bank, closest } = sandbox.window.LabAudio;
   assert.equal(engine.output.gain.value, 0);
   assert(!ctx.nodes.some(node => node.kind === 'convolver'), 'Não deve existir processamento de ambiência');
   const sounds = bank.map(sample => ({ frequency: 440 * 2 ** ((sample.midi - 69) / 12) }));
+  const progress = [];
+  await Promise.all([preload(sounds, 'piano', (done, total) => progress.push([done, total])), preload(sounds, 'piano')]);
+  assert.equal(requests, 25, 'Pré-carga simultânea deve compartilhar os downloads');
+  assert.equal(engine.samples.size, 0, 'Pré-carga não deve decodificar áudio');
+  assert.equal(ctx.sources.length, 0, 'Pré-carga não deve emitir som');
+  assert.deepEqual(progress.at(-1), [25, 25]);
   await engine.prepare(sounds, 'piano');
   assert.equal(requests, 25); assert(maxActive <= 4);
   await engine.prepare(sounds, 'piano'); assert.equal(requests, 25, 'Reprodução seguinte deve reutilizar buffers');
@@ -78,7 +84,10 @@ const { Engine, bank, closest } = sandbox.window.LabAudio;
   ctx.currentTime = 2.2; engine.silence();
   for (const source of ctx.sources.slice(before)) { assert.equal(source.stopAt, 2.2350000000000003); source.onended(); }
   assert.equal(engine.voices.size, 0, 'Parar deve liberar todas as vozes');
-  const failed = new Engine(new Context(), () => settings); fail = true;
+  // A fresh page has an empty encoded cache, so network failure is observable.
+  const retrySandbox = { ...sandbox, window: {} };
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, 'audio.js'), 'utf8'), retrySandbox);
+  const failed = new retrySandbox.window.LabAudio.Engine(new Context(), () => settings); fail = true;
   await assert.rejects(() => failed.prepare([sounds[0]], 'piano'), /HTTP 404/);
   assert.equal(failed.pending.size, 0); fail = false;
   await failed.prepare([sounds[0]], 'piano'); assert.equal(failed.samples.size, 1, 'Falha deve permitir nova tentativa');

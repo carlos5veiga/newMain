@@ -1,0 +1,64 @@
+ORGANIZAÇÃO DOS SOLFEJOS
+
+Agrupe os arquivos em blocos de dez, mantendo três dígitos na numeração:
+
+001-010/solfejo001.mxl até solfejo010.mxl
+011-020/solfejo011.mxl até solfejo020.mxl
+021-030/solfejo021.mxl até solfejo030.mxl
+031-040/solfejo031.mxl até solfejo040.mxl
+041-050/solfejo041.mxl até solfejo050.mxl
+051-060/solfejo051.mxl até solfejo060.mxl
+061-070/solfejo061.mxl até solfejo070.mxl
+
+Para continuar além de 70, crie 071-080 e siga o mesmo padrão.
+Os blocos organizam a numeração; não representam níveis de dificuldade.
+Use nomes de arquivo sem espaços, acentos ou letras maiúsculas.
+Exporte do Finale e coloque o MXL original na pasta correspondente.
+Não é necessário descompactar ou editar o conteúdo do MXL.
+
+O solfejo001.mxl é uma cópia exata do solfejo01.mxl já existente na raiz
+do laboratório. Esse arquivo antigo foi preservado e continua sendo lido
+pela aplicação atual. Não remova os arquivos da raiz nesta etapa.
+
+CATÁLOGO
+
+catalogo.json registra os grupos e somente os solfejos já disponíveis.
+O caminho arquivo é relativo à pasta laboratorio/solfejos.
+Ao adicionar solfejo002.mxl em 001-010, acrescente ao array solfejos:
+
+{
+  "id": "solfejo002",
+  "numero": 2,
+  "titulo": "Solfejo 2",
+  "grupo": "001-010",
+  "arquivo": "001-010/solfejo002.mxl"
+}
+
+Separe os objetos com vírgula, sem vírgula depois do último objeto.
+Mantenha id e numero únicos. O título pode conter espaços e acentos.
+Não cadastre arquivos que ainda não foram colocados na pasta.
+Os arquivos .gitkeep apenas preservam as pastas vazias no Git;
+podem ser removidos quando houver partituras nesses blocos.
+
+O aplicativo consulta o catálogo e apresenta os solfejos na ordem numérica,
+no seletor ao lado de Play e Stop. Adicione cada novo arquivo ao catálogo
+para ele aparecer. O nome em arquivo deve coincidir exatamente, inclusive
+maiúsculas e minúsculas, com o nome publicado na hospedagem.
+Os arquivos 002 a 005 foram recebidos com inicial maiúscula e mantidos assim.
+As cópias .xml são extrações do documento principal dos MXL, para hospedagens
+que bloqueiam essa extensão. Preserve os originais e envie também as cópias.
+Envie as subpastas e catalogo.json ao publicar a coleção.
+
+IMPORTADOR LOCAL
+
+Para incluir os próximos lotes, não é preciso editar o catálogo manualmente.
+Coloque os MXL nos blocos correspondentes e execute, na raiz do repositório:
+
+node laboratorio/.agents/skills/importar-solfejos/scripts/importar.cjs
+
+Acrescente --check para conferir sem gravar ou --all para revalidar tudo.
+O importador requer Node e PowerShell no Windows apenas no computador de
+desenvolvimento. Não instala pacotes nem acessa a rede. Ele também aceita
+nomes recebidos com dois dígitos, como Solfejo21.mxl, sem renomear o original.
+Confira o relatório publicar para saber quais arquivos enviar ao site.
+A pasta laboratorio/.agents contém ferramentas locais e não precisa ser enviada.

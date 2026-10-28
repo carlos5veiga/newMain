@@ -1,11 +1,11 @@
 /* Cache exclusivo do laboratório. Incremente VERSION quando publicar arquivos
    novos; uma versão instalada só substitui a atual após ação do usuário. */
 'use strict';
-const VERSION = '2026-10-19-7';
+const VERSION = '2026-10-23-solf-1';
 const BASE = self.registration.scope;
 const PREFIX = `musicxml-lab:${new URL(BASE).pathname}:`;
 const CACHE = PREFIX + VERSION;
-const CORE = ['index.html', 'style.css', 'audio.js', 'app.js', 'offline.js', 'verificar.html', 'diagnostico.js',
+const CORE = ['index.html', 'style.css', 'i18n.js', 'audio.js', 'app.js', 'offline.js', 'verificar.html', 'diagnostico.js', 'solfejos/catalogo.json',
   'vendor/jszip-3.10.1.min.js', 'vendor/opensheetmusicdisplay-1.9.3.min.js',
   'vendor/OSMD-LICENSE.txt', 'vendor/JSZip-LICENSE.txt', 'audio/piano/CREDITOS.txt',
   'audio/piano/LICENCA-ORIGEM.txt', 'audio/piano/REVISAO.txt'];
@@ -23,10 +23,10 @@ async function download(cache, path, timeout = 20000) {
   try {
     const response = await fetch(url, { cache: 'reload', signal: controller.signal });
     if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
-    const score = SCORES.find(name => new URL(name, BASE).href === url);
+    const score = SCORES.find(name => new URL(name, BASE).href === url) || (/\/solfejos\/\d{3}-\d{3}\/[a-z0-9_-]+\.(mxl|xml|musicxml)$/i.test(new URL(url).pathname) ? new URL(url).pathname : null);
     if (score) {
       const bytes = new Uint8Array(await response.clone().arrayBuffer());
-      const valid = score.endsWith('.mxl') ? bytes[0] === 80 && bytes[1] === 75 : /<(?:[\w-]+:)?score-partwise[\s>]/.test(new TextDecoder().decode(bytes));
+      const valid = /\.mxl$/i.test(score) ? bytes[0] === 80 && bytes[1] === 75 : /<(?:[\w-]+:)?score-partwise[\s>]/.test(new TextDecoder().decode(bytes));
       if (!valid) throw new Error(`${score}: o servidor não entregou uma partitura válida.`);
     }
     await cache.put(url, response.clone());
@@ -124,11 +124,13 @@ self.addEventListener('fetch', event => {
   // Navigation fallback is restricted to the laboratory home, never other routes.
   const home = url.href === BASE || url.href === new URL('index.html', BASE).href;
   const key = home ? new URL('index.html', BASE).href : url.href;
-  if (!allowed.has(key)) return;
-  const isScore = SCORES.some(path => new URL(path, BASE).href === key);
+  const collectionPath = key.startsWith(new URL('solfejos/', BASE).href) ? key.slice(new URL('solfejos/', BASE).href.length) : '';
+  const collectionScore = /^\d{3}-\d{3}\/[a-z0-9_-]+\.(mxl|xml|musicxml)$/i.test(collectionPath);
+  if (!allowed.has(key) && !collectionScore) return;
+  const isScore = collectionScore || SCORES.some(path => new URL(path, BASE).href === key);
   event.respondWith((async () => {
     const cache = await caches.open(CACHE);
-    if (isScore) {
+    if (isScore || key === new URL('solfejos/catalogo.json', BASE).href) {
       try { return await download(cache, key, 3000); }
       catch { return (await cache.match(key)) || new Response('Partitura não disponível offline.', { status: 404 }); }
     }

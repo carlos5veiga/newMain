@@ -49,7 +49,7 @@ function element() {
       assert.equal(elements.capabilities.children.length, 6);
       await elements.checkFiles.handlers.click();
       assert(elements.fileResult.textContent.startsWith('Arquivos conferidos diretamente no servidor'), elements.fileResult.textContent);
-      assert.equal(elements.fileChecks.children.length, 41);
+      assert.equal(elements.fileChecks.children.length, 42);
       assert(elements.fileChecks.children.every(item => item.className === 'pass'));
       failure = 'html'; await assert.rejects(() => context.publicationTest.inspect('app.js', 'js'), /HTML/);
       failure = 'mime'; await assert.rejects(() => context.publicationTest.inspect('app.js', 'js'), /Tipo incorreto/);
@@ -57,6 +57,6 @@ function element() {
       assert(worker.headers.get('content-type').includes('javascript')); assert.equal(worker.headers.get('cache-control'), 'no-cache');
       const sample = await fetch(base + 'audio/piano/C4.mp3'); assert.equal(sample.headers.get('content-type'), 'audio/mpeg');
     }
-    console.log('OK publicação: caminhos na raiz e em /laboratorio/; referências HTML; diagnóstico de 41 arquivos com rede real; erro de HTML/MIME; MIME de worker/MP3 e atualização sem cache imutável.');
+    console.log('OK publicação: caminhos na raiz e em /laboratorio/; referências HTML; diagnóstico de 42 arquivos com rede real; erro de HTML/MIME; MIME de worker/MP3 e atualização sem cache imutável.');
   } finally { child.kill(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

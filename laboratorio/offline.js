@@ -31,9 +31,9 @@
     catch (error) { status.textContent = error.message; prepare.disabled = false; }
   }
   function showUpdate() {
-    if (registration.waiting) {
+    if (registration?.waiting) {
       update.hidden = false;
-      update.textContent = 'Nova versão: atualizar laboratório';
+      update.textContent = window.SolfI18n?.t('updateAvailable') || 'Nova versão: atualizar Solf';
     }
   }
   prepare.addEventListener('click', async () => {
@@ -47,6 +47,7 @@
       busy = false; prepare.disabled = false; prepare.textContent = 'Tentar preparar novamente'; status.textContent = error.message;
     }
   });
+  window.addEventListener('solf:languagechange', showUpdate);
   update.addEventListener('click', () => {
     if (!registration?.waiting) return;
     window.dispatchEvent(new Event('lab:before-update'));

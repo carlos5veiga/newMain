@@ -35,16 +35,13 @@ if (cursos) {
             <a class="topicos__link" href="https://tutoriaisemmusica.com.br/scoreplay" target="_blank">Scoreplay</a>
         </li>
         <li class="topicos__item">
-            <a class="topicos__link" href="https://tutoriaisemmusica.com.br/15melodiasparatocar" target="_blank">15 Melodias</a>
+            <a class="topicos__link" href="https://tutoriaisemmusica.com.br/15melodias" target="_blank">15 Melodias</a>
         </li>
         <li class="topicos__item">
-            <a class="topicos__link" href="https://tutoriaisemmusica.com.br/teoriamusical" target="_blank">Teoria</a>
+            <a class="topicos__link" href="https://tutoriaisemmusica.com.br/decifrando" target="_blank">Teoria</a>
         </li>
         <li class="topicos__item">
-            <a class="topicos__link" href="https://tutoriaisemmusica.com.br/intervalosmusicais" target="_blank">Intervalos</a>
-        </li>
-        <li class="topicos__item">
-            <a class="topicos__link" href="https://tutoriaisemmusica.com.br/finaledescomplicado" target="_blank">Finale</a>
+            <a class="topicos__link" href="https://tutoriaisemmusica.com.br/intervalos" target="_blank">Intervalos</a>
         </li>
     </ul>
 `;
@@ -281,12 +278,12 @@ const divCardTeoria = document.getElementById("div-card-teoria");
 if (divCardTeoria) {
     divCardTeoria.innerHTML = `
         <div class="card__imagem-solo">
-            <a target="_blank" href="https://tutoriaisemmusica.com.br/teoriamusical">
+            <a target="_blank" href="https://tutoriaisemmusica.com.br/decifrando">
                 <img src="/img/Teoria Musical.jpg" alt="Imagem do curso teoria musical" class="descricao__imagem" height="160px">
             </a>
         </div>
         <div class="card__botao-solo">
-            <a target="_blank" href="https://tutoriaisemmusica.com.br/teoriamusical" class="botao-conhecer">Conheça</a>
+            <a target="_blank" href="https://tutoriaisemmusica.com.br/decifrando" class="botao-conhecer">Conheça</a>
         </div>
 `;
 }

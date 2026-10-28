@@ -4,7 +4,7 @@
   const script = new URL(document.currentScript?.src || 'recuperar-cache.js', location.href);
   const base = new URL('./', script);
   const prefix = `musicxml-lab:${base.pathname}:`;
-  const shell = new Set(['', 'index.html', 'app.js', 'audio.js', 'offline.js', 'style.css', 'verificar.html', 'diagnostico.js'].map(name => new URL(name || './', base).href));
+  const shell = new Set(['', 'index.html', 'i18n.js', 'app.js', 'audio.js', 'offline.js', 'style.css', 'verificar.html', 'diagnostico.js'].map(name => new URL(name || './', base).href));
   const button = document.getElementById('recover'), status = document.getElementById('recoveryStatus');
   async function onlineFile(url) {
     const abort = new AbortController(), timeout = setTimeout(() => abort.abort(), 15000);

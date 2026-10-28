@@ -28,7 +28,7 @@ PUBLICAR E TESTAR O LABORATÓRIO
 
 O QUE ENVIAR
 
-Arquivos de execução: index.html, style.css, app.js, audio.js, offline.js,
+Arquivos de execução: index.html, style.css, i18n.js, app.js, audio.js, offline.js,
 sw.js, verificar.html, diagnostico.js, a partitura solfejo01.mxl e sua cópia
 solfejo01.xml, solfejo01.musicxml, a pasta vendor inteira e a pasta audio inteira.
 Preserve os créditos e as licenças distribuídos nessas pastas.

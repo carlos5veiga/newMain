@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#104c58">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; worker-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'">
+  <title>Solf</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="vendor/jszip-3.10.1.min.js"></script>
+  <script defer src="vendor/opensheetmusicdisplay-1.9.3.min.js"></script>
+  <script defer src="i18n.js"></script>
+  <script defer src="audio.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="offline.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <p id="status" role="status" aria-live="polite">Carregando partitura…</p>
+    <noscript>Ative o JavaScript · Enable JavaScript · Activa JavaScript</noscript>
+    <section class="panel score-panel" aria-labelledby="scoreHeading">
+      <div class="transport" id="transport">
+        <h1 id="scoreHeading" class="brand">Solf</h1>
+        <div class="toolbar">
+          <div class="score-picker"><label for="solfejo" data-i18n="exercise">Solfejo</label><select id="solfejo" disabled aria-label="Escolher solfejo" data-i18n-aria="choose"><option data-i18n="loading">Carregando…</option></select></div>
+          <div class="transport-buttons">
+            <button id="play" class="primary" type="button" disabled data-i18n-aria="play" aria-label="Tocar solfejo">Play</button>
+            <button id="stop" type="button" disabled data-i18n-aria="stop" aria-label="Parar reprodução">Stop</button>
+          </div>
+        </div>
+        <div class="playback-status"><span id="loadingSpinner" class="spinner" aria-hidden="true"></span><p id="playing" class="live" role="status" aria-live="polite">Carregando solfejos…</p></div>
+      </div>
+      <div id="score" tabindex="0" aria-label="Partitura musical" data-i18n-aria="score"></div>
+    </section>
+    <section class="panel" aria-labelledby="controlsHeading">
+      <h2 id="controlsHeading" data-i18n="settings">Ajustes</h2>
+      <div class="transport-grid">
+        <label><span data-i18n="tempo">Andamento</span> <span class="range-control"><input id="tempo" type="range" min="30" max="240" step="1" value="120"><output id="tempoOut">120 BPM</output></span></label>
+        <label><span data-i18n="volume">Volume</span> <span class="range-control"><input id="masterVolume" type="range" min="0" max="100" value="80" step="5"><output id="masterVolumeOut">80%</output></span></label>
+      </div>
+        <div class="controls zoom-controls">
+          <button id="zoomMinus" type="button" disabled aria-label="Reduzir partitura" data-i18n-aria="zoomOut">−</button>
+          <label>Zoom <input id="zoom" type="range" min="50" max="200" step="10" value="80" disabled><output id="zoomOut">80%</output></label>
+          <button id="zoomPlus" type="button" disabled aria-label="Ampliar partitura" data-i18n-aria="zoomIn">+</button>
+          <button id="resetZoom" type="button" disabled data-i18n="reset">Restaurar</button>
+        </div>
+    </section>
+    <details class="panel options-panel">
+      <summary data-i18n="options">Som e opções de reprodução</summary>
+      <div class="option-grid">
+        <label><span data-i18n="playback">Reproduzir</span> <select id="playbackMode">
+          <option value="both" data-i18n="both">Melodia e harmonia</option>
+          <option value="melody" data-i18n="melodyOnly">Somente melodia</option>
+          <option value="harmony" data-i18n="harmonyOnly">Somente harmonia</option>
+        </select></label>
+        <label><span data-i18n="melody">Melodia</span> <select id="track" disabled></select></label>
+        <label><span data-i18n="melodySound">Som da melodia</span> <select id="timbre">
+          <option value="piano" data-i18n="piano">Piano acústico · Salamander</option>
+          <option value="electric" data-i18n="electric">Piano elétrico · cristalino</option>
+          <option value="flute" data-i18n="flute">Flauta · expressiva</option>
+          <option value="sine" data-i18n="sine">Senoidal · referência simples</option>
+        </select></label>
+        <label><span data-i18n="harmonySound">Som da harmonia</span> <select id="harmonyTimbre">
+          <option value="piano" data-i18n="piano">Piano acústico · Salamander</option>
+          <option value="electric" data-i18n="electric">Piano elétrico · cristalino</option>
+        </select></label>
+        <label><span data-i18n="brightness">Brilho</span> <span class="range-control"><input id="brightness" type="range" min="0" max="100" value="65" step="5"><output id="brightnessOut">65%</output></span></label>
+        <label><span data-i18n="harmonyVolume">Volume da harmonia</span> <span class="range-control"><input id="harmonyVolume" type="range" min="0" max="100" step="5" value="45"><output id="harmonyVolumeOut">45%</output></span></label>
+        <label class="checkbox-label"><input id="followCursor" type="checkbox" checked> <span data-i18n="follow">Acompanhar cursor com rolagem</span></label>
+      </div>
+    </details>
+    <div class="language-picker"><label for="language" data-i18n="language">Idioma</label><select id="language"><option value="pt-BR" lang="pt-BR">Português</option><option value="en" lang="en">English</option><option value="es" lang="es">Español</option></select></div>
+    <button id="updateApp" class="update-button" type="button" hidden data-i18n="update">Atualizar Solf</button>
+    <footer class="credits">Piano: Salamander Grand Piano · Alexander Holm · <a href="audio/piano/CREDITOS.txt" data-i18n="credits">Créditos e licença CC BY 3.0</a></footer>
+  </main>
+</body>
+</html>

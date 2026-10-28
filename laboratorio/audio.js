@@ -12,6 +12,37 @@
     const midi = 69 + 12 * Math.log2(frequency / 440);
     return BANK.reduce((best, sample) => Math.abs(sample.midi - midi) < Math.abs(best.midi - midi) ? sample : best);
   };
+  // Keep encoded samples separate: downloading never opens or resumes audio.
+  const encoded = new Map();
+  function fetchSample(sample) {
+    if (!encoded.has(sample.midi)) {
+      const task = (async () => {
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), 20000);
+        try {
+          const response = await fetch(sample.file, { signal: controller.signal });
+          if (!response.ok) throw new Error(`Amostra ${sample.file} indisponível (HTTP ${response.status}).`);
+          const bytes = await response.arrayBuffer();
+          if (!bytes.byteLength) throw new Error(`Amostra ${sample.file} vazia.`);
+          return bytes;
+        } finally { clearTimeout(timer); }
+      })();
+      encoded.set(sample.midi, task);
+      task.catch(() => { if (encoded.get(sample.midi) === task) encoded.delete(sample.midi); });
+    }
+    return encoded.get(sample.midi);
+  }
+  async function preload(sounds, melodyTimbre, progress = () => {}) {
+    const required = new Map();
+    for (const sound of sounds) if ((sound.timbre || melodyTimbre) === 'piano' && sound.frequency > 0) {
+      const sample = closest(sound.frequency); required.set(sample.midi, sample);
+    }
+    const entries = [...required.values()]; let next = 0, done = 0;
+    if (entries.length) progress(0, entries.length);
+    await Promise.all(Array.from({ length: Math.min(4, entries.length) }, async () => {
+      while (next < entries.length) { await fetchSample(entries[next++]); progress(++done, entries.length); }
+    }));
+  }
   class Engine {
     constructor(context, settings, progress = () => {}) {
       this.context = context; this.settings = settings; this.progress = progress;
@@ -43,9 +74,8 @@
       const load = async sample => {
         if (!this.pending.has(sample.midi)) {
           const task = (async () => {
-            const response = await fetch(sample.file);
-            if (!response.ok) throw new Error(`Amostra ${sample.file} indisponível (HTTP ${response.status}).`);
-            const buffer = await this.context.decodeAudioData(await response.arrayBuffer());
+            // decodeAudioData may detach its input; preserve the shared bytes.
+            const buffer = await this.context.decodeAudioData((await fetchSample(sample)).slice(0));
             if (!(buffer.duration > 0)) throw new Error(`Amostra ${sample.file} sem áudio decodificável.`);
             this.samples.set(sample.midi, buffer);
           })();
@@ -135,5 +165,5 @@
       return voice;
     }
   }
-  window.LabAudio = Object.freeze({ Engine, bank: BANK, closest });
+  window.LabAudio = Object.freeze({ Engine, bank: BANK, closest, preload });
 })();

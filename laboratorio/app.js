@@ -5,8 +5,90 @@
   // a hosting alias, query string or the phone's local file picker.
   const APP_BASE = new URL('./', document.currentScript?.src || location.href);
   const $ = id => document.getElementById(id);
+  const tr = text => window.SolfI18n?.translate(text) ?? text;
+  const exerciseTitle = text => window.SolfI18n?.exerciseTitle(text) ?? text;
+  const trackLabel = text => window.SolfI18n?.trackLabel(text) ?? text;
+  let lastPlaying = 'Carregando solfejos…', lastStatus = 'Carregando partitura…', lastError = false;
+  function playing(message) { lastPlaying = message; $('playing').textContent = tr(message); }
   // Use the same breakpoint as the compact layout; preserve manual zoom on resize.
   const defaultZoom = () => window.matchMedia('(max-width: 600px)').matches ? 60 : 80;
+  let catalog = [], selectedSolfejo = null;
+  const LAST_SOLFEJO_KEY = `musicxml-lab:${APP_BASE.pathname}:last-solfejo`;
+  function lastSolfejo() {
+    try { return window.localStorage.getItem(LAST_SOLFEJO_KEY); }
+    catch { return null; }
+  }
+  function rememberSolfejo(id) {
+    try { window.localStorage.setItem(LAST_SOLFEJO_KEY, id); }
+    catch { /* Storage may be blocked; opening and playback still work. */ }
+  }
+  const loading = new Set();
+  function setLoading(task, active) {
+    if (active) loading.add(task); else loading.delete(task);
+    $('loadingSpinner').hidden = loading.size === 0;
+    $('score').setAttribute('aria-busy', String(loading.has('score')));
+  }
+  let warmup = 0;
+  async function warmPiano() {
+    const id = ++warmup, token = player.token, track = selectedTrack();
+    if (!track || !window.LabAudio.preload) return;
+    const mode = $('playbackMode').value, timbre = $('timbre').value;
+    const sounds = mode === 'harmony' ? [] : track.events.filter(e => !e.rest && !e.grace && e.frequency > 0);
+    const part = state.score.parts.find(p => p.id === track.part);
+    if (mode !== 'melody' && Number($('harmonyVolume').value) > 0) {
+      for (const h of harmonyTimeline(part, track.staff)) for (const midi of h.pitches) {
+        sounds.push({ frequency: 440 * 2 ** ((midi - 69) / 12), timbre: $('harmonyTimbre').value });
+      }
+    }
+    setLoading('piano', true);
+    try {
+      await window.LabAudio.preload(sounds, timbre, (done, total) => {
+        if (id === warmup && token === player.token) playing(`Carregando piano: ${done}/${total}…`);
+      });
+      if (id === warmup && token === player.token) playing('Pronto para tocar');
+    } catch {
+      if (id === warmup && token === player.token) playing('Piano não carregado. Toque em Play para tentar novamente.');
+    } finally { if (id === warmup) setLoading('piano', false); }
+  }
+
+  async function initialize() {
+    setLoading('catalog', true);
+    try {
+      const response = await fetch(new URL('solfejos/catalogo.json', APP_BASE), { cache: 'no-store' });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const data = await response.json();
+      if (!Array.isArray(data.solfejos) || !data.solfejos.length) throw new Error('Catálogo vazio.');
+      const ids = new Set();
+      catalog = data.solfejos.map(item => {
+        if (!item.id || ids.has(item.id) || !Number.isInteger(item.numero) || typeof item.titulo !== 'string' ||
+            !/^\d{3}-\d{3}\/[a-z0-9_-]+\.(mxl|xml|musicxml)$/i.test(item.arquivo)) throw new Error('Entrada inválida no catálogo.');
+        ids.add(item.id); return item;
+      }).sort((a, b) => a.numero - b.numero);
+      $('solfejo').replaceChildren();
+      for (const item of catalog) {
+        const option = document.createElement('option'); option.value = item.id; option.textContent = exerciseTitle(item.titulo);
+        $('solfejo').append(option);
+      }
+      const first = catalog.find(item => item.numero === 1) || catalog[0];
+      const saved = lastSolfejo();
+      selectedSolfejo = catalog.find(item => item.id === saved) || first;
+      $('solfejo').value = selectedSolfejo.id; $('solfejo').disabled = false;
+      const restored = selectedSolfejo.id;
+      const loaded = await load();
+      // Only fall back during startup, never replace a user's manual selection.
+      if (loaded === false && selectedSolfejo.id === restored && restored !== first.id) {
+        selectedSolfejo = first; $('solfejo').value = first.id;
+        if (await load()) status(`Não foi possível retomar o solfejo anterior. ${first.titulo} carregado.`);
+      }
+    } catch (error) {
+      // Keep the original exercise available if the catalog was not published.
+      catalog = []; selectedSolfejo = null; $('solfejo').disabled = true;
+      $('solfejo').replaceChildren();
+      const option = document.createElement('option'); option.textContent = exerciseTitle('Solfejo 1'); $('solfejo').append(option);
+      await load();
+      if (state.score) status(`Solfejo 1 disponível. Não foi possível carregar a lista de solfejos: ${error.message}`, true);
+    } finally { setLoading('catalog', false); }
+  }
   const children = (node, name) => Array.from(node?.children || []).filter(el => el.localName === name);
   const child = (node, name) => children(node, name)[0];
   const value = (node, name, fallback = '') => child(node, name)?.textContent.trim() ?? fallback;
@@ -105,7 +187,13 @@
 
   async function readPublishedScore() {
     const failures = [];
-    for (const filename of ['solfejo01.mxl', 'solfejo01.xml', 'solfejo01.musicxml']) {
+    const files = selectedSolfejo
+      ? ['mxl', 'xml', 'musicxml'].map(extension => `solfejos/${selectedSolfejo.arquivo.replace(/\.[^.]+$/, '')}.${extension}`)
+      : ['solfejo01.mxl', 'solfejo01.xml', 'solfejo01.musicxml'];
+    // The first exercise was originally published in the laboratory root.
+    // Retain that path while existing deployments migrate to the collection.
+    if (selectedSolfejo?.id === 'solfejo001') files.push('solfejo01.mxl', 'solfejo01.xml', 'solfejo01.musicxml');
+    for (const filename of files) {
       const url = new URL(filename, APP_BASE).href;
       try {
         const response = await fetch(url, { cache: 'no-store' });
@@ -115,7 +203,7 @@
         return { xml, score: extractScore(parseXML(xml)), filename };
       } catch (error) { failures.push(`${url}: ${error.message}`); }
     }
-    throw new Error(`Arquivo ausente ou bloqueado na hospedagem. Envie solfejo01.xml para ${APP_BASE.href} (junto de index.html). O MXL original também pode ser usado. Não é necessário escolher um arquivo do celular. ${failures.join(' | ')}`);
+    throw new Error(`Arquivo ausente ou bloqueado na hospedagem. Confira a publicação de ${files.join(' ou ')} na pasta do laboratório. ${failures.join(' | ')}`);
   }
 
   function keyLabel(key) {
@@ -267,7 +355,7 @@
       this.context ||= new AudioContext();
       if (!this.engine) this.engine = new window.LabAudio.Engine(this.context, () => ({
         timbre: $('timbre').value, brightness: Number($('brightness').value), volume: Number($('masterVolume').value)
-      }), message => { if (this.preparingToken === this.token) $('playing').textContent = message; });
+      }), message => { if (this.preparingToken === this.token) playing(message); });
       await this.context.resume();
       if (this.context.state !== 'running') throw new Error('O navegador bloqueou o áudio. Clique novamente em Play.');
     }
@@ -280,10 +368,11 @@
       }
       $('stop').disabled = true; $('play').textContent = 'Play';
       state.scoreCursor?.hide();
-      $('playing').textContent = 'Reprodução parada';
+      playing('Reprodução parada');
       for (const id of state.highlighted) state.rows.get(id)?.classList.remove('active');
       state.highlighted.clear();
       $('play').removeAttribute('aria-busy');
+      setLoading('audio', false);
     }
     tone(frequency, when, duration, options = {}) {
       const voice = this.engine.play(frequency, when, duration, options);
@@ -292,6 +381,7 @@
     }
     async play(events, total, isolated = false, scoreOffset = 0) {
       this.stop(); const token = this.token;
+      setLoading('audio', true); playing('Preparando áudio…');
       await this.unlock(); if (token !== this.token) return;
       const seconds = 60 / Number($('tempo').value);
       const sounds = [], openTies = new Map();
@@ -326,6 +416,7 @@
       catch (error) { if (token !== this.token) return; throw error; }
       if (token !== this.token) return;
       $('play').removeAttribute('aria-busy');
+      setLoading('audio', false);
       this.engine.update();
       const origin = this.context.currentTime + .08;
       let next = 0;
@@ -348,14 +439,14 @@
         state.highlighted = highlighted;
         const currentHarmony = harmonies.find(h => beat >= h.start && beat < h.start + h.duration);
         const label = (active.length ? `Compasso ${active[0].measure} · ${active.map(e => e.label).join(' + ')}` : 'Preparando…') + (currentHarmony ? ` · Acorde: ${currentHarmony.label}${currentHarmony.warning ? ' (não sintetizado)' : ''}` : '');
-        if ($('playing').textContent !== label) $('playing').textContent = label;
-        if (beat >= total) { this.stop(true); $('playing').textContent = 'Reprodução concluída'; }
+        if ($('playing').textContent !== tr(label)) playing(label);
+        if (beat >= total) { this.stop(true); playing('Reprodução concluída'); }
       };
       this.timer = setInterval(tick, 25); tick();
     }
   }
   const player = new Player();
-  function status(message, error = false) { $('status').textContent = message; $('status').classList.toggle('error', error); }
+  function status(message, error = false) { lastStatus = message; lastError = error; $('status').textContent = tr(message); $('status').classList.toggle('error', error); }
   function selectedTrack() { return state.score?.tracks.get($('track').value); }
   function showTrack() {
     player.stop();
@@ -365,9 +456,10 @@
     const hasMelody = track.events.some(e => !e.rest && !e.grace && e.midi !== null);
     const hasHarmony = harmonies.some(h => h.pitches.length && h.duration > 0);
     $('play').disabled = $('playbackMode').value === 'harmony' ? !hasHarmony : $('playbackMode').value === 'melody' ? !hasMelody : !hasMelody && !hasHarmony;
-    $('playing').textContent = 'Pronto para reproduzir';
+    playing('Pronto para reproduzir');
+    warmPiano();
   }
-  function audioError(error) { player.stop(); $('playing').textContent = `Não foi possível reproduzir: ${error.message}`; }
+  function audioError(error) { player.stop(); playing(`Não foi possível reproduzir: ${error.message}`); }
   function zoom() {
     $('zoomOut').textContent = `${$('zoom').value}%`;
     if (!state.osmd || !state.score) return;
@@ -376,6 +468,7 @@
   }
   async function load(file) {
     const generation = ++state.generation;
+    ++warmup; setLoading('piano', false); setLoading('score', true);
     player.stop(); state.busy = true; state.score = null; state.osmd = null; state.scoreCursor = null;
     for (const id of ['play', 'track', 'zoom', 'zoomMinus', 'zoomPlus', 'resetZoom']) $(id).disabled = true;
     for (const id of ['track', 'score']) $(id).replaceChildren();
@@ -385,7 +478,7 @@
       const { xml, filename } = source, score = source.score || extractScore(parseXML(xml));
       if (generation !== state.generation) return;
       state.score = score;
-      for (const track of score.tracks.values()) { const option = document.createElement('option'); option.value = track.id; option.textContent = track.label; $('track').append(option); }
+      for (const track of score.tracks.values()) { const option = document.createElement('option'); option.value = track.id; option.textContent = trackLabel(track.label); $('track').append(option); }
       $('track').disabled = false; $('tempo').value = Math.max(30, Math.min(240, Math.round(score.tempo)));
       $('tempoOut').textContent = `${$('tempo').value} BPM`; showTrack();
       if (!window.opensheetmusicdisplay) throw new Error('OpenSheetMusicDisplay local ausente. Confira vendor. Os dados e o áudio continuam disponíveis.');
@@ -399,20 +492,27 @@
       state.scoreCursor = new ScoreCursor(renderer);
       for (const id of ['zoom', 'zoomMinus', 'zoomPlus', 'resetZoom']) $(id).disabled = false;
       status('');
+      if (!file && selectedSolfejo) rememberSolfejo(selectedSolfejo.id);
+      return true;
     } catch (error) {
       if (generation !== state.generation) return;
       const hint = location.protocol === 'file:' ? ' Abra por um servidor HTTP estático ou use Abrir arquivo.' : '';
       status(`Não foi possível carregar ou renderizar a partitura: ${error.message}${hint}`, true);
-    } finally { if (generation === state.generation) state.busy = false; }
+      return false;
+    } finally { if (generation === state.generation) { state.busy = false; setLoading('score', false); } }
   }
   $('track').addEventListener('change', showTrack);
+  $('solfejo').addEventListener('change', () => {
+    selectedSolfejo = catalog.find(item => item.id === $('solfejo').value);
+    if (selectedSolfejo) return load();
+  });
   $('zoom').addEventListener('input', zoom);
   $('zoomMinus').addEventListener('click', () => { $('zoom').value = Math.max(50, Number($('zoom').value) - 10); zoom(); });
   $('zoomPlus').addEventListener('click', () => { $('zoom').value = Math.min(200, Number($('zoom').value) + 10); zoom(); });
   $('resetZoom').addEventListener('click', () => { $('zoom').value = defaultZoom(); zoom(); });
   $('tempo').addEventListener('input', () => { player.stop(); $('tempoOut').textContent = `${$('tempo').value} BPM`; });
-  $('timbre').addEventListener('change', () => player.stop());
-  $('harmonyTimbre').addEventListener('change', () => player.stop());
+  $('timbre').addEventListener('change', () => { player.stop(); warmPiano(); });
+  $('harmonyTimbre').addEventListener('change', () => { player.stop(); warmPiano(); });
   for (const [id, output] of [['brightness', 'brightnessOut'], ['masterVolume', 'masterVolumeOut']]) {
     $(id).addEventListener('input', () => { $(output).textContent = `${$(id).value}%`; player.engine?.update(); });
   }
@@ -428,5 +528,20 @@
   document.addEventListener('visibilitychange', () => { if (document.hidden) player.stop(); });
   $('zoom').value = defaultZoom();
   $('zoomOut').textContent = `${$('zoom').value}%`;
-  load();
+  window.addEventListener('solf:languagechange', () => {
+    player.stop();
+    for (const option of $('solfejo').children) {
+      const item = catalog.find(item => item.id === option.value);
+      option.textContent = exerciseTitle(item?.titulo || 'Solfejo 1');
+    }
+    for (const option of $('track').children) {
+      const track = state.score?.tracks.get(option.value);
+      if (track) option.textContent = trackLabel(track.label);
+    }
+    status(lastStatus, lastError);
+    playing(state.score && !state.busy ? 'Pronto para tocar' : lastPlaying);
+    if (state.score && !state.busy) warmPiano();
+  });
+  status(lastStatus); playing(lastPlaying);
+  initialize();
 })();

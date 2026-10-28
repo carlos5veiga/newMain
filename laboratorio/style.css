@@ -18,12 +18,23 @@ details[open] > summary { margin-bottom: 16px; }
 .transport-buttons button { flex: 1; min-height: 48px; min-width: 80px; white-space: nowrap; }
 .score-panel { padding-top: 0; }
 .score-panel h1 { font-size: 1.15rem; margin: 0; }
+.score-panel .brand { font-size: .85rem; color: #096e5f; letter-spacing: .08em; margin: 0 0 6px; }
+.language-picker { display: flex; justify-content: center; gap: 10px; align-items: center; margin: 20px 0 12px; font-size: .9rem; }
+.score-picker { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.score-picker > label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.score-picker select { width: clamp(125px, 25vw, 230px); font-weight: 650; }
+.transport > .toolbar { flex-wrap: nowrap; gap: 8px; }
 .score-panel #score { margin-top: 8px; }
 .transport-grid > label, .option-grid > label { display: flex; flex-direction: column; align-items: stretch; gap: 6px; min-width: 0; }
 .range-control { display: flex; align-items: center; gap: 8px; min-width: 0; }
 .range-control input[type=range] { flex: 1; min-width: 0; width: 100%; margin: 0; min-height: 44px; }
 .range-control output { min-width: 58px; font-size: .9rem; }
 .transport .live { margin: 8px 0 0; padding: 7px 10px; font-size: .9rem; }
+.playback-status { display: flex; gap: 8px; align-items: center; min-height: 42px; }
+.playback-status .live { flex: 1; min-width: 0; margin: 0; }
+.spinner { width: 18px; height: 18px; flex: 0 0 18px; border: 2px solid #d5e2e3; border-top-color: #096e5f; border-radius: 50%; animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .spinner { animation: none; border-style: dotted; } }
 .option-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 .option-grid .checkbox-label { flex-direction: row; align-items: center; }
 input[type=checkbox] { width: 22px; height: 22px; accent-color: #096e5f; flex-shrink: 0; }
@@ -74,6 +85,7 @@ a { color: #076954; }
   .file { display: block; max-width: 100%; }
   input[type=range] { width: 110px; }
   .transport { padding: 8px 0; }
+  .transport-buttons button { min-width: 64px; padding: 8px 12px; }
   .score-panel { padding-top: 0; }
   .transport-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 14px; margin-top: 8px; }
   .transport-buttons { grid-column: 1 / -1; }

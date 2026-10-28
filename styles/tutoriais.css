@@ -1,0 +1,27 @@
+/* Complementos exclusivos da página de Tutoriais. */
+.main-nav a[aria-current="page"] { color:var(--accent); font-weight:700; text-decoration:underline; text-underline-offset:6px; }
+.tutorials-hero { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(0,1fr); align-items:center; gap:72px; padding-block:64px; }
+.tutorials-hero .hero-intro { max-width:550px; }
+.start-card { position:relative; padding:34px; background:var(--sand); border:1px solid var(--line); border-radius:10px; overflow:hidden; }
+.start-card h2 { font-size:clamp(32px,3.6vw,44px); }
+.start-card > p:not(.eyebrow) { max-width:340px; font-size:14px; color:var(--muted); }
+.start-card .card-link { border-top:1px solid #d2cbbc; margin-top:24px; padding-top:18px; }
+.start-note { position:absolute; top:26px; right:30px; font:90px/1 Georgia,serif; color:#a1492426; pointer-events:none; }
+#series { scroll-margin-top:24px; }
+.tutorials-list .small-links { border-top:1px solid var(--line); padding-top:12px; }
+.tutorials-list .small-links a { min-height:44px; display:inline-flex; align-items:center; gap:7px; }
+.resource-card > .tonal-art { min-height:195px; padding:30px 24px; display:flex; flex-direction:row; flex-wrap:wrap; align-items:center; justify-content:center; gap:12px; flex:0 0 auto; background:var(--ink); color:var(--white); }
+.tonal-art span { display:grid; place-items:center; width:64px; height:64px; border:1px solid #667780; border-radius:50%; font:italic 28px/1 Georgia,serif; }
+.tonal-art small { flex-basis:100%; text-align:center; font-size:9px; letter-spacing:.2em; color:#c5d0d4; }
+.tutorial-practice { display:grid; grid-template-columns:1fr 1.2fr; gap:72px; align-items:center; }
+.tutorial-practice h2 { margin-bottom:0; }
+.tutorial-practice p:not(.eyebrow) { color:var(--muted); max-width:570px; }
+@media(max-width:1050px) { .tutorials-hero,.tutorial-practice { gap:36px; } }
+@media(max-width:760px) {
+  .tutorials-hero { grid-template-columns:minmax(0,1fr); padding-block:38px; gap:30px; }
+  .start-card { padding:26px; }
+  .tutorials-list .resource-card { flex-direction:column; }
+  .tutorials-list .resource-card > img { width:100%; height:200px; min-height:0; }
+  .tutorial-practice { grid-template-columns:minmax(0,1fr); gap:24px; }
+  .resource-card > .tonal-art { min-height:200px; }
+}

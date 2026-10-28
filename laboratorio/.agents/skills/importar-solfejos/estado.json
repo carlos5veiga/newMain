@@ -1,0 +1,285 @@
+{
+  "versao": 1,
+  "arquivos": {
+    "001-010/solfejo001.mxl": {
+      "mxl": "9251bb67dd3b25c6513fc3b4e8408e45bce2e135ed7405c66468995bdea56320",
+      "xml": "04a8630a52a54d6e60590156e735989050abbb2d9293d2a6ea032e55f6402f69"
+    },
+    "001-010/Solfejo002.mxl": {
+      "mxl": "a2cacd4b127f3a474dbe3756338b1b36d97207c8fda5f96144319ce7eaadaff0",
+      "xml": "993ebff04559ddb7adb4942542be9faeafc4975b73461ea6a6560f2beb5ef9b2"
+    },
+    "001-010/Solfejo003.mxl": {
+      "mxl": "b8692f6f7db94be4bb6322adc59de2d82d2ba2d10a06da2699154df0fde69331",
+      "xml": "675942f2ad64c3d3d764d290c72e597e5817c813c541cd1b596af261b783a9f3"
+    },
+    "001-010/Solfejo004.mxl": {
+      "mxl": "8b3f2c6b79b0cc801ba2528104e493b114cda861692343f69a8c61c01030e8fb",
+      "xml": "d10b566268820c39dd55c98fca97e9b330c227f925492985c6fce9b181a514fc"
+    },
+    "001-010/Solfejo005.mxl": {
+      "mxl": "b80b3d377790b72e2b312fc5b2e17ac4ce9ed03e62966b1c15f3788c5602dbb8",
+      "xml": "218f308fad4b9de4eb3c6fee658ae411b8418e349a708a66c9699123fc56badb"
+    },
+    "001-010/Solfejo006.mxl": {
+      "mxl": "2d4fa6fa789fe7e753b3a07d68bc0cf503f6e7a5224580df3a98e8c2cd9493d2",
+      "xml": "ec5a30b45015f451274e7aaa9923d5d18358c0fb38c15c0767d6bd8c75e13657"
+    },
+    "001-010/Solfejo007.mxl": {
+      "mxl": "840cb94a15f7f523968f207f8a382b383dd318ba0a61156e9d4f1100ec42c40b",
+      "xml": "74e1dceb227d7a399cea0a778f299b116959bc430fa2c58432030545e5a81761"
+    },
+    "001-010/Solfejo008.mxl": {
+      "mxl": "d827f188d4808d309c19d70258783fd6c7adb4218102b830209def1d80acdf09",
+      "xml": "70e8d204b6416d80bf347f310eedddb6fc898afed3c1f3eda7bfbfd61fadf8b5"
+    },
+    "001-010/Solfejo009.mxl": {
+      "mxl": "2483ac2adaeb1e4794b7b47bf9b57a0fd0c1d33187759a59b04adb80b97d0d55",
+      "xml": "e0edff75b12b3fb4f74469cf92952bdd56ce0148cbd3706e35839f5a29a486cd"
+    },
+    "001-010/Solfejo010.mxl": {
+      "mxl": "45120cc9e3774d951f53a64520e7fd1eea20f81e5fa71cf2902735f427fb3886",
+      "xml": "b0a6000db1e7c991a5587a508ee796e1a9f8b839154a65f70a19c3b2bba37816"
+    },
+    "011-020/Solfejo011.mxl": {
+      "mxl": "06fb91a444a93f56c003eb208cf893bd0533fac3f30776dd8f185461fdfe5aba",
+      "xml": "17e062d41e327b34080e6e692072ef360b74572dc7420ebdbf3e8589c8335e18"
+    },
+    "011-020/Solfejo012.mxl": {
+      "mxl": "2989f684e45690d78b593f6a3a19516eacde4987a97294f24fed1fdd9bc56c3f",
+      "xml": "e5efb505157fa6fca0d1d8c3daf1b8cef24bfe77b051f3cb24dc85d76fa64105"
+    },
+    "011-020/Solfejo013.mxl": {
+      "mxl": "d7e1c1e9ce9462399383dd41d3f6cf466a17f5d244acaa5f7ee43d6ab1971c73",
+      "xml": "da278d448c875f58b0795d4473604bb0fd41715da6b24f7e68474f8f128636b2"
+    },
+    "011-020/Solfejo014.mxl": {
+      "mxl": "b55ed5b887530c95e420dae86eaabaa157610dda9ea32245fa93486e641c1152",
+      "xml": "6291b17cf01d9d01a8b8a9734da19e66bfdadaf73aa3b92cb5fd5758da4add88"
+    },
+    "011-020/Solfejo015.mxl": {
+      "mxl": "d70b78bcda69e9579e03085b29906ef354704211177419971a48e36e09b78dbe",
+      "xml": "0a506276075bb431a0a627d1efd91ae726df601a4d6fdaabcc44493849a32f2a"
+    },
+    "011-020/Solfejo016.mxl": {
+      "mxl": "200d387012a6786e7a91722df7f29d9fcf37257019855807023d34127f397e1f",
+      "xml": "27f776311d35700f47240250d0ede2eaaf3b59720b636dbb5412aae46474924e"
+    },
+    "011-020/Solfejo017.mxl": {
+      "mxl": "1866019064b4aee7c94f6d4c3b1cb621bef467a6481d1c37bcb2201efec2305a",
+      "xml": "b80f9b861d90d13e01b4591ed77e1c6f7afeab1e366da20baed23da56b2f3579"
+    },
+    "011-020/Solfejo018.mxl": {
+      "mxl": "668b0bbb2f17c8bd537697d98da21c21aa9e4de717ebb18372ca809427c2fd66",
+      "xml": "e4844110cd11d02568f57225578ea3e86a15537d5fb861adce7670882b833139"
+    },
+    "011-020/Solfejo019.mxl": {
+      "mxl": "5924c6031a01705895d1cea7c4c7085941a21a3f0dba770536f883cb3787e733",
+      "xml": "d7f8cdc8b869ec9a8356448a7982526464e2f541702974d2b5a4948851b8a0c4"
+    },
+    "011-020/Solfejo020.mxl": {
+      "mxl": "0a6b32d54889619524e4eb7ec052cfa2d432c659c812e619eecda0d249d946c1",
+      "xml": "2a06dfd8513a2e5db163378d7dfc41ce2785f394a2b23d977b4c888e6e25cea4"
+    },
+    "021-030/Solfejo021.mxl": {
+      "mxl": "f7b99e55968c14dd877b347e0a6a622e59f4532e2ffcc329d33ebd21e2075a70",
+      "xml": "120b29be1678f4ad202734111519a96b3722aa9843f786ab4d70ead496982bb7"
+    },
+    "021-030/Solfejo022.mxl": {
+      "mxl": "f6ba3bd1f62224f2fde728bd1f5ca9820c922101048be0728aa8334bcb7ecac2",
+      "xml": "8c54a9d4692dfeb86a8a950c7c9017dc8597437e083931484cf91845d15187c4"
+    },
+    "021-030/Solfejo023.mxl": {
+      "mxl": "2e8e1e55bccfa2448e92d36c2d08f8fa606070069bb83926c579e3265b9e823f",
+      "xml": "0e575f48456e037bef64aa1a868326298de170232c9197f3ff4df5ca7a0286fa"
+    },
+    "021-030/Solfejo024.mxl": {
+      "mxl": "24ee84c9efdb9f35587624d709c30d3a1746114df7795b3ba025ab1a13ca01f4",
+      "xml": "f48235190c2665b4cee2983f16d4d40c4afdde43efafa54186d2218eb10be72d"
+    },
+    "021-030/Solfejo025.mxl": {
+      "mxl": "43496e4d5bc33e9b77f6b9f1b0269e8d4dde7925feafaa9dc69abdccc1183fa8",
+      "xml": "22884bc399b162291c41b5d5fc5d10b0dd28f3f9f33bd48059bbba69ef76a3f6"
+    },
+    "021-030/Solfejo026.mxl": {
+      "mxl": "260121afcb8279d83bb5c60eeaedcb40648a1733006269f332ed1b001e68500a",
+      "xml": "b7e866e09ac87b79c4ffd35a8cd54cf97f52786c9a02224ac7f7d772417e02c6"
+    },
+    "021-030/Solfejo027.mxl": {
+      "mxl": "84e09c4c207155dc139846f92b187fb3e8dc318b58531621d002144c55a5c64e",
+      "xml": "d8f2902c0b815ee4a3f11202a14b70aacdf4b37f41fa99fdd42cd8a89d3c0f49"
+    },
+    "021-030/Solfejo028.mxl": {
+      "mxl": "753e7ecdccca1dbe3868c17fb1ea0d4034c18cc6840ab91dbe363a0c145a31c7",
+      "xml": "8abc0b33d5d78f3a959fca15f93fc5b0c8035f09ab1af8c52fe2615bf460a044"
+    },
+    "021-030/Solfejo029.mxl": {
+      "mxl": "bbc958be25454f0b1909ca3ee7462307d105d01bd3b8ede8412def4f00569fec",
+      "xml": "baa084c90cb8cfaacf55a7e721ede1a61276f4c5d50ed8a42e3354ab4c3a5eae"
+    },
+    "021-030/Solfejo030.mxl": {
+      "mxl": "f45a0f1109d2307ef42f2524c82c750bfae3aa06d1cdf53d733b555970a23047",
+      "xml": "ad17f553f70f1b49eadfda9136b3a22934a5a9806e28e1ff72aaf0f862e17fa9"
+    },
+    "031-040/Solfejo031.mxl": {
+      "mxl": "df548dcb60bd2e3354587fde015f17cdd8d43d5f3fad5db3ae3595063199ba10",
+      "xml": "7b2c3c685df6811c5af2f08c1d0c40c6ca4f25f204e3d5a55d6a986f2b72bf55"
+    },
+    "031-040/Solfejo032.mxl": {
+      "mxl": "2c5c452c8e77fa0eddcf34a6e389cf8a1c63952e9be0fd2bad7be34c95800717",
+      "xml": "a448ba8d1aa5b4d7ee5ad2169661f01916a67afa2c53949a7d13e7872a03ad20"
+    },
+    "031-040/Solfejo033.mxl": {
+      "mxl": "e5076c117e766e05bf7a83f2d140e3e1176856bd81a135a47dee6ac274c65c10",
+      "xml": "4032c65d1d7ea5a6a2b520b2491b7344b5192a463f0c5c1dd4ad8fa72ed0cb0f"
+    },
+    "031-040/Solfejo034.mxl": {
+      "mxl": "f5f4d071d9b41053d57826e7be58d09486d6766dd7bb747ba023c8c596ffd89a",
+      "xml": "5e9490c19530b863bbf7bb47531602918be2d43da43f10089d9b2d512e3c5eb9"
+    },
+    "031-040/Solfejo035.mxl": {
+      "mxl": "99c9fac2593a558988ab6df7d95bcdf8dbda4f2ea06095b66090ce1d6d567289",
+      "xml": "f647ec1c76154b998a158332f1c7129b6dc728fca21651ef68f848c449e24ab3"
+    },
+    "031-040/Solfejo036.mxl": {
+      "mxl": "f59601d84e2f8a9f6b8a101bd3790b89b03e4b9d7f83b048b0aa0b3ec449c9aa",
+      "xml": "be43308c789f7d6b6e40d3c4287019b759c571ef45eab09bfd2d67d38983ab3a"
+    },
+    "031-040/Solfejo037.mxl": {
+      "mxl": "c23edde056d6236dc23d9af6dac019651769e0568143fe30344a5a856d134274",
+      "xml": "a1776f6374d7df237cce77ebc6823dc007e4cd1c42f191ecc2cc6d05c9bfd79b"
+    },
+    "031-040/Solfejo038.mxl": {
+      "mxl": "571cc5df9aeaee7ead5a4af95a3df0d31a928b8bc94faab10660d3f21361f2ee",
+      "xml": "2d81440857a7d2db717f47b9a76a0a100d307fb82f87e168fc8a3e39505d6809"
+    },
+    "031-040/Solfejo039.mxl": {
+      "mxl": "de7b651eac2bd1cdc4620b6fc5c97906daf98b508912f2f0cee7e8ddfb0e5fef",
+      "xml": "da210535c8c9bcf1b57b92fb69c83aad7843805fc7bd9252a4e380fccab8a3ab"
+    },
+    "031-040/Solfejo040.mxl": {
+      "mxl": "6f675a0662cd323bb602fde0129002f1e27e89c4f9ad570454004913454d26c5",
+      "xml": "bff406fb524c45fa695c8dad2d0ba0e3a3198a99cd8fae9309eed9db008e93f2"
+    },
+    "041-050/Solfejo041.mxl": {
+      "mxl": "ec784aac687f6a9b2abc506f7322978419574627ea4e52cd19b66df871a80dd6",
+      "xml": "a6e21e7b39d0fb72c3e6788afe426d2a34ef86f18e31c19b089d551f19f1cdb8"
+    },
+    "041-050/Solfejo042.mxl": {
+      "mxl": "f32e26ce8b8ac3475a9c33e7334b964204e23fa82e6abdd1561435a253566e41",
+      "xml": "0c1b68205123473a176ea0a1d33f7923c2a39e50a7765d356269543f2353df0f"
+    },
+    "041-050/Solfejo043.mxl": {
+      "mxl": "125638a97fe9aec7949ddd1d02df1d790012fa06b6bbef73385129b67ecd6ddf",
+      "xml": "6a1f806d6053e4dd19af2d03a4203e11c086e729b4cc81cb86be803419635393"
+    },
+    "041-050/Solfejo044.mxl": {
+      "mxl": "0384193ba0a78fc7f6493e0470686b0a99ef611d5b13dd8c4dae6118700f52a4",
+      "xml": "4c3f45252d6dff88adf187e4eaf360e1e76d4e152b92a04836fc9ddf4785572f"
+    },
+    "041-050/Solfejo045.mxl": {
+      "mxl": "848606dd55695d0f59d0ac4d9cc74d425791a66a80ce5d93cbd53edc9f906b99",
+      "xml": "7a5de047ef416dccde759fde01d424f8947114b47a90407373ef3100e552bc0a"
+    },
+    "041-050/Solfejo046.mxl": {
+      "mxl": "3445f87cc11d26585e96635383ed0cfe4552390e5687dda86aec36f65d15bc3d",
+      "xml": "9da29881debc2af2507097d1bc63f5a18c0d158a4c16aadff6d5cd7d96084875"
+    },
+    "041-050/Solfejo047.mxl": {
+      "mxl": "2b504e0f4c71e5547e6b4c2dbb38d21c8f63600c4261bc867e34582a540a1d7d",
+      "xml": "e289535fa94ddb56b95f69beee74eaefb2a23d8cfce193fb619018ff07c3499a"
+    },
+    "041-050/Solfejo048.mxl": {
+      "mxl": "b945fdd35dd050370d5d3011364010d33170fc61916ef40a74e442d26e4a844a",
+      "xml": "21811cd4e6693004b15e8edca4b189a663fdf6b975633977bd290a6da618afd1"
+    },
+    "041-050/Solfejo049.mxl": {
+      "mxl": "119f9015fa777995a804b2c1e9c7bbef7520ed10c3b4124de3e4e6f3fc71170c",
+      "xml": "244d616c6bbe42efbb4b90a6d740741c7658be0358578dba803160d89cf98515"
+    },
+    "041-050/Solfejo050.mxl": {
+      "mxl": "07d1149f12f66fadda6458eab9c7ea260dabf39460b1b5ea330a46c9b712778a",
+      "xml": "8c3b2bcb959c55246fe0416faf67d2c6f6893baba8816cce00e1c1d80eb1c3f0"
+    },
+    "051-060/Solfejo051.mxl": {
+      "mxl": "6027893c5058a256ebe0afc963652257f5a493584580611cab68bab101e28d11",
+      "xml": "db220bef6efa9be10134ff6bcbd9a46e4becb272a961a78d7022823a3a657a64"
+    },
+    "051-060/Solfejo052.mxl": {
+      "mxl": "ad2ffedfeaf260089797659f59646ad2d34a4eb20f8ce56c5f8aad50b0b37fbf",
+      "xml": "044d8826db965e62aeca9e357cc7031280ea9a6b74f6226a6b2fd755821ebff8"
+    },
+    "051-060/Solfejo053.mxl": {
+      "mxl": "e897ba1070e5c76ed34c57ed7ffe2a568ff02c823a1536e3252709b317ac31ea",
+      "xml": "f27cc595a7a935d96ca60dc8444e9d3e02031385529627a181117b1d2794f81e"
+    },
+    "051-060/Solfejo054.mxl": {
+      "mxl": "afd40afdb0bd75931a04b77dc3ee9adf5fdd0156ec8cf63d3ea88e6c61d9f457",
+      "xml": "8c644a12a3dfdfdcc1ceb20be7a863624ac7a6135add52d88096c6d0458a3686"
+    },
+    "051-060/Solfejo055.mxl": {
+      "mxl": "05962e72be6ecf681719259ee96ddb2800a0322a1ca7b7377e08d018e73b63f2",
+      "xml": "68881592e1ccb25563505fdd0c8e0f8e74001028ff8348b1889878be58cfc2ef"
+    },
+    "051-060/Solfejo056.mxl": {
+      "mxl": "288a8d6d6e9f8fd96e12570545531d13427b5aec4d37d4ab4f979896ad99950a",
+      "xml": "4175ea7e64e197b7bdf8ac37204f00afcc29f995f570a5ec3abdf1857dada791"
+    },
+    "051-060/Solfejo057.mxl": {
+      "mxl": "3d3ab078555ce0dc35cf36bad16e9e5e2bc11e86bdbdc139b1736e23f2939b2d",
+      "xml": "19eb10fdb136de1951b3922064a3d165eb0eb61b807eae850e27460cb7d15e2d"
+    },
+    "051-060/Solfejo058.mxl": {
+      "mxl": "4f8b40beac0a5869f0178114b26ede19ce354a96bacc6dc1b9f05ee9ac58cb0d",
+      "xml": "53974122353aa4183f1018f4d66ec0c508a86c614adf4f42016b0baf815d0166"
+    },
+    "051-060/Solfejo059.mxl": {
+      "mxl": "787c021fa4177d438bb47200afe1362927d8157268c3acaaeac1911f3ca832bc",
+      "xml": "70791c3129d6e9348677b8dca388229b145ce6f2b0ff63a8e984e60414fc9b78"
+    },
+    "051-060/Solfejo060.mxl": {
+      "mxl": "0296a38e2fcc1df1f9d24871a1056c0a72e17f88fd9dd50eabab7a70d94f5108",
+      "xml": "68324b2472ffe5257b9ddbf10f3c133abb138c32f548cf10743234cce24c9aa1"
+    },
+    "061-070/Solfejo061.mxl": {
+      "mxl": "58d0f052da0eefa9fe8aa19c1055fe1b29ced25bf4576a4340462a6873653f31",
+      "xml": "236a9823a6d7bcbbad019fd6cbdd3569c558d910b1c38826aa0cf1190cd3001f"
+    },
+    "061-070/Solfejo062.mxl": {
+      "mxl": "03d983b1d4fbf08800991d259781b807a3ca8ae20fa997351e0c638ddd1b5a0f",
+      "xml": "4a8f463f3980905e1a9398c51c1c8a14796547365cc1779997cfd5865409c31c"
+    },
+    "061-070/Solfejo063.mxl": {
+      "mxl": "b7d75cff77f668a1fef5dc9b1a57ec2c85a42b5046559764c979970cebe46ec5",
+      "xml": "e7407532c8555d4122e105fc6698b67759e54e95e09fce30462469d326b431f7"
+    },
+    "061-070/Solfejo064.mxl": {
+      "mxl": "9186a8c34d706c325ac8a3d70f139ab153ee745cfb77c0398e7d72646deb9bb3",
+      "xml": "96ebf7cbcbfbb455d9fa409931be5524ed430252c5eb61ffeca0f1147fb51968"
+    },
+    "061-070/Solfejo065.mxl": {
+      "mxl": "44c6b7efd78fa05325bde471ed4144e0f39bc48b0b8d0e69224c1ba856518e50",
+      "xml": "70d3e2d7ce1e7c890ebf7472630c940270c26ea0b4225a3e5d36c11020e115cb"
+    },
+    "061-070/Solfejo066.mxl": {
+      "mxl": "4bb7ffc64f3d3828673bf5220df9529aa7934a36ad579e9d49cc5d7088f0e658",
+      "xml": "960052e88f88efcacdb1258f58b7ecc6addc587a857770013d4c0e1952b03e36"
+    },
+    "061-070/Solfejo067.mxl": {
+      "mxl": "0bb9949282471b4689bfde21616c4e8d0dc6a5833a0b02353bfded7137176951",
+      "xml": "7f21613ddac55b9b45e7bddda6abdb46ea7cc78b46e8c3bb3b2d46aa1cc3da29"
+    },
+    "061-070/Solfejo068.mxl": {
+      "mxl": "dbadba76e99742a2ea6280ca5ae29586de0b5c2674d11ebda6870e1d47a793ba",
+      "xml": "58acf39f49fa2eaa256bf3d7c20e8d0281eeece2975f6fb6d8d17496676f4b70"
+    },
+    "061-070/Solfejo069.mxl": {
+      "mxl": "8e07ff1d5e796885a3fee208fc4198c86c987b97142fae30a9e325080d717792",
+      "xml": "537dbccd307d751a7c11c0e5ed0f1f0b425edb224b96a110210ddf946ba70bb2"
+    },
+    "061-070/Solfejo070.mxl": {
+      "mxl": "eb22b644108255e89968a9ed5e39dfda491d22bf52798cf6c96af29f1d7a7e74",
+      "xml": "4a59354d99aed2ccdb88450d4130c5d362276d659d81b5f5b04f11449c284d9b"
+    }
+  }
+}

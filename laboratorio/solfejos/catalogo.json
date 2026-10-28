@@ -1,0 +1,525 @@
+{
+  "versao": 1,
+  "grupos": [
+    {
+      "id": "001-010",
+      "titulo": "Solfejos 1 a 10"
+    },
+    {
+      "id": "011-020",
+      "titulo": "Solfejos 11 a 20"
+    },
+    {
+      "id": "021-030",
+      "titulo": "Solfejos 21 a 30"
+    },
+    {
+      "id": "031-040",
+      "titulo": "Solfejos 31 a 40"
+    },
+    {
+      "id": "041-050",
+      "titulo": "Solfejos 41 a 50"
+    },
+    {
+      "id": "051-060",
+      "titulo": "Solfejos 51 a 60"
+    },
+    {
+      "id": "061-070",
+      "titulo": "Solfejos 61 a 70"
+    }
+  ],
+  "solfejos": [
+    {
+      "id": "solfejo001",
+      "numero": 1,
+      "titulo": "Solfejo 1",
+      "grupo": "001-010",
+      "arquivo": "001-010/solfejo001.mxl"
+    },
+    {
+      "id": "solfejo002",
+      "numero": 2,
+      "titulo": "Solfejo 2",
+      "grupo": "001-010",
+      "arquivo": "001-010/Solfejo002.mxl"
+    },
+    {
+      "id": "solfejo003",
+      "numero": 3,
+      "titulo": "Solfejo 3",
+      "grupo": "001-010",
+      "arquivo": "001-010/Solfejo003.mxl"
+    },
+    {
+      "id": "solfejo004",
+      "numero": 4,
+      "titulo": "Solfejo 4",
+      "grupo": "001-010",
+      "arquivo": "001-010/Solfejo004.mxl"
+    },
+    {
+      "id": "solfejo005",
+      "numero": 5,
+      "titulo": "Solfejo 5",
+      "grupo": "001-010",
+      "arquivo": "001-010/Solfejo005.mxl"
+    },
+    {
+      "id": "solfejo006",
+      "numero": 6,
+      "titulo": "Solfejo 6",
+      "grupo": "001-010",
+      "arquivo": "001-010/Solfejo006.mxl"
+    },
+    {
+      "id": "solfejo007",
+      "numero": 7,
+      "titulo": "Solfejo 7",
+      "grupo": "001-010",
+      "arquivo": "001-010/Solfejo007.mxl"
+    },
+    {
+      "id": "solfejo008",
+      "numero": 8,
+      "titulo": "Solfejo 8",
+      "grupo": "001-010",
+      "arquivo": "001-010/Solfejo008.mxl"
+    },
+    {
+      "id": "solfejo009",
+      "numero": 9,
+      "titulo": "Solfejo 9",
+      "grupo": "001-010",
+      "arquivo": "001-010/Solfejo009.mxl"
+    },
+    {
+      "id": "solfejo010",
+      "numero": 10,
+      "titulo": "Solfejo 10",
+      "grupo": "001-010",
+      "arquivo": "001-010/Solfejo010.mxl"
+    },
+    {
+      "id": "solfejo011",
+      "numero": 11,
+      "titulo": "Solfejo 11",
+      "grupo": "011-020",
+      "arquivo": "011-020/Solfejo011.mxl"
+    },
+    {
+      "id": "solfejo012",
+      "numero": 12,
+      "titulo": "Solfejo 12",
+      "grupo": "011-020",
+      "arquivo": "011-020/Solfejo012.mxl"
+    },
+    {
+      "id": "solfejo013",
+      "numero": 13,
+      "titulo": "Solfejo 13",
+      "grupo": "011-020",
+      "arquivo": "011-020/Solfejo013.mxl"
+    },
+    {
+      "id": "solfejo014",
+      "numero": 14,
+      "titulo": "Solfejo 14",
+      "grupo": "011-020",
+      "arquivo": "011-020/Solfejo014.mxl"
+    },
+    {
+      "id": "solfejo015",
+      "numero": 15,
+      "titulo": "Solfejo 15",
+      "grupo": "011-020",
+      "arquivo": "011-020/Solfejo015.mxl"
+    },
+    {
+      "id": "solfejo016",
+      "numero": 16,
+      "titulo": "Solfejo 16",
+      "grupo": "011-020",
+      "arquivo": "011-020/Solfejo016.mxl"
+    },
+    {
+      "id": "solfejo017",
+      "numero": 17,
+      "titulo": "Solfejo 17",
+      "grupo": "011-020",
+      "arquivo": "011-020/Solfejo017.mxl"
+    },
+    {
+      "id": "solfejo018",
+      "numero": 18,
+      "titulo": "Solfejo 18",
+      "grupo": "011-020",
+      "arquivo": "011-020/Solfejo018.mxl"
+    },
+    {
+      "id": "solfejo019",
+      "numero": 19,
+      "titulo": "Solfejo 19",
+      "grupo": "011-020",
+      "arquivo": "011-020/Solfejo019.mxl"
+    },
+    {
+      "id": "solfejo020",
+      "numero": 20,
+      "titulo": "Solfejo 20",
+      "grupo": "011-020",
+      "arquivo": "011-020/Solfejo020.mxl"
+    },
+    {
+      "id": "solfejo021",
+      "numero": 21,
+      "titulo": "Solfejo 21",
+      "grupo": "021-030",
+      "arquivo": "021-030/Solfejo021.mxl"
+    },
+    {
+      "id": "solfejo022",
+      "numero": 22,
+      "titulo": "Solfejo 22",
+      "grupo": "021-030",
+      "arquivo": "021-030/Solfejo022.mxl"
+    },
+    {
+      "id": "solfejo023",
+      "numero": 23,
+      "titulo": "Solfejo 23",
+      "grupo": "021-030",
+      "arquivo": "021-030/Solfejo023.mxl"
+    },
+    {
+      "id": "solfejo024",
+      "numero": 24,
+      "titulo": "Solfejo 24",
+      "grupo": "021-030",
+      "arquivo": "021-030/Solfejo024.mxl"
+    },
+    {
+      "id": "solfejo025",
+      "numero": 25,
+      "titulo": "Solfejo 25",
+      "grupo": "021-030",
+      "arquivo": "021-030/Solfejo025.mxl"
+    },
+    {
+      "id": "solfejo026",
+      "numero": 26,
+      "titulo": "Solfejo 26",
+      "grupo": "021-030",
+      "arquivo": "021-030/Solfejo026.mxl"
+    },
+    {
+      "id": "solfejo027",
+      "numero": 27,
+      "titulo": "Solfejo 27",
+      "grupo": "021-030",
+      "arquivo": "021-030/Solfejo027.mxl"
+    },
+    {
+      "id": "solfejo028",
+      "numero": 28,
+      "titulo": "Solfejo 28",
+      "grupo": "021-030",
+      "arquivo": "021-030/Solfejo028.mxl"
+    },
+    {
+      "id": "solfejo029",
+      "numero": 29,
+      "titulo": "Solfejo 29",
+      "grupo": "021-030",
+      "arquivo": "021-030/Solfejo029.mxl"
+    },
+    {
+      "id": "solfejo030",
+      "numero": 30,
+      "titulo": "Solfejo 30",
+      "grupo": "021-030",
+      "arquivo": "021-030/Solfejo030.mxl"
+    },
+    {
+      "id": "solfejo031",
+      "numero": 31,
+      "titulo": "Solfejo 31",
+      "grupo": "031-040",
+      "arquivo": "031-040/Solfejo031.mxl"
+    },
+    {
+      "id": "solfejo032",
+      "numero": 32,
+      "titulo": "Solfejo 32",
+      "grupo": "031-040",
+      "arquivo": "031-040/Solfejo032.mxl"
+    },
+    {
+      "id": "solfejo033",
+      "numero": 33,
+      "titulo": "Solfejo 33",
+      "grupo": "031-040",
+      "arquivo": "031-040/Solfejo033.mxl"
+    },
+    {
+      "id": "solfejo034",
+      "numero": 34,
+      "titulo": "Solfejo 34",
+      "grupo": "031-040",
+      "arquivo": "031-040/Solfejo034.mxl"
+    },
+    {
+      "id": "solfejo035",
+      "numero": 35,
+      "titulo": "Solfejo 35",
+      "grupo": "031-040",
+      "arquivo": "031-040/Solfejo035.mxl"
+    },
+    {
+      "id": "solfejo036",
+      "numero": 36,
+      "titulo": "Solfejo 36",
+      "grupo": "031-040",
+      "arquivo": "031-040/Solfejo036.mxl"
+    },
+    {
+      "id": "solfejo037",
+      "numero": 37,
+      "titulo": "Solfejo 37",
+      "grupo": "031-040",
+      "arquivo": "031-040/Solfejo037.mxl"
+    },
+    {
+      "id": "solfejo038",
+      "numero": 38,
+      "titulo": "Solfejo 38",
+      "grupo": "031-040",
+      "arquivo": "031-040/Solfejo038.mxl"
+    },
+    {
+      "id": "solfejo039",
+      "numero": 39,
+      "titulo": "Solfejo 39",
+      "grupo": "031-040",
+      "arquivo": "031-040/Solfejo039.mxl"
+    },
+    {
+      "id": "solfejo040",
+      "numero": 40,
+      "titulo": "Solfejo 40",
+      "grupo": "031-040",
+      "arquivo": "031-040/Solfejo040.mxl"
+    },
+    {
+      "id": "solfejo041",
+      "numero": 41,
+      "titulo": "Solfejo 41",
+      "grupo": "041-050",
+      "arquivo": "041-050/Solfejo041.mxl"
+    },
+    {
+      "id": "solfejo042",
+      "numero": 42,
+      "titulo": "Solfejo 42",
+      "grupo": "041-050",
+      "arquivo": "041-050/Solfejo042.mxl"
+    },
+    {
+      "id": "solfejo043",
+      "numero": 43,
+      "titulo": "Solfejo 43",
+      "grupo": "041-050",
+      "arquivo": "041-050/Solfejo043.mxl"
+    },
+    {
+      "id": "solfejo044",
+      "numero": 44,
+      "titulo": "Solfejo 44",
+      "grupo": "041-050",
+      "arquivo": "041-050/Solfejo044.mxl"
+    },
+    {
+      "id": "solfejo045",
+      "numero": 45,
+      "titulo": "Solfejo 45",
+      "grupo": "041-050",
+      "arquivo": "041-050/Solfejo045.mxl"
+    },
+    {
+      "id": "solfejo046",
+      "numero": 46,
+      "titulo": "Solfejo 46",
+      "grupo": "041-050",
+      "arquivo": "041-050/Solfejo046.mxl"
+    },
+    {
+      "id": "solfejo047",
+      "numero": 47,
+      "titulo": "Solfejo 47",
+      "grupo": "041-050",
+      "arquivo": "041-050/Solfejo047.mxl"
+    },
+    {
+      "id": "solfejo048",
+      "numero": 48,
+      "titulo": "Solfejo 48",
+      "grupo": "041-050",
+      "arquivo": "041-050/Solfejo048.mxl"
+    },
+    {
+      "id": "solfejo049",
+      "numero": 49,
+      "titulo": "Solfejo 49",
+      "grupo": "041-050",
+      "arquivo": "041-050/Solfejo049.mxl"
+    },
+    {
+      "id": "solfejo050",
+      "numero": 50,
+      "titulo": "Solfejo 50",
+      "grupo": "041-050",
+      "arquivo": "041-050/Solfejo050.mxl"
+    },
+    {
+      "id": "solfejo051",
+      "numero": 51,
+      "titulo": "Solfejo 51",
+      "grupo": "051-060",
+      "arquivo": "051-060/Solfejo051.mxl"
+    },
+    {
+      "id": "solfejo052",
+      "numero": 52,
+      "titulo": "Solfejo 52",
+      "grupo": "051-060",
+      "arquivo": "051-060/Solfejo052.mxl"
+    },
+    {
+      "id": "solfejo053",
+      "numero": 53,
+      "titulo": "Solfejo 53",
+      "grupo": "051-060",
+      "arquivo": "051-060/Solfejo053.mxl"
+    },
+    {
+      "id": "solfejo054",
+      "numero": 54,
+      "titulo": "Solfejo 54",
+      "grupo": "051-060",
+      "arquivo": "051-060/Solfejo054.mxl"
+    },
+    {
+      "id": "solfejo055",
+      "numero": 55,
+      "titulo": "Solfejo 55",
+      "grupo": "051-060",
+      "arquivo": "051-060/Solfejo055.mxl"
+    },
+    {
+      "id": "solfejo056",
+      "numero": 56,
+      "titulo": "Solfejo 56",
+      "grupo": "051-060",
+      "arquivo": "051-060/Solfejo056.mxl"
+    },
+    {
+      "id": "solfejo057",
+      "numero": 57,
+      "titulo": "Solfejo 57",
+      "grupo": "051-060",
+      "arquivo": "051-060/Solfejo057.mxl"
+    },
+    {
+      "id": "solfejo058",
+      "numero": 58,
+      "titulo": "Solfejo 58",
+      "grupo": "051-060",
+      "arquivo": "051-060/Solfejo058.mxl"
+    },
+    {
+      "id": "solfejo059",
+      "numero": 59,
+      "titulo": "Solfejo 59",
+      "grupo": "051-060",
+      "arquivo": "051-060/Solfejo059.mxl"
+    },
+    {
+      "id": "solfejo060",
+      "numero": 60,
+      "titulo": "Solfejo 60",
+      "grupo": "051-060",
+      "arquivo": "051-060/Solfejo060.mxl"
+    },
+    {
+      "id": "solfejo061",
+      "numero": 61,
+      "titulo": "Solfejo 61",
+      "grupo": "061-070",
+      "arquivo": "061-070/Solfejo061.mxl"
+    },
+    {
+      "id": "solfejo062",
+      "numero": 62,
+      "titulo": "Solfejo 62",
+      "grupo": "061-070",
+      "arquivo": "061-070/Solfejo062.mxl"
+    },
+    {
+      "id": "solfejo063",
+      "numero": 63,
+      "titulo": "Solfejo 63",
+      "grupo": "061-070",
+      "arquivo": "061-070/Solfejo063.mxl"
+    },
+    {
+      "id": "solfejo064",
+      "numero": 64,
+      "titulo": "Solfejo 64",
+      "grupo": "061-070",
+      "arquivo": "061-070/Solfejo064.mxl"
+    },
+    {
+      "id": "solfejo065",
+      "numero": 65,
+      "titulo": "Solfejo 65",
+      "grupo": "061-070",
+      "arquivo": "061-070/Solfejo065.mxl"
+    },
+    {
+      "id": "solfejo066",
+      "numero": 66,
+      "titulo": "Solfejo 66",
+      "grupo": "061-070",
+      "arquivo": "061-070/Solfejo066.mxl"
+    },
+    {
+      "id": "solfejo067",
+      "numero": 67,
+      "titulo": "Solfejo 67",
+      "grupo": "061-070",
+      "arquivo": "061-070/Solfejo067.mxl"
+    },
+    {
+      "id": "solfejo068",
+      "numero": 68,
+      "titulo": "Solfejo 68",
+      "grupo": "061-070",
+      "arquivo": "061-070/Solfejo068.mxl"
+    },
+    {
+      "id": "solfejo069",
+      "numero": 69,
+      "titulo": "Solfejo 69",
+      "grupo": "061-070",
+      "arquivo": "061-070/Solfejo069.mxl"
+    },
+    {
+      "id": "solfejo070",
+      "numero": 70,
+      "titulo": "Solfejo 70",
+      "grupo": "061-070",
+      "arquivo": "061-070/Solfejo070.mxl"
+    }
+  ]
+}

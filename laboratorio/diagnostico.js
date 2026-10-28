@@ -32,7 +32,7 @@
   window.addEventListener('online', offlineStatus); window.addEventListener('offline', offlineStatus);
 
   const assets = [
-    ['index.html', 'html'], ['style.css', 'css'], ['audio.js', 'js'], ['app.js', 'js'], ['offline.js', 'js'], ['sw.js', 'js'],
+    ['index.html', 'html'], ['style.css', 'css'], ['i18n.js', 'js'], ['audio.js', 'js'], ['app.js', 'js'], ['offline.js', 'js'], ['sw.js', 'js'],
     ['verificar.html', 'html'], ['diagnostico.js', 'js'], ['vendor/jszip-3.10.1.min.js', 'js'], ['vendor/opensheetmusicdisplay-1.9.3.min.js', 'js'],
     ['vendor/OSMD-LICENSE.txt', 'text'], ['vendor/JSZip-LICENSE.txt', 'text'], ['audio/piano/CREDITOS.txt', 'text'], ['audio/piano/LICENCA-ORIGEM.txt', 'text'], ['audio/piano/REVISAO.txt', 'text'],
     ...window.LabAudio.bank.map(sample => [sample.file, 'mp3'])

@@ -27,7 +27,7 @@ function parse(text) {
   return { documentElement: element, getElementsByTagName: name => [...(element.localName === name ? [element] : []), ...element.getElementsByTagName(name)] };
 }
 function element() {
-  return { value: '', children: [], textContent: '', disabled: false, classList: { add() {}, remove() {}, toggle() {} }, addEventListener() {}, setAttribute() {}, removeAttribute() {}, append(...nodes) { this.children.push(...nodes); if (!this.value && nodes[0]?.value) this.value = nodes[0].value; }, replaceChildren() { this.children = []; this.value = ''; } };
+  return { value: '', children: [], textContent: '', disabled: false, listeners: {}, classList: { add() {}, remove() {}, toggle() {} }, addEventListener(type, callback) { this.listeners[type] = callback; }, setAttribute() {}, removeAttribute() {}, append(...nodes) { this.children.push(...nodes); if (!this.value && nodes[0]?.value) this.value = nodes[0].value; }, replaceChildren() { this.children = []; this.value = ''; } };
 }
 const elements = Object.fromEntries([...html.matchAll(/id="([^"]+)"/g)].map(m => [m[1], element()]));
 elements.tempo.value = '120'; elements.zoom.value = '100'; elements.timbre.value = 'piano'; elements.followCursor.checked = true;
@@ -56,7 +56,7 @@ const context = vm.createContext({ console, URL, JSZip, Blob, fetch, setTimeout,
   document: { currentScript: { src: 'https://carlosveigafilho.com.br/laboratorio/app.js' }, getElementById: id => elements[id], createElement: element, addEventListener() {} },
   window: { AudioContext, JSZip, LabAudio: { Engine: TestEngine }, matchMedia: () => ({ matches: false }), addEventListener() {} }, location: { protocol: 'https:', href: 'https://carlosveigafilho.com.br/outro-endereco?teste=1' },
   DOMParser: class { parseFromString(text) { return parse(text); } } });
-const source = fs.readFileSync(path.join(root, 'app.js'), 'utf8').replace(/\n  load\(\);\n\}\)\(\);\s*$/, '\n  globalThis.testAPI = { extractScore, parseXML, readScore, readHarmony, harmonyTimeline, Player, ScoreCursor, load, state };\n})();');
+const source = fs.readFileSync(path.join(root, 'app.js'), 'utf8').replace(/\n  initialize\(\);\n\}\)\(\);\s*$/, '\n  globalThis.testAPI = { extractScore, parseXML, readScore, readHarmony, harmonyTimeline, Player, ScoreCursor, load, initialize, warmPiano, state };\n})();');
 assert(source.includes('globalThis.testAPI'), 'Ponto de entrada do teste não encontrado');
 vm.runInContext(source, context);
 assert.equal(elements.zoom.value, 80, 'Zoom inicial no desktop');
@@ -240,6 +240,104 @@ const note = (pitch, duration, extra = '') => `<note>${pitch ? `<pitch><step>${p
   p.stop(); elements.harmonyVolume.value = '45'; elements.playbackMode.value = 'melody';
   console.log('OK: 11 cifras reais; posições e baixos G/B e C/G; sétimas, acidentes, transposição, inversão, graus, offset, N.C., pautas, tipos desconhecidos; modos de reprodução, sincronização e volume zero.');
   console.log('OK: timbres piano/flauta/senoidal; cursor sincronizado, retorno, conclusão, nota isolada e preservação após zoom.');
+  const catalog = JSON.parse(fs.readFileSync(path.join(root, 'solfejos/catalogo.json'), 'utf8'));
+  const savedPreferences = new Map();
+  const preferenceKey = 'musicxml-lab:/laboratorio/:last-solfejo';
+  const storage = {
+    getItem: key => savedPreferences.get(key) ?? null,
+    setItem: (key, value) => savedPreferences.set(key, value)
+  };
+  context.window.localStorage = storage;
+  const requests = [];
+  context.opensheetmusicdisplay.OpenSheetMusicDisplay = class { async load(text) { parseXML(text); } render() {} };
+  context.fetch = async input => {
+    const url = new URL(input); requests.push(url.pathname);
+    if (url.pathname.endsWith('catalogo.json')) return { ok: true, json: async () => catalog };
+    const relative = url.pathname.replace('/laboratorio/', '');
+    const filename = path.join(root, relative);
+    // Exercise the compatibility path used by hosting that rejects MXL.
+    return relative.endsWith('.mxl') ? { ok: false, status: 403 } :
+      { ok: true, blob: async () => new Blob([fs.readFileSync(filename)]) };
+  };
+  await context.testAPI.initialize();
+  assert.equal(elements.solfejo.children.length, catalog.solfejos.length);
+  assert.equal(elements.solfejo.disabled, false);
+  assert.equal(elements.solfejo.value, 'solfejo001', 'Primeira visita deve abrir o 001');
+  const originalZoom = elements.zoom.value;
+  for (const item of catalog.solfejos) {
+    elements.solfejo.value = item.id;
+    await elements.solfejo.listeners.change();
+    assert.equal(elements.status.textContent, '', item.titulo);
+    assert.equal(elements.play.disabled, false, item.titulo);
+    assert.equal(elements.zoom.value, originalZoom);
+    assert.equal(savedPreferences.get(preferenceKey), item.id);
+    assert(requests.includes('/laboratorio/solfejos/' + item.arquivo.replace(/\.mxl$/, '.xml')));
+    const archive = await JSZip.loadAsync(fs.readFileSync(path.join(root, 'solfejos', item.arquivo)));
+    const manifest = parseXML(await archive.file('META-INF/container.xml').async('string'));
+    const rootfile = manifest.getElementsByTagName('rootfile')[0].getAttribute('full-path');
+    assert.deepEqual(await archive.file(rootfile).async('nodebuffer'), fs.readFileSync(path.join(root, 'solfejos', item.arquivo.replace(/\.mxl$/, '.xml'))));
+  }
+  console.log(`OK: seletor dos ${catalog.solfejos.length} solfejos; nomes exatos; XML alternativo idêntico ao MXL; troca sem áudio automático e com zoom preservado.`);
+  const collectionFetch = context.fetch;
+  const migrationRequests = [];
+  context.fetch = async input => {
+    const url = new URL(input); migrationRequests.push(url.pathname);
+    if (url.pathname.includes('/solfejos/')) return { ok: false, status: 404 };
+    return { ok: true, blob: async () => new Blob([fs.readFileSync(path.join(root, 'solfejo01.xml'))]) };
+  };
+  elements.solfejo.value = 'solfejo001';
+  await elements.solfejo.listeners.change();
+  assert.equal(elements.status.textContent, '', 'Solfejo 001 deve aceitar o caminho original quando a subpasta não foi publicada');
+  assert.equal(elements.play.disabled, false);
+  assert(migrationRequests.includes('/laboratorio/solfejo01.xml'));
+  elements.solfejo.value = 'solfejo002';
+  await elements.solfejo.listeners.change();
+  assert(elements.status.textContent.includes('Arquivo ausente'), 'Outro exercício ausente não pode tocar o 001');
+  assert.equal(savedPreferences.get(preferenceKey), 'solfejo001', 'Falha não pode substituir o último solfejo válido');
+  context.fetch = collectionFetch;
+  console.log('OK: migração do 001 com arquivos da raiz; outros solfejos nunca usam a partitura errada.');
+  savedPreferences.set(preferenceKey, 'solfejo005');
+  const contextsBeforeRestore = audioContexts;
+  await context.testAPI.initialize();
+  assert.equal(elements.solfejo.value, 'solfejo005', 'Reabertura deve retomar o último solfejo');
+  assert.equal(audioContexts, contextsBeforeRestore, 'Retomar não pode iniciar áudio');
+  savedPreferences.set(preferenceKey, 'solfejo-removido');
+  await context.testAPI.initialize();
+  assert.equal(elements.solfejo.value, 'solfejo001', 'ID que não existe mais deve abrir o 001');
+  savedPreferences.set(preferenceKey, 'solfejo005');
+  context.fetch = async input => String(input).includes('Solfejo005.') ? { ok: false, status: 404 } : collectionFetch(input);
+  await context.testAPI.initialize();
+  assert.equal(elements.solfejo.value, 'solfejo001', 'Arquivo lembrado indisponível deve abrir o 001');
+  assert.equal(elements.play.disabled, false);
+  assert.equal(savedPreferences.get(preferenceKey), 'solfejo001');
+  context.fetch = collectionFetch;
+  Object.defineProperty(context.window, 'localStorage', { configurable: true, get() { throw new Error('Armazenamento bloqueado'); } });
+  await context.testAPI.initialize();
+  assert.equal(elements.solfejo.value, 'solfejo001');
+  assert.equal(elements.play.disabled, false, 'Armazenamento bloqueado não pode impedir uso');
+  Object.defineProperty(context.window, 'localStorage', { configurable: true, value: storage });
+  console.log('OK: último solfejo persistido; retomada sem áudio; registro inválido, arquivo ausente e armazenamento bloqueado retornam ao 001.');
+  elements.solfejo.value = 'solfejo002';
+  await elements.solfejo.listeners.change();
+  const contextsBeforeWarmup = audioContexts;
+  let finishWarmup;
+  context.window.LabAudio.preload = (sounds, timbre, progress) => {
+    assert(sounds.length > 0); progress(0, 3);
+    return new Promise(resolve => { finishWarmup = resolve; });
+  };
+  const warming = context.testAPI.warmPiano();
+  assert.equal(elements.loadingSpinner.hidden, false);
+  assert(elements.playing.textContent.includes('Carregando piano'));
+  assert.equal(audioContexts, contextsBeforeWarmup, 'Antecipar downloads não pode criar AudioContext');
+  finishWarmup(); await warming;
+  assert.equal(elements.loadingSpinner.hidden, true);
+  assert.equal(elements.playing.textContent, 'Pronto para tocar');
+  context.window.LabAudio.preload = async () => { throw new Error('Sem rede'); };
+  await context.testAPI.warmPiano();
+  assert.equal(elements.loadingSpinner.hidden, true);
+  assert(elements.playing.textContent.includes('Play para tentar novamente'));
+  assert.equal(elements.play.disabled, false);
+  console.log('OK: spinner durante pré-carga; conclusão e erro liberam indicador; Play continua disponível; nenhuma abertura de áudio na pré-carga.');
   const baseURL = process.env.LAB_URL;
   if (baseURL) {
     for (const name of ['index.html', 'style.css', 'app.js', 'audio.js', 'solfejo01.mxl', 'vendor/jszip-3.10.1.min.js', 'vendor/opensheetmusicdisplay-1.9.3.min.js', 'audio/piano/C4.mp3']) {
